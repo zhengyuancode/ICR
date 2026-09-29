@@ -35,7 +35,7 @@ def download(url: str, target: Path, expected: str) -> None:
     target.parent.mkdir(parents=True, exist_ok=True)
     if target.exists() and digest(target) == expected:
         return
-    request = urllib.request.Request(url, headers={"User-Agent": "ICR-reproducibility"})
+    request = urllib.request.Request(url, headers={"User-Agent": "ICR"})
     temporary = target.with_suffix(target.suffix + ".download")
     with urllib.request.urlopen(request) as response, temporary.open("wb") as stream:
         shutil.copyfileobj(response, stream)
@@ -78,4 +78,3 @@ if __name__ == "__main__":
     fetch_taskbench()
     fetch_planbench()
     print("Public benchmark files downloaded and verified.")
-

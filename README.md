@@ -1,15 +1,16 @@
 # Interface-Closed Recovery (ICR)
 
-This repository contains the implementation, frozen protocols, result records,
-analysis code, and paper source for **Interface-Closed Recovery: Joint Workflow
-Repair with Observed-Input Certificates**.
+This repository provides the reference implementation of **Interface-Closed
+Recovery (ICR)**, together with tests, experiment drivers, and the paper source
+for **Interface-Closed Recovery: Joint Workflow Repair with Observed-Input
+Certificates**.
 
 ICR repairs a failed tool workflow in two coupled steps: it selects replacement
 implementations together with the least region that reconnects to unchanged
 work, then admits a relational recovery path only when its boundary value is
 certified for the observed input.
 
-## Quick verification
+## Install and verify
 
 The commands below do not call a language model or download a benchmark.
 
@@ -26,7 +27,32 @@ exact McNemar tests from the committed graph-level and task-level records. It
 writes `reproduced_claims.json` and exits with a nonzero status if a paper claim
 does not match its frozen evidence.
 
-## Artifact map
+## Use the solvers
+
+The implementation is ordinary Python source and does not require package
+installation. Run code from the repository root. For example:
+
+```python
+from experiments.repair_region import Edge, least_region
+
+region = least_region(
+    nodes=["producer", "consumer", "context"],
+    edges=[
+        Edge("producer", "consumer", ok_10=False),
+        Edge("consumer", "context"),
+    ],
+    failed={"producer"},
+    immutable={"context"},
+)
+print(region.feasible, sorted(region.nodes))
+```
+
+Joint implementation and scope selection is exposed through
+`experiments.joint_repair.solve_tree`; port-bound DAG optimization is exposed
+through `experiments.port_joint_repair.solve_ports`. Their oracle-backed tests
+show complete input constructions.
+
+## Repository map
 
 | Paper result | Code | Frozen evidence |
 |---|---|---|
@@ -45,7 +71,7 @@ provider-generated conversation traces are not required to reproduce the
 reported statistics; the online runners recreate them when supplied with an
 API configuration.
 
-## Full rerun
+## Reproducing the paper
 
 Run the public-data fetcher once:
 
@@ -74,4 +100,3 @@ it is not presented as an isolated causal estimate of the certificate alone.
 TaskBench and PlanBench-XL remain subject to their upstream licenses. This
 repository does not redistribute their source datasets; the fetcher retrieves
 the exact public files and checks their recorded hashes.
-
