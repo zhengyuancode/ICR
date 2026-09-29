@@ -1,0 +1,522 @@
+{
+  "role": "Development test of observed-input relational effect admission, designed after the prior global-advice and type-only outcomes",
+  "primary_all_frozen_failures": {
+    "n": 29,
+    "native_successes": 20,
+    "advice_successes": 26,
+    "advice_minus_native": 0.20689655172413793,
+    "paired_task_bootstrap_95": [
+      0.06896551724137931,
+      0.3793103448275862
+    ],
+    "mcnemar_two_sided_exact_p": 0.03125,
+    "improved": 6,
+    "worsened": 0,
+    "tied": 23
+  },
+  "secondary_vs_native": {
+    "n": 29,
+    "native_successes": 16,
+    "advice_successes": 26,
+    "advice_minus_native": 0.3448275862068966,
+    "paired_task_bootstrap_95": [
+      0.1724137931034483,
+      0.5172413793103449
+    ],
+    "mcnemar_two_sided_exact_p": 0.001953125,
+    "improved": 10,
+    "worsened": 0,
+    "tied": 19
+  },
+  "secondary_vs_type_only": {
+    "n": 29,
+    "native_successes": 26,
+    "advice_successes": 26,
+    "advice_minus_native": 0.0,
+    "paired_task_bootstrap_95": [
+      -0.13793103448275862,
+      0.13793103448275862
+    ],
+    "mcnemar_two_sided_exact_p": 1.0,
+    "improved": 2,
+    "worsened": 2,
+    "tied": 25
+  },
+  "structural_exposure_descriptive": {
+    "n": 11,
+    "native_successes": 6,
+    "advice_successes": 10,
+    "advice_minus_native": 0.36363636363636365,
+    "paired_task_bootstrap_95": [
+      0.09090909090909091,
+      0.6363636363636364
+    ],
+    "mcnemar_two_sided_exact_p": 0.125,
+    "improved": 4,
+    "worsened": 0,
+    "tied": 7
+  },
+  "first_recovery_event_pairs": [
+    {
+      "global_event": false,
+      "instance_event": false,
+      "same_first_path_if_both": false,
+      "tasks": 2
+    },
+    {
+      "global_event": false,
+      "instance_event": true,
+      "same_first_path_if_both": false,
+      "tasks": 7
+    },
+    {
+      "global_event": true,
+      "instance_event": true,
+      "same_first_path_if_both": false,
+      "tasks": 1
+    },
+    {
+      "global_event": true,
+      "instance_event": true,
+      "same_first_path_if_both": true,
+      "tasks": 19
+    }
+  ],
+  "task_rows": [
+    {
+      "query_id": "retail_query_0005",
+      "exposed": true,
+      "global": "failed",
+      "instance": "failed",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ]
+    },
+    {
+      "query_id": "retail_query_0008",
+      "exposed": true,
+      "global": "success",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ],
+      "instance_path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ]
+    },
+    {
+      "query_id": "retail_query_0009",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "failed",
+      "global_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ],
+      "instance_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0014",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_outbound_shipment_id_from_attempt_record_id_v2",
+        "get_fulfillment_request_id_from_parcel_record_id_edge"
+      ],
+      "instance_path": [
+        "get_outbound_shipment_id_from_attempt_record_id_v2",
+        "get_fulfillment_request_id_from_parcel_record_id_edge"
+      ]
+    },
+    {
+      "query_id": "retail_query_0016",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ],
+      "instance_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0020",
+      "exposed": false,
+      "global": "failed",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "instance_path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0043",
+      "exposed": true,
+      "global": "failed",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0058",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_payment_approval_code_from_charge_id_fast"
+      ],
+      "instance_path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_payment_approval_code_from_charge_id_fast"
+      ]
+    },
+    {
+      "query_id": "retail_query_0062",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ],
+      "instance_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0074",
+      "exposed": false,
+      "global": "failed",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "failed",
+      "global_path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_live_order_id_from_warehouse_request_max"
+      ],
+      "instance_path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_live_order_id_from_warehouse_request_max"
+      ]
+    },
+    {
+      "query_id": "retail_query_0082",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "instance_path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0089",
+      "exposed": true,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ]
+    },
+    {
+      "query_id": "retail_query_0091",
+      "exposed": true,
+      "global": "failed",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ]
+    },
+    {
+      "query_id": "retail_query_0101",
+      "exposed": false,
+      "global": "failed",
+      "instance": "failed",
+      "native": "failed",
+      "type_only": "failed",
+      "global_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ],
+      "instance_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0115",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ],
+      "instance_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0128",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "instance_path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0158",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "instance_path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0169",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ],
+      "instance_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0172",
+      "exposed": true,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": null
+    },
+    {
+      "query_id": "retail_query_0196",
+      "exposed": true,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": null
+    },
+    {
+      "query_id": "retail_query_0217",
+      "exposed": true,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "instance_path": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ]
+    },
+    {
+      "query_id": "retail_query_0233",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ],
+      "instance_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0235",
+      "exposed": false,
+      "global": "failed",
+      "instance": "failed",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ],
+      "instance_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0236",
+      "exposed": true,
+      "global": "failed",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ]
+    },
+    {
+      "query_id": "retail_query_0241",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ],
+      "instance_path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0284",
+      "exposed": true,
+      "global": "success",
+      "instance": "success",
+      "native": "success",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0307",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_live_order_id_from_warehouse_request_max"
+      ],
+      "instance_path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_live_order_id_from_warehouse_request_max"
+      ]
+    },
+    {
+      "query_id": "retail_query_0316",
+      "exposed": true,
+      "global": "failed",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": null,
+      "instance_path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ]
+    },
+    {
+      "query_id": "retail_query_0319",
+      "exposed": false,
+      "global": "success",
+      "instance": "success",
+      "native": "failed",
+      "type_only": "success",
+      "global_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ],
+      "instance_path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ]
+    }
+  ]
+}

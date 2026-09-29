@@ -1,0 +1,13 @@
+{
+  "protocol": "planbench_seed43_transfer_protocol.json",
+  "paired_task_count": 102,
+  "confirmation_task_count": 72,
+  "model_name": "deepseek-flash",
+  "blocker_seed": 43,
+  "max_steps": 100,
+  "metadata_configuration_identical_except_output_and_run_id": true,
+  "same_query_ids": true,
+  "final_rows_have_no_infrastructure_status": true,
+  "frozen_source_hashes_match": true,
+  "source_mismatches": []
+}

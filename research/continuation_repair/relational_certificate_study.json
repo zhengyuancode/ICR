@@ -1,0 +1,45 @@
+{
+  "setting": "Native PlanBench-XL finite retail database; all public unary tool paths of length <=5",
+  "assumptions": [
+    "Each tool is a projection over the same underlying row relation.",
+    "The original and every path edge satisfy the indicated functional dependency.",
+    "Every defined original input has a row witness with all intermediate columns present."
+  ],
+  "rows": 100,
+  "unary_tools": 136,
+  "distinct_edge_signatures": 136,
+  "functional_edge_signatures": 136,
+  "static_compilation_seconds": 0.17179409999516793,
+  "static_tool_calls": 0,
+  "calibration_rows_only": {
+    "20260925": {
+      "admitted_paths": 282,
+      "agreement_with_full_static": 282,
+      "false_admitted_on_full_relation": 0,
+      "missed_full_static": 0
+    },
+    "20260926": {
+      "admitted_paths": 282,
+      "agreement_with_full_static": 282,
+      "false_admitted_on_full_relation": 0,
+      "missed_full_static": 0
+    },
+    "20260927": {
+      "admitted_paths": 282,
+      "agreement_with_full_static": 282,
+      "false_admitted_on_full_relation": 0,
+      "missed_full_static": 0
+    }
+  },
+  "certificate_vs_native_exact": {
+    "certified_equivalent": 282,
+    "certified_inequivalent": 0,
+    "rejected_equivalent": 0,
+    "rejected_inequivalent": 59
+  },
+  "native_comparisons": {
+    "path_input": 31565,
+    "path_input_mismatch": 826
+  },
+  "certificate_counterexamples": []
+}

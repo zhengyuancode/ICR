@@ -1,0 +1,16 @@
+{
+  "reason": "Offline exposure-yield planning expanded the fixed candidate schedule from 65 to 80 distinct previously unseen task IDs before any model response was obtained.",
+  "earlier_plan_sha256": "daed91d9587f27ab4eab5b05be3d55752b80a0f29df0fbb9bdad5d950d7e1490",
+  "current_plan_sha256": "44532c71edd075f67ff12ab94ebe073ffbe18967187677e849aa4399215ead17",
+  "attempted_new_run": "prefix_capture_seed45",
+  "attempted_tasks": 6,
+  "completed_tasks": 0,
+  "model_responses": 0,
+  "terminal_api_error": "HTTP 402 Insufficient Balance on each first request",
+  "unchanged": [
+    "first-six pilot and next-twenty confirmation enrollment",
+    "same-prefix paired arms",
+    "primary and secondary endpoints",
+    "analysis and pilot gate"
+  ]
+}

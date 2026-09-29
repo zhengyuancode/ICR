@@ -1,0 +1,293 @@
+{
+  "protocol": "planbench_final_holdout_protocol.json",
+  "arms": {
+    "global_advice": {
+      "events": 14,
+      "global_certified": 14,
+      "observed_input_certified": 14,
+      "newly_observed_input_certified": 0,
+      "event_rows": [
+        {
+          "query_id": "retail_query_0037",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0040",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        },
+        {
+          "query_id": "retail_query_0137",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0153",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0226",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0226",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0226",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0243",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0252",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0260",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0260",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0261",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0272",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        },
+        {
+          "query_id": "retail_query_0282",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        }
+      ]
+    },
+    "instance_advice": {
+      "events": 15,
+      "global_certified": 14,
+      "observed_input_certified": 15,
+      "newly_observed_input_certified": 1,
+      "event_rows": [
+        {
+          "query_id": "retail_query_0037",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0040",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        },
+        {
+          "query_id": "retail_query_0137",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        },
+        {
+          "query_id": "retail_query_0153",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0166",
+          "global_certified": false,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        },
+        {
+          "query_id": "retail_query_0208",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0226",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0226",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0243",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0252",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0260",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0261",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0272",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        },
+        {
+          "query_id": "retail_query_0282",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0294",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        }
+      ]
+    },
+    "type_only_advice": {
+      "events": 15,
+      "global_certified": 12,
+      "observed_input_certified": 15,
+      "newly_observed_input_certified": 3,
+      "event_rows": [
+        {
+          "query_id": "retail_query_0040",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        },
+        {
+          "query_id": "retail_query_0137",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0137",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0137",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0153",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0166",
+          "global_certified": false,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        },
+        {
+          "query_id": "retail_query_0226",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0243",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0252",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0252",
+          "global_certified": false,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0260",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0260",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0261",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0261",
+          "global_certified": false,
+          "observed_input_certified": true,
+          "whole_task_status": "success"
+        },
+        {
+          "query_id": "retail_query_0272",
+          "global_certified": true,
+          "observed_input_certified": true,
+          "whole_task_status": "failed"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "unit": "distinct TaskBench tool graph, stratified by domain",
+  "seed": 20260924,
+  "draws": 20000,
+  "domains": {
+    "multimedia": {
+      "graphs": 1030,
+      "counts": {
+        "assignments": 481024,
+        "oracle_feasible": 93915,
+        "one_hop_admitted": 93252,
+        "two_hop_admitted": 93874,
+        "changed_feasible": 7868,
+        "changed_one_hop_admitted": 7205,
+        "changed_two_hop_admitted": 7827
+      },
+      "fractions": {
+        "one_hop_miss_among_changed_feasible": 0.08426537874936452,
+        "two_hop_miss_among_changed_feasible": 0.005210981189628877
+      }
+    },
+    "huggingface": {
+      "graphs": 871,
+      "counts": {
+        "assignments": 411776,
+        "oracle_feasible": 75654,
+        "one_hop_admitted": 72979,
+        "two_hop_admitted": 75477,
+        "changed_feasible": 21065,
+        "changed_one_hop_admitted": 18390,
+        "changed_two_hop_admitted": 20888
+      },
+      "fractions": {
+        "one_hop_miss_among_changed_feasible": 0.1269878946119155,
+        "two_hop_miss_among_changed_feasible": 0.008402563493947307
+      }
+    }
+  },
+  "combined": {
+    "graphs": 1901,
+    "counts": {
+      "assignments": 892800,
+      "oracle_feasible": 169569,
+      "one_hop_admitted": 166231,
+      "two_hop_admitted": 169351,
+      "changed_feasible": 28933,
+      "changed_one_hop_admitted": 25595,
+      "changed_two_hop_admitted": 28715
+    },
+    "fractions": {
+      "one_hop_miss_among_changed_feasible": 0.11536999274185186,
+      "two_hop_miss_among_changed_feasible": 0.007534649016693741
+    },
+    "graph_bootstrap_95ci": {
+      "one_hop_miss_among_changed_feasible": [
+        0.1079012999395136,
+        0.1228259887078472
+      ],
+      "two_hop_miss_among_changed_feasible": [
+        0.006183678956411069,
+        0.008972335846936547
+      ]
+    }
+  }
+}

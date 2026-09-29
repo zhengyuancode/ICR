@@ -1,0 +1,39 @@
+{
+  "scenario": "Worst-propagation chain, fixed replacement assignment, all crossing edges force next node",
+  "repetitions": 20,
+  "clock": "Python time.perf_counter, local CPU, wall time",
+  "rows": [
+    {
+      "nodes": 100,
+      "edges": 99,
+      "median_ms": 0.08754999726079404,
+      "min_ms": 0.07679999544052407,
+      "max_ms": 0.22890000400366262,
+      "edge_visits": 198
+    },
+    {
+      "nodes": 1000,
+      "edges": 999,
+      "median_ms": 0.9696500019344967,
+      "min_ms": 0.909200003661681,
+      "max_ms": 2.5363000022480264,
+      "edge_visits": 1998
+    },
+    {
+      "nodes": 10000,
+      "edges": 9999,
+      "median_ms": 13.195099996664794,
+      "min_ms": 11.816400001407601,
+      "max_ms": 17.40129999961937,
+      "edge_visits": 19998
+    },
+    {
+      "nodes": 50000,
+      "edges": 49999,
+      "median_ms": 73.67914999849745,
+      "min_ms": 59.90690000180621,
+      "max_ms": 84.31250000285218,
+      "edge_visits": 99998
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+\section{Experimental Methodology}
+\subsection{Implementation}
+ICR observes the public tool catalog, concrete call arguments, returned
+observations, and an append-only execution ledger. It never receives benchmark
+injection labels, reference paths, task solutions, or judge verdicts. Tool
+definitions supply input schemas, output annotations, categories, domains,
+and declared substitutes. We retain PlanBench-XL's native retail
+executor~\cite{planbenchxl}.
+
+ICR separates a trusted backend compiler from the end-user agent. In the
+PlanBench-XL deployment, the compiler may read the benchmark's released,
+fixed retail relation to build a certificate index; neither ICR's language
+model nor the native-agent control can inspect relation rows. Global,
+observed-input, and type-only advice controls use the same compiler-side
+catalog and index. Native-versus-ICR results therefore evaluate the deployed
+recovery system, while matched advice controls isolate admission policy.
+
+After an observed failure, the compiler enumerates alternative producers and
+linked consumers, constructs their compatibility table, and computes the least
+repair region. Admission requires lossless transport of supplied producer
+arguments, a unique projection that binds the observed payload into the
+consumer, and preservation of the original output schema. Generic
+``data'' or ``object'' matches are rejected. At execution, a failed producer
+interrupts the program before its consumer is dispatched; the original
+failure and all recovery calls remain in the trace.
+
+Candidate generation does not assume that a new failure is permanent. An
+identical-call retry gate permits one further attempt unless persistence is
+explicit; declared direct substitutions retain precedence when their concrete
+inputs validate. Every matched online control uses the same catalog, retry
+rule, retriever, executor, and failure trigger.
+
+\subsection{Studies and Controls}
+We evaluate structural optimality, boundary-value safety, and
+online completion separately. Within each comparison, controls receive the
+same frozen unit, public catalog, model, executor, and limits; reference paths
+and judge labels enter only offline scoring.
+
+\textbf{RQ1: structural exactness and joint choice.}
+An exhaustive small-graph suite covers 40,824 fixed-assignment instances;
+runtime audits enumerate all 16 regions of every recorded local assignment.
+A local processor probe uses worst-propagation chains up to 50,000 nodes.
+The multi-node study deduplicates 1,901 one-input TaskBench Multimedia and
+Hugging Face graphs~\cite{taskbench}; each failed node receives 128 seeded
+domain replacements, type equality defines compatibility, and external ports
+remain immutable. Distinct graphs are cluster-bootstrapped and two additional
+assignment seeds check stability.
+
+For joint choice, every published operation receives two controlled format
+variants from plain text, JSON, and protobuf, with fixed sampled costs and
+unchanged operation identity. Exact DP, matched-information greedy, beam
+controls, and the exhaustive oracle receive identical choices, boundaries,
+costs, and compatibility tables. On 157 additional multi-input DAGs, variable
+elimination and beams receive the same port-bound variants. Four-choice and
+additional-seed runs test sensitivity. These interventions isolate interface
+optimization; the executable catalog in RQ2 tests boundary-value effects.
+
+\textbf{RQ2: boundary-value admission and native-agent recovery.}
+PlanBench-XL supplies 327 retail queries, 185 typed tools, and a released
+100-row read-only relation. Without reading task solutions, we enumerate
+boundary-compatible paths of at most five calls. For the relational
+certificate, all 136 unary edge dependencies are checked exhaustively on the
+fixed relation; this is a finite-snapshot guarantee, not an inference about
+future data. The compiler then indexes non-null row witnesses. Compilation
+takes 0.172\,s and no tool or model calls. The index occupies 2.36\,MiB on disk
+and 6.23\,MiB when parsed; 9,850 hash-and-lookup probes take a median
+1.72\,$\mu$s each on one processor. Exhaustive native replay is used
+only after compilation to audit all 31,565 path--input classifications. A
+separate calibration/held-out replay rule provides an empirical comparator.
+
+The online policies are native execution, type-only advice,
+global-certificate advice, and ICR advice using the observed-input certificate.
+A 29-prefix development study precedes an all-arm, reserved 21-task seed-42
+holdout. The target population is explicit-blocker tasks with at least one
+available globally certified local bypass, defined before model outcomes. Of 134 tasks untouched by
+earlier development, 102 met this structural rule (76.1\%). Under seed 43 these
+102 eligible tasks were frozen;
+the first 30 served as diagnostics and the remaining 72 formed the sealed
+independent-task confirmation. A separate 80-task schedule captures previously
+unused input-only opportunities. Six prefixes form a pilot; the next 20 form
+the sealed same-prefix comparison, with identical histories, states, and
+failed actions. Its predeclared primary endpoint is restoration of the trusted
+target value within 12 subsequent model turns; whole-task success is
+secondary. An ancillary post-primary type-only arm replays the same 20
+prefixes. Table~\ref{tab:study-map} separates their estimands and units.
+
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{5pt}
+\caption{Evaluation cohorts and primary estimands.}
+\label{tab:study-map}
+\begin{tabular}{llll}
+\toprule
+\textbf{Study} & \textbf{Unit} & \textbf{Comparison} & \textbf{Primary endpoint}\\
+\midrule
+Structural oracle & 6,975 node failures in 1,901 graphs & DP, greedy, beams, oracle & Feasibility and minimum cost\\
+Static certificate & 31,565 path--input pairs & Global, type only, observed input & Native-executor value equality\\
+System confirmation & 72 globally certified-bypass tasks & Native vs. complete ICR advice & Whole-task completion\\
+Admission holdout & 21 reserved tasks & Three certificate policies & Whole-task completion\\
+Same-prefix confirmation & 20 input-only failure states & Three certificate policies & Target restoration within 12 turns\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Online Settings and Statistics}
+All online arms use the same hosted endpoint, which reports the served-model
+identifier \texttt{deepseek-flash}.
+Temperature is zero, thinking is disabled, and the response cap is 4,096
+tokens. PlanBench-XL retains its 100-step cap.
+We use 100,000 paired template, task, or prefix bootstrap resamples (seed
+20260924); reported 95\% intervals are percentile intervals. TaskBench graph
+resamples are stratified by domain. Exact paired binary tests use the two-sided
+McNemar test. The sealed 72-task and 20-prefix studies use task and matched
+prefix as their respective units; pilots and ancillary controls are not pooled
+with them. Every paired 72-task run reached a terminal benchmark outcome; no
+task was omitted because of a missing model response.
+
+\section{Results}
+\input{generated_candidate_results.tex}

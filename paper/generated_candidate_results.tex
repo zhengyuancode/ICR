@@ -1,0 +1,114 @@
+\subsection{Structural Recovery and Joint Choice}
+The multi-node TaskBench study evaluates 892,800 fixed assignments on 1,901
+distinct Multimedia and Hugging Face graphs. Among 28,933 feasible cases
+whose replacement changes an adjacent interface, the least fixed point
+matches an exhaustive subset oracle in every case. One and two rounds of
+otherwise identical implication propagation miss 3,338 and 218 repairs,
+respectively. The one-round recall gap is 11.5 percentage points (graph-bootstrap 95\%
+interval [10.8, 12.3]); both extra assignment seeds give similar gaps.
+A 50,000-node chain closes in 73.7\,ms median on one processor.
+
+Each graph contributes one instance per possible failed node, giving 6,975
+instances. All methods in Table~\ref{tab:joint-choice} receive identical candidates,
+costs, immutable boundaries, and compatibility tables. ``Oracle match''
+requires the same feasibility status and, when feasible, the same minimum cost.
+\begin{table}[t]\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Joint repair on 1,901 TaskBench topologies.}
+\label{tab:joint-choice}
+\begin{tabular}{ccc}\toprule
+\textbf{Method} & \textbf{Repairs found} & \textbf{Oracle match}\\\midrule
+Forward greedy & 3,449/6,975 & 6,472/6,975\\
+Beam width 2 & 3,745/6,975 & 6,786/6,975\\
+Beam width 4 & 3,914/6,975 & 6,956/6,975\\
+Beam width 8 & \textbf{3,933/6,975} & \textbf{6,975/6,975}\\
+ICR joint tree DP & \textbf{3,933/6,975} & \textbf{6,975/6,975}\\
+\bottomrule\end{tabular}\end{table}
+
+Joint tree DP finds 484 feasible repairs missed by the matched-information
+forward greedy rule, a gain of 6.9 percentage points (graph-bootstrap 95\% interval
+[6.3, 7.6]); width-four beam misses 19. On 157 multi-input DAGs, exact
+elimination matches the oracle at every one of 568 oracle-checkable positions.
+With four implementations per operation, width-eight beams miss one to four
+feasible DAG repairs across three independent seeds; elimination remains exact.
+On three-choice chains, the exact DP scales from 0.040\,ms at three nodes to
+117.4\,ms at 10,000 nodes, whereas exhaustive enumeration already takes
+51.6\,ms at 11 nodes.
+The graph experiments preserve each published operation's identity while
+varying declared interface formats, isolating repair-scope optimization from
+language-model generation.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.97\textwidth]{figures/results_overview.pdf}
+\caption{PlanBench-XL results: (a) 31,565 path--input pairs; (b) 72 tasks; (c) 20 matched prefixes.}
+\label{fig:results-overview}
+\end{figure*}
+
+\subsection{Observed-Input Certificate}
+PlanBench-XL's independent retail executor yields 341 typed bypass paths
+of two to five calls. Figure~\ref{fig:results-overview}(a) scores all 31,565
+defined path--input pairs of the fixed read-only relation; here ``safe'' means
+exact normalized output equality under the native executor on that snapshot.
+The 9,250
+failed-tool--input decisions below select at most one shortest route from
+those pairs. The observed-input certificate recovers 5,074 safe
+pairs inside the 59 paths rejected by global certification, without invoking
+candidate paths at admission. Exhaustive native replay verifies every
+classification. Among 9,250 failed-tool--input decisions, the shortest route
+admitted by the observed-input certificate matches the native shortest-safe oracle in every case:
+9,124 safe routes and 126 abstentions. Global certification finds 8,350
+safe routes and abstains 900 times; type-only routing makes 126 wrong route
+selections among these 9,250 decisions. The observed-input certificate thus recovers 774 safe decisions without
+accepting the type-only errors.
+
+\subsection{Native-Agent Recovery}
+On 29 development first-failure prefixes, observed-input advice passes 26
+continuations versus 20 for global advice (six paired gains, zero losses;
+exact McNemar $p=0.031$). Four gains follow newly available packets. The
+independent-task test below checks whole-trajectory transfer.
+
+Table~\ref{tab:online-ablation} reports matched admission-rule controls: its
+first row is whole-task pass and its second is trusted-target restoration
+within 12 turns.
+On the sealed 72-task seed-43 confirmation
+(Fig.~\ref{fig:results-overview}(b)), ICR advice passes 58 tasks
+versus 39 natively: 20 paired gains and one loss, a gain of 26.4 percentage
+points (paired bootstrap 95\% interval [15.3, 37.5]; exact McNemar
+$p=2.1\times10^{-5}$). Clustering by released reference path (49 groups)
+and target datatype (19 groups) gives [16.1, 37.2] and [16.7, 35.5]
+percentage-point intervals. Mean model requests differ by $-0.32$ per
+task [$-3.99$, 3.32]. ICR emits 33 advice packets, and 17 of the 20 gains
+contain a recovery event.
+Across all 102 frozen eligible seed-43 tasks, including the 30-task diagnostic
+stage, descriptive completion is 79/102 for ICR and 54/102 natively.
+
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Matched PlanBench-XL online controls.}
+\label{tab:online-ablation}
+\begin{tabular}{ccccc}\toprule
+\textbf{Frozen unit} & \textbf{Native} & \textbf{Global} & \textbf{Type only} & \textbf{ICR obs.}\\\midrule
+21 tasks & 8/21 & \textbf{15/21} & \textbf{15/21} & \textbf{15/21}\\
+20 prefixes & N/A & 7/20 & \textbf{19/20} & \textbf{19/20}\\
+\bottomrule\end{tabular}
+\end{table}
+
+The prefix experiment starts from a native agent's already observed failed
+state and isolates the three admission rules; it therefore has no separate
+native continuation arm, shown as N/A in Table~\ref{tab:online-ablation}.
+
+In the 21-task admission-rule holdout, global, type-only, and observed-input
+advice emit 14, 15, and 15 packets, respectively. All 15 type-only packets in
+this cohort pass the observed-input certificate, so the full-relation audit,
+rather than this small task sample, exposes its 126 unsafe route decisions.
+Of 62 frozen-order native captures, 26 met the
+input-only failure rule; six formed the pilot and 20 the sealed same-prefix
+confirmation (Fig.~\ref{fig:results-overview}(c)). Observed-input advice versus
+global-certificate advice yields 12 paired local gains, no losses, a difference of 60 percentage
+points (paired bootstrap 95\% interval [40, 80]; two-sided exact McNemar
+$p=0.00049$). Whole-task success has 13 gains, no losses ($p=0.00024$).
+Every local gain invokes a packet tool; four execute the full path. The
+pilot enters neither test. In the ancillary type-only replay, all 20 first
+paths coincide with and pass the observed-input certificate, yielding the
+same local endpoint. Figure~\ref{fig:results-overview}(a) identifies the safety
+distinction over the complete path--input relation.

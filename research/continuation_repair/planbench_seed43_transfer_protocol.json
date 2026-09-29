@@ -1,0 +1,1359 @@
+{
+  "role": "Adaptive-design independent-task confirmation after seed-42 final analysis",
+  "selection": "Every previously unused task with at least one available global-certified bypass under fixed blocker seed 43; no model outcomes or reference answers used",
+  "blocker_seed": 43,
+  "previously_used_seed42_task_count": 193,
+  "task_ids": [
+    "retail_task_0011",
+    "retail_task_0019",
+    "retail_task_0023",
+    "retail_task_0027",
+    "retail_task_0030",
+    "retail_task_0032",
+    "retail_task_0034",
+    "retail_task_0046",
+    "retail_task_0049",
+    "retail_task_0050",
+    "retail_task_0052",
+    "retail_task_0053",
+    "retail_task_0055",
+    "retail_task_0057",
+    "retail_task_0060",
+    "retail_task_0065",
+    "retail_task_0067",
+    "retail_task_0071",
+    "retail_task_0072",
+    "retail_task_0084",
+    "retail_task_0086",
+    "retail_task_0093",
+    "retail_task_0098",
+    "retail_task_0099",
+    "retail_task_0103",
+    "retail_task_0106",
+    "retail_task_0108",
+    "retail_task_0110",
+    "retail_task_0112",
+    "retail_task_0113",
+    "retail_task_0116",
+    "retail_task_0118",
+    "retail_task_0119",
+    "retail_task_0120",
+    "retail_task_0121",
+    "retail_task_0122",
+    "retail_task_0123",
+    "retail_task_0124",
+    "retail_task_0125",
+    "retail_task_0126",
+    "retail_task_0129",
+    "retail_task_0130",
+    "retail_task_0134",
+    "retail_task_0135",
+    "retail_task_0138",
+    "retail_task_0141",
+    "retail_task_0145",
+    "retail_task_0146",
+    "retail_task_0147",
+    "retail_task_0148",
+    "retail_task_0149",
+    "retail_task_0154",
+    "retail_task_0164",
+    "retail_task_0165",
+    "retail_task_0174",
+    "retail_task_0178",
+    "retail_task_0179",
+    "retail_task_0181",
+    "retail_task_0185",
+    "retail_task_0186",
+    "retail_task_0192",
+    "retail_task_0195",
+    "retail_task_0197",
+    "retail_task_0198",
+    "retail_task_0200",
+    "retail_task_0201",
+    "retail_task_0202",
+    "retail_task_0203",
+    "retail_task_0206",
+    "retail_task_0207",
+    "retail_task_0209",
+    "retail_task_0210",
+    "retail_task_0219",
+    "retail_task_0224",
+    "retail_task_0227",
+    "retail_task_0237",
+    "retail_task_0240",
+    "retail_task_0244",
+    "retail_task_0248",
+    "retail_task_0251",
+    "retail_task_0255",
+    "retail_task_0256",
+    "retail_task_0257",
+    "retail_task_0258",
+    "retail_task_0267",
+    "retail_task_0268",
+    "retail_task_0270",
+    "retail_task_0273",
+    "retail_task_0275",
+    "retail_task_0276",
+    "retail_task_0283",
+    "retail_task_0287",
+    "retail_task_0288",
+    "retail_task_0299",
+    "retail_task_0303",
+    "retail_task_0304",
+    "retail_task_0309",
+    "retail_task_0313",
+    "retail_task_0322",
+    "retail_task_0323",
+    "retail_task_0324",
+    "retail_task_0327"
+  ],
+  "n_tasks": 102,
+  "structural_options": [
+    {
+      "task_id": "retail_task_0011",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_warehouse_request_max",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0019",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_auth_reference_code_from_processor_auth_id_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0023",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0027",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0030",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0032",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0034",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_approval_code_from_charge_id_fast",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0046",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0049",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0050",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0052",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0053",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0055",
+      "structural_options": [
+        {
+          "failed_tool": "get_checkout_order_id_from_intent_record_id_max",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+          "usable_global_paths": 2
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0057",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_method_from_auth_id_edge",
+          "usable_global_paths": 4
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0060",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0065",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_method_from_auth_id_edge",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_checkout_intent_id_from_charge_id",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0067",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 2
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0071",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_method_from_auth_id_edge",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0072",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_payment_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0084",
+      "structural_options": [
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0086",
+      "structural_options": [
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0093",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0098",
+      "structural_options": [
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0099",
+      "structural_options": [
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0103",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0106",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0108",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0110",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0112",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_warehouse_request_max",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0113",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0116",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_warehouse_request_max",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0118",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_auth_reference_code_from_processor_auth_id_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0119",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0120",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_state_from_authorization_id_swift",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0121",
+      "structural_options": [
+        {
+          "failed_tool": "get_checkout_intent_status_from_payment_intent_nano",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0122",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0123",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0124",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0125",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0126",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0129",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0130",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0134",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0135",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0138",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_payment_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_checkout_intent_status_from_payment_intent_nano",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0141",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_payment_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0145",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0146",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0147",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0148",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0149",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0154",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0164",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0165",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0174",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0178",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0179",
+      "structural_options": [
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_warehouse_request_max",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0181",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_reference_code_from_processor_auth_id_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0185",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0186",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0192",
+      "structural_options": [
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0195",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_reference_code_from_processor_auth_id_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0197",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0198",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_checkout_intent_status_from_payment_intent_nano",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0200",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0201",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0202",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0203",
+      "structural_options": [
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0206",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0207",
+      "structural_options": [
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0209",
+      "structural_options": [
+        {
+          "failed_tool": "get_checkout_order_id_from_intent_record_id_max",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_draft_cart_id_from_quote_record_id_fast",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_checkout_intent_id_from_charge_id",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_refund_from_payment_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0210",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_billing_method_id_from_payment_session_id_fast",
+          "usable_global_paths": 2
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0219",
+      "structural_options": [
+        {
+          "failed_tool": "get_draft_cart_id_from_quote_record_id_fast",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0224",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_return_claim_id",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_draft_cart_id_from_quote_record_id_fast",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_checkout_order_id_from_intent_record_id_max",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+          "usable_global_paths": 2
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0227",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0237",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_recorded_at_from_refund_record_id_nano",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_warehouse_request_max",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0240",
+      "structural_options": [
+        {
+          "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0244",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_approval_code_from_charge_id_fast",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_checkout_intent_id_from_charge_id",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0248",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0251",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0255",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0256",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0257",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0258",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_method_from_auth_id_edge",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_billing_method_id_from_payment_session_id_fast",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0267",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_state_from_authorization_id_swift",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0268",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_checkout_intent_status_from_payment_intent_nano",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0270",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0273",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0275",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0276",
+      "structural_options": [
+        {
+          "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0283",
+      "structural_options": [
+        {
+          "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0287",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_checkout_intent_id_from_charge_id",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0288",
+      "structural_options": [
+        {
+          "failed_tool": "get_account_from_payment_intent_v3",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0299",
+      "structural_options": [
+        {
+          "failed_tool": "get_payment_id_from_refund_record_id_instant",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_warehouse_request_max",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0303",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_payment_record_id_core",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_warehouse_request_max",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0304",
+      "structural_options": [
+        {
+          "failed_tool": "get_account_from_payment_intent_v3",
+          "usable_global_paths": 2
+        },
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_auth_id_from_payment_record_id_core",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0309",
+      "structural_options": [
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0313",
+      "structural_options": [
+        {
+          "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_checkout_intent_id_from_charge_id",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0322",
+      "structural_options": [
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0323",
+      "structural_options": [
+        {
+          "failed_tool": "get_quote_from_fulfillment_enterprise",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0324",
+      "structural_options": [
+        {
+          "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_warehouse_request_max",
+          "usable_global_paths": 1
+        }
+      ]
+    },
+    {
+      "task_id": "retail_task_0327",
+      "structural_options": [
+        {
+          "failed_tool": "get_checkout_order_id_from_intent_record_id_max",
+          "usable_global_paths": 1
+        },
+        {
+          "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+          "usable_global_paths": 2
+        }
+      ]
+    }
+  ],
+  "arms": {
+    "baseline": "seed43_native",
+    "global_advice": "seed43_global_advice",
+    "instance_advice": "seed43_instance_advice"
+  },
+  "primary": "instance-advice minus native whole-task success on all selected tasks",
+  "secondary": "global-advice minus native and instance-advice minus global-advice",
+  "analysis": "paired exact two-sided McNemar and 100000 task-bootstrap draws",
+  "runtime": {
+    "max_steps": 100,
+    "workers_per_arm": 4
+  },
+  "source_sha256": {
+    "research/run_planbench_pilot.py": "de2d9c95d96050a6834edd9f1c18f780facf47f57f231f6344464abfe902c656",
+    "research/planbench_controller.py": "bcc393bc41feef080752d3ddce00a5df543186485fa28f7a024f1fa1b3e19aa2",
+    "research/planbench_instance_advice.py": "805bec68f270905ba47ba808f5db1b743762d88e781197169a7bb871a468cade",
+    "research/freeze_planbench_seed43_transfer.py": "dc883a0cbbd5a1cb8255385110d8ad56435356384fe2087e2d1516eb6da4276f",
+    "research/continuation_repair/planbench_calibrated_contracts.json": "9a8500d0cca21eb4de184a2e316fd98ed423632f2bc7eef0aa85507dfebdfa4c",
+    "research/continuation_repair/planbench_instance_contracts.json": "911858936f750b6863c79e0e35f4d67ebd09bb318889e4dab9670366a0fc4fd5",
+    "external/PlanBench-XL-main/src/data/retail/baseline_tools.json": "b46dda31f10a2b427d82d3f58995b1201075c03f98cd3a14d7ec1a19217fd212",
+    "external/PlanBench-XL-main/src/data/retail/database.json": "cd17e2f8b82c87af25c7a674bc2143e6b35bc84ec616760c1d25fb6e237215d8",
+    "external/PlanBench-XL-main/src/data/retail/paths_set_catalog.json": "887bb9e0f17cd4c9105958694a6b8bba4cd4c88cb8835126dd609482ee5c33bc",
+    "external/PlanBench-XL-main/src/data/retail/tasks.json": "924c018313fb9e2ea59152b30ab59d31f40c052a51732f515cbc49bb5b2e804b"
+  }
+}

@@ -1,0 +1,777 @@
+{
+  "protocol": "planbench_seed43_confirmation72_protocol.json",
+  "primary_confirmation72": {
+    "n": 72,
+    "native_successes": 39,
+    "advice_successes": 58,
+    "advice_minus_native": 0.2638888888888889,
+    "paired_task_bootstrap_95": [
+      0.1527777777777778,
+      0.375
+    ],
+    "mcnemar_two_sided_exact_p": 2.09808349609375e-05,
+    "improved": 20,
+    "worsened": 1,
+    "tied": 51
+  },
+  "descriptive_all102": {
+    "n": 102,
+    "native_successes": 54,
+    "advice_successes": 79,
+    "advice_minus_native": 0.24509803921568626,
+    "paired_task_bootstrap_95": [
+      0.13725490196078433,
+      0.3431372549019608
+    ],
+    "mcnemar_two_sided_exact_p": 2.2361520677804947e-05,
+    "improved": 30,
+    "worsened": 5,
+    "tied": 67
+  },
+  "decision_rule_met": true,
+  "cluster_sensitivity": {
+    "released_reference_path": {
+      "n_clusters": 49,
+      "percentile_95": [
+        0.16129032258064516,
+        0.3717948717948718
+      ]
+    },
+    "target_datatype": {
+      "n_clusters": 19,
+      "percentile_95": [
+        0.16666666666666666,
+        0.35526315789473684
+      ]
+    }
+  },
+  "mechanism_diagnostic": {
+    "advice_event_statuses": {
+      "advised": 33
+    },
+    "gains_with_recovery_event": 17,
+    "losses_with_recovery_event": 0,
+    "note": "Event-conditioned counts are descriptive because events occur after treatment assignment."
+  },
+  "model_requests_confirmation72": {
+    "native_mean": 31.09722222222222,
+    "icr_mean": 30.77777777777778,
+    "paired_difference_mean": -0.3194444444444444,
+    "paired_difference_bootstrap_95": [
+      -3.986111111111111,
+      3.3194444444444446
+    ]
+  },
+  "task_rows": [
+    {
+      "query_id": "retail_query_0116",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 34,
+      "icr_steps": 16,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0118",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 38,
+      "icr_steps": 47,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0119",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 33,
+      "icr_steps": 32,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0120",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 35,
+      "icr_steps": 70,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0121",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 47,
+      "icr_steps": 52,
+      "icr_recovery_events": 2,
+      "icr_recovery_statuses": [
+        "advised",
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0122",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 24,
+      "icr_steps": 25,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0123",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 59,
+      "icr_steps": 44,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0124",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 22,
+      "icr_steps": 42,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0125",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 60,
+      "icr_steps": 55,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0126",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 35,
+      "icr_steps": 34,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0129",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 16,
+      "icr_steps": 13,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0130",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 15,
+      "icr_steps": 18,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0134",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 16,
+      "icr_steps": 19,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0135",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 67,
+      "icr_steps": 44,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0138",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 65,
+      "icr_steps": 100,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0141",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 26,
+      "icr_steps": 7,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0145",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 33,
+      "icr_steps": 32,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0146",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 17,
+      "icr_steps": 15,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0147",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 18,
+      "icr_steps": 26,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0148",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 21,
+      "icr_steps": 24,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0149",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 20,
+      "icr_steps": 16,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0154",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 33,
+      "icr_steps": 22,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0164",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 15,
+      "icr_steps": 14,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0165",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 16,
+      "icr_steps": 18,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0174",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 46,
+      "icr_steps": 55,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0178",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 24,
+      "icr_steps": 19,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0179",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 18,
+      "icr_steps": 22,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0181",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 23,
+      "icr_steps": 40,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0185",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 70,
+      "icr_steps": 57,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0186",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 83,
+      "icr_steps": 40,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0192",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 20,
+      "icr_steps": 20,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0195",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 40,
+      "icr_steps": 38,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0197",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 28,
+      "icr_steps": 36,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0198",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 92,
+      "icr_steps": 32,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0200",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 62,
+      "icr_steps": 35,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0201",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 18,
+      "icr_steps": 26,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0202",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 39,
+      "icr_steps": 45,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0203",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 37,
+      "icr_steps": 31,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0206",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 12,
+      "icr_steps": 16,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0207",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 23,
+      "icr_steps": 16,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0209",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 20,
+      "icr_steps": 15,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0210",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 16,
+      "icr_steps": 27,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0219",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 11,
+      "icr_steps": 41,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0224",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 12,
+      "icr_steps": 20,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0227",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 21,
+      "icr_steps": 14,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0237",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 29,
+      "icr_steps": 28,
+      "icr_recovery_events": 2,
+      "icr_recovery_statuses": [
+        "advised",
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0240",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 16,
+      "icr_steps": 14,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0244",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 47,
+      "icr_steps": 37,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0248",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 25,
+      "icr_steps": 26,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0251",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 23,
+      "icr_steps": 33,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0255",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 14,
+      "icr_steps": 16,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0256",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 15,
+      "icr_steps": 18,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0257",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 17,
+      "icr_steps": 19,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0258",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 16,
+      "icr_steps": 16,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0267",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 21,
+      "icr_steps": 23,
+      "icr_recovery_events": 2,
+      "icr_recovery_statuses": [
+        "advised",
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0268",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 100,
+      "icr_steps": 88,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0270",
+      "native_status": "success",
+      "icr_status": "failed",
+      "native_steps": 25,
+      "icr_steps": 38,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0273",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 23,
+      "icr_steps": 25,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0275",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 14,
+      "icr_steps": 13,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0276",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 14,
+      "icr_steps": 15,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0283",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 50,
+      "icr_steps": 38,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0287",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 27,
+      "icr_steps": 28,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0288",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 41,
+      "icr_steps": 30,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0299",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 82,
+      "icr_steps": 57,
+      "icr_recovery_events": 2,
+      "icr_recovery_statuses": [
+        "advised",
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0303",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 42,
+      "icr_steps": 100,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0304",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 30,
+      "icr_steps": 22,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0309",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 11,
+      "icr_steps": 22,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0313",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 19,
+      "icr_steps": 20,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0322",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 14,
+      "icr_steps": 17,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0323",
+      "native_status": "success",
+      "icr_status": "success",
+      "native_steps": 16,
+      "icr_steps": 14,
+      "icr_recovery_events": 0,
+      "icr_recovery_statuses": []
+    },
+    {
+      "query_id": "retail_query_0324",
+      "native_status": "failed",
+      "icr_status": "failed",
+      "native_steps": 15,
+      "icr_steps": 15,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    },
+    {
+      "query_id": "retail_query_0327",
+      "native_status": "failed",
+      "icr_status": "success",
+      "native_steps": 13,
+      "icr_steps": 14,
+      "icr_recovery_events": 1,
+      "icr_recovery_statuses": [
+        "advised"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "Sealed before any seed-43 model call",
+  "files_sha256": {
+    "research/continuation_repair/planbench_seed43_transfer_protocol.json": "e518977e153074b4503ba588d45ca1c230ae64491ceaff0980f3890cfb769a13",
+    "research/run_planbench_seed43_transfer.py": "3f1af5042befbaf14c02794a576462385ae9a034291009c88b00fb77ddc8c98f",
+    "research/analyze_planbench_seed43_transfer.py": "c068984994a1970c2fe365428add7804af9f8d6ba5ca0a74795066ff17275f85"
+  },
+  "preflight": "Python compilation and blocker.seed=43 config-load checks passed"
+}

@@ -1,0 +1,26 @@
+{
+  "recorded_at_utc": "2026-09-28T10:33:31.523538+00:00",
+  "role": "Prospective same-prefix online study of global versus observed-input certificate advice",
+  "schedule": "All 80 entries in planbench_prefix_exposure_plan.json, in stored order; one blocker seed per entry and no repeated task ID",
+  "capture": "Run the unmodified native agent under each stored blocker seed, stopping at the first actual explicit-blocker failure for which a currently usable observed-input-certified path exists, no currently usable global-certified path exists, and the target datatype has no trusted value before failure. A task without such an event by 100 steps is not enrolled; report the full denominator.",
+  "enrollment": "First six captured prefixes in fixed schedule order form a development pilot; the next 20 form a separate confirmation cohort. No outcome-dependent task replacement. If the schedule yields fewer than 26, report the shortfall and do not claim a completed confirmation.",
+  "intervention": "Replay the same recorded history, prior state, and fixed failed model action in both arms. Global-certified advice and observed-input-certified advice use the same hosted model, retriever, tool executor, blocker seed, 100-step total cap, and non-automatic execution policy; only the certificate admission rule changes.",
+  "primary_endpoint": "Within 12 additional model turns after the fixed failed call, produce a trusted successful tool result of the original target datatype exactly equal to the official unblocked original-tool output for the observed failed-call input; judge offline after both runs.",
+  "secondary_endpoint": "Official native whole-task success under the 100-step cap; report all captured prefixes in each cohort regardless of packet activation.",
+  "analysis": "For the confirmation cohort only, two-sided exact McNemar on the paired primary endpoint; report paired risk difference and 95% paired bootstrap interval, then secondary whole-task contrast and tool-cluster sensitivity. Pilot is never pooled into the confirmation p-value.",
+  "pilot_gate": "Continue to confirmation only if six pairs finish without protocol violation, at least three input-only recovery packets actually appear, and primary endpoint gains exceed losses by at least two. Otherwise diagnose the mechanism before spending on confirmation.",
+  "spending_gate": "Run capture and matched arms in small sequential batches (at most two workers); inspect completion, packet exposure, and account errors after each batch. Never spend on confirmation when the pilot gate fails or a control ceiling makes a positive paired result impossible.",
+  "source_sha256": {
+    "research/run_planbench_prefix_capture.py": "289c8ed4bc7ec2dd6fcad93da12c51800df4c3cebe453a6e94113c336a407d5f",
+    "research/run_planbench_pilot.py": "de2d9c95d96050a6834edd9f1c18f780facf47f57f231f6344464abfe902c656",
+    "research/planbench_controller.py": "bcc393bc41feef080752d3ddce00a5df543186485fa28f7a024f1fa1b3e19aa2",
+    "research/planbench_instance_advice.py": "805bec68f270905ba47ba808f5db1b743762d88e781197169a7bb871a468cade",
+    "research/continuation_repair/planbench_prefix_exposure_plan.json": "44532c71edd075f67ff12ab94ebe073ffbe18967187677e849aa4399215ead17",
+    "research/continuation_repair/planbench_calibrated_contracts.json": "9a8500d0cca21eb4de184a2e316fd98ed423632f2bc7eef0aa85507dfebdfa4c",
+    "research/continuation_repair/planbench_instance_contracts.json": "911858936f750b6863c79e0e35f4d67ebd09bb318889e4dab9670366a0fc4fd5",
+    "external/PlanBench-XL-main/src/data/retail/baseline_tools.json": "b46dda31f10a2b427d82d3f58995b1201075c03f98cd3a14d7ec1a19217fd212",
+    "external/PlanBench-XL-main/src/data/retail/blocker_tools.json": "58e4148a18d58d1da30fdf35645a4b92843e4a1217ccd1513ed68d7aa1a1e7e8",
+    "external/PlanBench-XL-main/src/data/retail/database.json": "cd17e2f8b82c87af25c7a674bc2143e6b35bc84ec616760c1d25fb6e237215d8",
+    "external/PlanBench-XL-main/src/data/retail/tasks.json": "924c018313fb9e2ea59152b30ab59d31f40c052a51732f515cbc49bb5b2e804b"
+  }
+}

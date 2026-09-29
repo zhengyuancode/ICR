@@ -1,0 +1,4185 @@
+{
+  "split_seed": 20260925,
+  "split_rule": "For each failed tool, unique observed input values are shuffled with a name-derived seed, then split 50/50; no input value appears in both halves.",
+  "stats": {
+    "candidate_paths": 341,
+    "certified_paths": 282,
+    "test_comparisons": 12840,
+    "test_matches": 12840,
+    "test_errors": 0,
+    "rejected_paths": 59,
+    "rejected_mismatch": 59,
+    "rejected_test_comparisons": 2950,
+    "rejected_test_matches": 2549,
+    "certified_failed_tools": 93,
+    "multicandidate_failed_tools": 61,
+    "unique_candidate_failed_tools": 32
+  },
+  "certificates": [
+    {
+      "failed_tool": "get_product_name_from_variant_sku_instant",
+      "path": [
+        "get_main_catalog_item_id_from_sku_id_v3",
+        "get_catalog_name_from_product_id_instant"
+      ],
+      "calibration_comparable": 16,
+      "calibration_errors": 0,
+      "test_comparable": 16,
+      "test_matches": 16
+    },
+    {
+      "failed_tool": "get_catalog_price_from_exact_variant_id_mini",
+      "path": [
+        "get_main_catalog_item_id_from_sku_id_v3",
+        "get_list_price_from_product_id"
+      ],
+      "calibration_comparable": 16,
+      "calibration_errors": 0,
+      "test_comparable": 16,
+      "test_matches": 16
+    },
+    {
+      "failed_tool": "get_shopper_id_from_draft_cart_id",
+      "path": [
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_draft_cart_id",
+      "path": [
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_user_name_from_in_progress_order_id_realtime",
+      "path": [
+        "get_shopper_id_from_draft_cart_id",
+        "get_user_name_from_user_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_user_name_from_in_progress_order_id_realtime",
+      "path": [
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge",
+        "get_user_name_from_user_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_user_name_from_in_progress_order_id_realtime",
+      "path": [
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number",
+        "get_user_name_from_user_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_email_from_cart_id_fast",
+      "path": [
+        "get_shopper_id_from_draft_cart_id",
+        "get_account_email_from_user_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_email_from_cart_id_fast",
+      "path": [
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number",
+        "get_account_email_from_user_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_phone_from_draft_cart_id",
+      "path": [
+        "get_shopper_id_from_draft_cart_id",
+        "get_phone_on_file_from_user_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_phone_from_draft_cart_id",
+      "path": [
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge",
+        "get_phone_on_file_from_user_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_default_address_on_file_from_draft_order_id_max",
+      "path": [
+        "get_shopper_id_from_draft_cart_id",
+        "get_default_address_from_shopper_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_default_address_on_file_from_draft_order_id_max",
+      "path": [
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge",
+        "get_default_address_from_shopper_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_default_address_on_file_from_draft_order_id_max",
+      "path": [
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number",
+        "get_default_address_from_shopper_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_default_method_id_from_order_draft_reference_turbo",
+      "path": [
+        "get_shopper_id_from_draft_cart_id",
+        "get_saved_method_id_from_user_record_id_max"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_default_method_id_from_order_draft_reference_turbo",
+      "path": [
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge",
+        "get_saved_method_id_from_user_record_id_max"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_default_method_id_from_order_draft_reference_turbo",
+      "path": [
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number",
+        "get_saved_method_id_from_user_record_id_max"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_draft_id_from_order_item_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_draft_from_live_order_id_instant"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_product_option_id_from_precheckout_line_item_id_v3",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_variant_record_id_from_line_item_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_quantity_from_draft_item_id_v3",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_draft_units_from_order_item_reference"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_draft_unit_price_from_order_draft_item_id_edge",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_estimated_unit_price_from_order_line_id_v3"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_draft_id_from_order_item_mini",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_draft_from_live_order_id_instant",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_draft_id_from_order_item_mini",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_draft_id_from_order_item_mini",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_draft_from_live_order_id_instant",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_draft_from_live_order_id_instant",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_cart_state_from_order_draft_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_precheckout_status_from_pricing_quote_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_draft_id_from_order_item_mini",
+        "get_cart_state_from_order_draft_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_precheckout_status_from_pricing_quote_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_draft_from_live_order_id_instant",
+        "get_cart_state_from_order_draft_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_cart_state_from_order_draft_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_cart_state_from_order_draft_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_cart_state_from_order_draft_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_updated_timestamp_from_order_draft"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_updated_recorded_at_from_pricing_quote_id_v2"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_draft_id_from_order_item_mini",
+        "get_updated_timestamp_from_order_draft"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_updated_recorded_at_from_pricing_quote_id_v2"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_draft_from_live_order_id_instant",
+        "get_updated_timestamp_from_order_draft"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_updated_timestamp_from_order_draft"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_updated_timestamp_from_order_draft"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_updated_timestamp_from_order_draft"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_main_catalog_item_id_from_order_draft_item_id",
+      "path": [
+        "get_product_option_id_from_precheckout_line_item_id_v3",
+        "get_main_catalog_item_id_from_sku_id_v3"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_main_catalog_item_id_from_order_draft_item_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_parent_product_id_from_final_order_line_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_main_catalog_item_id_from_order_draft_item_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_variant_record_id_from_line_item_id",
+        "get_main_catalog_item_id_from_sku_id_v3"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_finish_color_from_cart_item_reference",
+      "path": [
+        "get_product_option_id_from_precheckout_line_item_id_v3",
+        "get_selected_color_from_variant_id_core"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_finish_color_from_cart_item_reference",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_color_from_order_item_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_finish_color_from_cart_item_reference",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_variant_record_id_from_line_item_id",
+        "get_selected_color_from_variant_id_core"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_size_from_draft_item_id_turbo",
+      "path": [
+        "get_product_option_id_from_precheckout_line_item_id_v3",
+        "get_selected_size_from_sku_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_size_from_draft_item_id_turbo",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_variant_size_from_placed_order_item_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_size_from_draft_item_id_turbo",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_variant_record_id_from_line_item_id",
+        "get_selected_size_from_sku_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_draft_cart_id_from_quote_record_id_fast",
+      "path": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_quote_state_from_quote_id_enterpri",
+      "path": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_quote_status_from_order_instant"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_estimated_order_total_from_price_snapshot_id_swift",
+      "path": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_estimated_order_total_from_order_id_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_pricing_quote_id",
+      "path": [
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_pricing_quote_id",
+      "path": [
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_pricing_quote_id",
+      "path": [
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_pricing_quote_id",
+      "path": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_pricing_quote_id",
+      "path": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_pricing_quote_id",
+      "path": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_precheckout_status_from_pricing_quote_id_fast",
+      "path": [
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_cart_state_from_order_draft_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_precheckout_status_from_pricing_quote_id_fast",
+      "path": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_cart_state_from_order_draft_reference_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_updated_recorded_at_from_pricing_quote_id_v2",
+      "path": [
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_updated_timestamp_from_order_draft"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_updated_recorded_at_from_pricing_quote_id_v2",
+      "path": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_updated_timestamp_from_order_draft"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_draft_from_live_order_id_instant",
+      "path": [
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_quote_status_from_order_instant",
+      "path": [
+        "get_quote_record_id_from_order_reference_fast",
+        "get_quote_state_from_quote_id_enterpri"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_estimated_order_total_from_order_id_swift",
+      "path": [
+        "get_quote_record_id_from_order_reference_fast",
+        "get_estimated_order_total_from_price_snapshot_id_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_reference_from_placed_order_item_id_enterprise",
+      "path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_variant_record_id_from_line_item_id",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_product_option_id_from_precheckout_line_item_id_v3"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_status_from_order_item_realtime",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_status_from_order_item_realtime",
+      "path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_created_at_from_order_item_id",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_created_at_from_order_item_id",
+      "path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_draft_id_from_order_item_mini",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_order_draft_from_live_order_id_instant"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_draft_id_from_order_item_mini",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_draft_id_from_order_item_mini",
+      "path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_draft_id_from_order_item_mini",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_draft_id_from_order_item_mini",
+      "path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_draft_units_from_order_item_reference",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_cart_quantity_from_draft_item_id_v3"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_estimated_unit_price_from_order_line_id_v3",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_unit_price_from_order_draft_item_id_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_parent_product_id_from_final_order_line_id",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_main_catalog_item_id_from_order_draft_item_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_parent_product_id_from_final_order_line_id",
+      "path": [
+        "get_variant_record_id_from_line_item_id",
+        "get_main_catalog_item_id_from_sku_id_v3"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_parent_product_id_from_final_order_line_id",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_product_option_id_from_precheckout_line_item_id_v3",
+        "get_main_catalog_item_id_from_sku_id_v3"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_color_from_order_item_id",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_finish_color_from_cart_item_reference"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_color_from_order_item_id",
+      "path": [
+        "get_variant_record_id_from_line_item_id",
+        "get_selected_color_from_variant_id_core"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_color_from_order_item_id",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_product_option_id_from_precheckout_line_item_id_v3",
+        "get_selected_color_from_variant_id_core"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_variant_size_from_placed_order_item_id",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_size_from_draft_item_id_turbo"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_variant_size_from_placed_order_item_id",
+      "path": [
+        "get_variant_record_id_from_line_item_id",
+        "get_selected_size_from_sku_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_variant_size_from_placed_order_item_id",
+      "path": [
+        "get_draft_item_id_from_line_item_id",
+        "get_product_option_id_from_precheckout_line_item_id_v3",
+        "get_selected_size_from_sku_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_id_from_saved_payment_method_id",
+      "path": [
+        "get_email_from_billing_method_id_edge",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_account_id_from_saved_payment_method_id",
+      "path": [
+        "get_phone_from_saved_payment_method_id_instant",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_account_holder_name_from_stored_payment_reference",
+      "path": [
+        "get_account_id_from_saved_payment_method_id",
+        "get_user_name_from_user_reference_swift"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_account_holder_name_from_stored_payment_reference",
+      "path": [
+        "get_email_from_billing_method_id_edge",
+        "get_user_id_from_customer_email_edge",
+        "get_user_name_from_user_reference_swift"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_account_holder_name_from_stored_payment_reference",
+      "path": [
+        "get_phone_from_saved_payment_method_id_instant",
+        "get_user_reference_from_phone_number",
+        "get_user_name_from_user_reference_swift"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_email_from_billing_method_id_edge",
+      "path": [
+        "get_account_id_from_saved_payment_method_id",
+        "get_account_email_from_user_id"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_email_from_billing_method_id_edge",
+      "path": [
+        "get_phone_from_saved_payment_method_id_instant",
+        "get_user_reference_from_phone_number",
+        "get_account_email_from_user_id"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_phone_from_saved_payment_method_id_instant",
+      "path": [
+        "get_account_id_from_saved_payment_method_id",
+        "get_phone_on_file_from_user_id"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_phone_from_saved_payment_method_id_instant",
+      "path": [
+        "get_email_from_billing_method_id_edge",
+        "get_user_id_from_customer_email_edge",
+        "get_phone_on_file_from_user_id"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_address_from_payment_method",
+      "path": [
+        "get_account_id_from_saved_payment_method_id",
+        "get_default_address_from_shopper_id"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_address_from_payment_method",
+      "path": [
+        "get_email_from_billing_method_id_edge",
+        "get_user_id_from_customer_email_edge",
+        "get_default_address_from_shopper_id"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_address_from_payment_method",
+      "path": [
+        "get_phone_from_saved_payment_method_id_instant",
+        "get_user_reference_from_phone_number",
+        "get_default_address_from_shopper_id"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_default_payment_method_from_payment_method_prime",
+      "path": [
+        "get_account_id_from_saved_payment_method_id",
+        "get_saved_method_id_from_user_record_id_max"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_default_payment_method_from_payment_method_prime",
+      "path": [
+        "get_email_from_billing_method_id_edge",
+        "get_user_id_from_customer_email_edge",
+        "get_saved_method_id_from_user_record_id_max"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_default_payment_method_from_payment_method_prime",
+      "path": [
+        "get_phone_from_saved_payment_method_id_instant",
+        "get_user_reference_from_phone_number",
+        "get_saved_method_id_from_user_record_id_max"
+      ],
+      "calibration_comparable": 12,
+      "calibration_errors": 0,
+      "test_comparable": 13,
+      "test_matches": 13
+    },
+    {
+      "failed_tool": "get_checkout_order_id_from_intent_record_id_max",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_checkout_order_id_from_intent_record_id_max",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_billing_method_id_from_payment_session_id_fast",
+      "path": [
+        "get_account_from_payment_intent_v3",
+        "get_payment_method_from_account_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_billing_method_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_payment_method_from_auth_id_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_checkout_intent_status_from_payment_intent_nano",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_checkout_intent_status_from_authorization_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_quote_from_payment_intent_max",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_quote_from_payment_intent_max",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_live_order_status_from_intent_record_id_realtime",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_live_order_status_from_intent_record_id_realtime",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_live_order_status_from_intent_record_id_realtime",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_created_time_from_payment_intent_realtime",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_created_time_from_payment_intent_realtime",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_created_time_from_payment_intent_realtime",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_order_draft_from_live_order_id_instant",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_email_from_billing_method_id_edge",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_phone_from_saved_payment_method_id_instant",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_account_from_payment_intent_v3",
+        "get_payment_method_from_account_nano",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_payment_method_from_auth_id_edge",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_order_draft_from_live_order_id_instant",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_order_draft_from_live_order_id_instant",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_account_from_payment_intent_v3",
+        "get_payment_method_from_account_nano",
+        "get_email_from_billing_method_id_edge",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_account_from_payment_intent_v3",
+        "get_payment_method_from_account_nano",
+        "get_phone_from_saved_payment_method_id_instant",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_order_draft_from_live_order_id_instant",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_payment_method_from_auth_id_edge",
+        "get_email_from_billing_method_id_edge",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_payment_method_from_auth_id_edge",
+        "get_phone_from_saved_payment_method_id_instant",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_draft_from_live_order_id_instant",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_order_draft_from_live_order_id_instant",
+        "get_email_from_cart_id_fast",
+        "get_user_id_from_customer_email_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_order_draft_from_live_order_id_instant",
+        "get_phone_from_draft_cart_id",
+        "get_user_reference_from_phone_number"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_method_category_from_intent_record_id",
+      "path": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_payment_type_from_payment_method_reference"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_method_category_from_intent_record_id",
+      "path": [
+        "get_account_from_payment_intent_v3",
+        "get_payment_method_from_account_nano",
+        "get_payment_type_from_payment_method_reference"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_method_category_from_intent_record_id",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_payment_method_from_auth_id_edge",
+        "get_payment_type_from_payment_method_reference"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_from_payment_intent_v3",
+      "path": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_on_file_from_payment_method_record_id_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_account_from_payment_intent_v3",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_payment_method_from_auth_id_edge",
+        "get_account_on_file_from_payment_method_record_id_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_setup_id_from_authorization_record_id_core",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_checkout_intent_id_from_charge_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_auth_state_from_authorization_id_swift",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_auth_state_from_posted_payment_id_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_auth_reference_code_from_processor_auth_id_quick",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_payment_approval_code_from_charge_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_checkout_intent_id_from_charge_id",
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_method_from_auth_id_edge",
+      "path": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_billing_method_id_from_payment_session_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_method_from_auth_id_edge",
+      "path": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_account_from_payment_intent_v3",
+        "get_payment_method_from_account_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_method_from_auth_id_edge",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_checkout_intent_id_from_charge_id",
+        "get_billing_method_id_from_payment_session_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_method_from_auth_id_edge",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_checkout_intent_id_from_charge_id",
+        "get_account_from_payment_intent_v3",
+        "get_payment_method_from_account_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_checkout_intent_status_from_authorization_id",
+      "path": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_intent_status_from_payment_intent_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_checkout_intent_status_from_authorization_id",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_intent_status_from_payment_intent_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_auth_id_from_payment_record_id_core",
+      "path": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_checkout_intent_id_from_charge_id",
+      "path": [
+        "get_auth_id_from_payment_record_id_core",
+        "get_payment_setup_id_from_authorization_record_id_core"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_auth_state_from_posted_payment_id_edge",
+      "path": [
+        "get_auth_id_from_payment_record_id_core",
+        "get_auth_state_from_authorization_id_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_auth_state_from_posted_payment_id_edge",
+      "path": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_auth_state_from_authorization_id_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_approval_code_from_charge_id_fast",
+      "path": [
+        "get_auth_id_from_payment_record_id_core",
+        "get_auth_reference_code_from_processor_auth_id_quick"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_payment_approval_code_from_charge_id_fast",
+      "path": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_auth_reference_code_from_processor_auth_id_quick"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_live_order_id_from_warehouse_request_max",
+      "path": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_quote_from_fulfillment_enterprise",
+      "path": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_status_from_warehouse_request_reference_v2",
+      "path": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_order_status_from_warehouse_request_reference_v2",
+      "path": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_created_timestamp_from_warehouse_request_id_quick",
+      "path": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_created_timestamp_from_warehouse_request_id_quick",
+      "path": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 0,
+      "test_comparable": 50,
+      "test_matches": 50
+    },
+    {
+      "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+      "path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_live_order_id_from_warehouse_request_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_placed_order_id_from_shipment_reference_quick",
+      "path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_warehouse_job_status_from_shipment_record_id_v2",
+      "path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_fulfillment_status_from_fulfillment_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_warehouse_created_at_from_shipment_record_id",
+      "path": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_fulfillment_requested_at_from_warehouse_job_id_swift"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_outbound_shipment_id_from_attempt_record_id_v2",
+      "path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_fulfillment_job_id_from_delivery_try_id",
+      "path": [
+        "get_outbound_shipment_id_from_attempt_record_id_v2",
+        "get_fulfillment_request_id_from_parcel_record_id_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_shipment_status_from_dropoff_attempt_id_core",
+      "path": [
+        "get_outbound_shipment_id_from_attempt_record_id_v2",
+        "get_shipment_status_from_shipment_turbo"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_shipment_status_from_dropoff_attempt_id_core",
+      "path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_shipment_status_from_shipment_turbo"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_tracking_code_from_delivery_attempt_id",
+      "path": [
+        "get_outbound_shipment_id_from_attempt_record_id_v2",
+        "get_tracking_on_file_from_shipment_id_fast"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_tracking_code_from_delivery_attempt_id",
+      "path": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_tracking_on_file_from_shipment_id_fast"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_reference_from_return_claim_id",
+      "path": [
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_reference_from_return_claim_id",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_reference_from_return_claim_id",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_reference_from_return_claim_id",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_live_order_id_from_payment_auth_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_reference_from_return_claim_id",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_reference_from_return_claim_id",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_customer_return_status_from_return_ticket_id_v3",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_customer_return_status_from_return_audit_id_quick"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_requested_at_from_return_ticket_id",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_return_filed_at_from_return_audit_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_quote_id_from_return_request_record_id_mini",
+      "path": [
+        "get_order_reference_from_return_claim_id",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_quote_id_from_return_request_record_id_mini",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_quote_id_from_return_request_record_id_mini",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_quote_from_payment_intent_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_quote_id_from_return_request_record_id_mini",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_quote_from_payment_intent_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_quote_id_from_return_request_record_id_mini",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_status_from_return_request",
+      "path": [
+        "get_order_reference_from_return_claim_id",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_status_from_return_request",
+      "path": [
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_status_from_return_request",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_status_from_return_request",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_live_order_status_from_intent_record_id_realtime"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_status_from_return_request",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_live_order_status_from_intent_record_id_realtime"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_status_from_return_request",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_created_time_from_customer_return_id_mini",
+      "path": [
+        "get_order_reference_from_return_claim_id",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_created_time_from_customer_return_id_mini",
+      "path": [
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_created_time_from_customer_return_id_mini",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_created_time_from_customer_return_id_mini",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_created_time_from_payment_intent_realtime"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_created_time_from_customer_return_id_mini",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_created_time_from_payment_intent_realtime"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_created_time_from_customer_return_id_mini",
+      "path": [
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_request_record_id_from_return_review_id",
+      "path": [
+        "get_order_from_return_review_turbo",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_request_record_id_from_return_review_id",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_return_claim_id_from_refund_record_id_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_request_record_id_from_return_review_id",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_request_record_id_from_return_review_id",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_request_record_id_from_return_review_id",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_request_record_id_from_return_review_id",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_audit_status_from_return_audit_record_id_swift",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_approval_decision_from_finance_refund_id_swift"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_return_request_record_id_from_return_review_id",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_live_order_id_from_payment_auth_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_order_from_return_review_turbo",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_customer_return_status_from_return_audit_id_quick",
+      "path": [
+        "get_return_request_record_id_from_return_review_id",
+        "get_customer_return_status_from_return_ticket_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_customer_return_status_from_return_audit_id_quick",
+      "path": [
+        "get_order_from_return_review_turbo",
+        "get_return_request_from_order_enterprise",
+        "get_customer_return_status_from_return_ticket_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_customer_return_status_from_return_audit_id_quick",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_customer_return_status_from_return_ticket_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_customer_return_status_from_return_audit_id_quick",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_customer_return_status_from_return_ticket_id_v3"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_filed_at_from_return_audit_id",
+      "path": [
+        "get_return_request_record_id_from_return_review_id",
+        "get_return_requested_at_from_return_ticket_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_filed_at_from_return_audit_id",
+      "path": [
+        "get_order_from_return_review_turbo",
+        "get_return_request_from_order_enterprise",
+        "get_return_requested_at_from_return_ticket_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_filed_at_from_return_audit_id",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_return_requested_at_from_return_ticket_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_filed_at_from_return_audit_id",
+      "path": [
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_return_requested_at_from_return_ticket_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_audit_id_from_refund_reference",
+      "path": [
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_audit_id_from_refund_reference",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_audit_id_from_refund_reference",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_audit_id_from_refund_reference",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_audit_id_from_refund_reference",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_payment_id_from_refund_record_id_instant",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_return_claim_id_from_refund_record_id_max",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_approval_decision_from_finance_refund_id_swift",
+      "path": [
+        "get_return_audit_id_from_refund_reference",
+        "get_audit_status_from_return_audit_record_id_swift"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_approval_decision_from_finance_refund_id_swift",
+      "path": [
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_audit_status_from_return_audit_record_id_swift"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_approval_decision_from_finance_refund_id_swift",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_audit_status_from_return_audit_record_id_swift"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_auth_id_from_finance_refund_id_prime",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_payment_status_from_refund_transaction_id_nano",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_settlement_status_from_payment_reference_realtime"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_payment_status_from_refund_transaction_id_nano",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_settlement_status_from_payment_reference_realtime"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_payment_recorded_at_from_refund_record_id_nano",
+      "path": [
+        "get_payment_id_from_refund_record_id_instant",
+        "get_payment_timestamp_from_payment_id_v2"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_payment_recorded_at_from_refund_record_id_nano",
+      "path": [
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_payment_timestamp_from_payment_id_v2"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_refund_from_payment_quick",
+      "path": [
+        "get_auth_id_from_payment_record_id_core",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_refund_from_payment_quick",
+      "path": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano"
+      ],
+      "calibration_comparable": 43,
+      "calibration_errors": 0,
+      "test_comparable": 43,
+      "test_matches": 43
+    }
+  ],
+  "rejections": [
+    {
+      "failed_tool": "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_account_id_from_draft_line_id",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 5,
+      "test_comparable": 50,
+      "test_matches": 41
+    },
+    {
+      "failed_tool": "get_cart_status_from_draft_item_enterprise",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_precheckout_status_from_pricing_quote_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_last_modified_time_from_draft_line_id_secure",
+      "path": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_updated_recorded_at_from_pricing_quote_id_v2"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_quote_record_id_from_order_reference_fast",
+      "path": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 10,
+      "test_comparable": 50,
+      "test_matches": 46
+    },
+    {
+      "failed_tool": "get_order_state_from_order_record_id_nano",
+      "path": [
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_order_created_time_from_order_reference_edge",
+      "path": [
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_order_draft_from_live_order_id_instant",
+      "path": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_quote_status_from_order_instant",
+      "path": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_quote_state_from_quote_id_enterpri"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 11,
+      "test_comparable": 50,
+      "test_matches": 47
+    },
+    {
+      "failed_tool": "get_estimated_order_total_from_order_id_swift",
+      "path": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_estimated_order_total_from_price_snapshot_id_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_pricing_snapshot_record_id_from_order_item_id_swift",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_order_status_from_order_item_realtime",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_order_status_from_order_item_realtime",
+      "path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_order_created_at_from_order_item_id",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 10,
+      "test_comparable": 50,
+      "test_matches": 46
+    },
+    {
+      "failed_tool": "get_order_created_at_from_order_item_id",
+      "path": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 10,
+      "test_comparable": 50,
+      "test_matches": 46
+    },
+    {
+      "failed_tool": "get_order_draft_id_from_order_item_mini",
+      "path": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_checkout_order_id_from_intent_record_id_max",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_checkout_order_id_from_intent_record_id_max",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_quote_from_payment_intent_max",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 7,
+      "test_comparable": 50,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_quote_from_payment_intent_max",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 7,
+      "test_comparable": 50,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_quote_from_payment_intent_max",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 7,
+      "test_comparable": 50,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_live_order_status_from_intent_record_id_realtime",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_live_order_status_from_intent_record_id_realtime",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_live_order_status_from_intent_record_id_realtime",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_live_order_status_from_intent_record_id_realtime",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_created_time_from_payment_intent_realtime",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 5,
+      "test_comparable": 50,
+      "test_matches": 41
+    },
+    {
+      "failed_tool": "get_created_time_from_payment_intent_realtime",
+      "path": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 5,
+      "test_comparable": 50,
+      "test_matches": 41
+    },
+    {
+      "failed_tool": "get_created_time_from_payment_intent_realtime",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 5,
+      "test_comparable": 50,
+      "test_matches": 41
+    },
+    {
+      "failed_tool": "get_created_time_from_payment_intent_realtime",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 5,
+      "test_comparable": 50,
+      "test_matches": 41
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_shopper_id_from_payment_session_id_fast",
+      "path": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_live_order_id_from_payment_auth_id_v3",
+      "path": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_processor_auth_id_from_payment_intent_max",
+      "path": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_auth_id_from_payment_record_id_core",
+      "path": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_settlement_status_from_payment_reference_realtime",
+      "path": [
+        "get_refund_from_payment_quick",
+        "get_payment_status_from_refund_transaction_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 3,
+      "test_comparable": 50,
+      "test_matches": 39
+    },
+    {
+      "failed_tool": "get_payment_timestamp_from_payment_id_v2",
+      "path": [
+        "get_refund_from_payment_quick",
+        "get_payment_recorded_at_from_refund_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_checkout_intent_id_from_charge_id",
+      "path": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_setup_id_from_authorization_record_id_core"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_auth_state_from_posted_payment_id_edge",
+      "path": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_auth_state_from_authorization_id_swift"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_payment_approval_code_from_charge_id_fast",
+      "path": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_auth_reference_code_from_processor_auth_id_quick"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 11,
+      "test_comparable": 50,
+      "test_matches": 47
+    },
+    {
+      "failed_tool": "get_completed_payment_id_from_processor_approval_id",
+      "path": [
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 5,
+      "test_comparable": 50,
+      "test_matches": 41
+    },
+    {
+      "failed_tool": "get_live_order_id_from_warehouse_request_max",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 7,
+      "test_comparable": 50,
+      "test_matches": 43
+    },
+    {
+      "failed_tool": "get_fulfillment_status_from_fulfillment_max",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_warehouse_job_status_from_shipment_record_id_v2"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 4,
+      "test_comparable": 50,
+      "test_matches": 40
+    },
+    {
+      "failed_tool": "get_fulfillment_requested_at_from_warehouse_job_id_swift",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_warehouse_created_at_from_shipment_record_id"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_quote_from_fulfillment_enterprise",
+      "path": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_quote_from_fulfillment_enterprise",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_quote_from_fulfillment_enterprise",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 6,
+      "test_comparable": 50,
+      "test_matches": 42
+    },
+    {
+      "failed_tool": "get_order_status_from_warehouse_request_reference_v2",
+      "path": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_order_status_from_warehouse_request_reference_v2",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_order_state_from_order_record_id_nano"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_order_status_from_warehouse_request_reference_v2",
+      "path": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_order_status_from_warehouse_request_reference_v2",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_order_status_from_return_request"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 8,
+      "test_comparable": 50,
+      "test_matches": 44
+    },
+    {
+      "failed_tool": "get_created_timestamp_from_warehouse_request_id_quick",
+      "path": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_created_timestamp_from_warehouse_request_id_quick",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_order_created_time_from_order_reference_edge"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_created_timestamp_from_warehouse_request_id_quick",
+      "path": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    },
+    {
+      "failed_tool": "get_created_timestamp_from_warehouse_request_id_quick",
+      "path": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_created_time_from_customer_return_id_mini"
+      ],
+      "calibration_comparable": 50,
+      "calibration_errors": 9,
+      "test_comparable": 50,
+      "test_matches": 45
+    }
+  ]
+}

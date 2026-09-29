@@ -1,0 +1,6 @@
+{
+  "original_protocol_sha256": "2f9082325e26ebf88b7d3452e911439e32bdcf3a635099a4ca9636e1fbefc84b",
+  "clarification": "The frozen protocol's phrase 'before input-indexed development fork results' means before the development outcomes were inspected or analyzed, not before the result file was written. The result file existed on disk at protocol freeze. The protocol was frozen at 18:03:27 local time, development analysis was first run at 18:03:46, and the first final-task API process began at 18:03:56 on 2026-09-26.",
+  "original_protocol_modified": false,
+  "final_21_task_ids_and_primary_contrast_changed": false
+}

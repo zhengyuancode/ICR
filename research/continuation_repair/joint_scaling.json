@@ -1,0 +1,71 @@
+{
+  "construction": "Chain with original plain/plain operation and two function-preserving representation variants per node",
+  "rows": [
+    {
+      "nodes": 3,
+      "options_per_node": 3,
+      "dp_median_seconds": 4.020000051241368e-05,
+      "dp_cost": 2,
+      "compatibility_checks": 9,
+      "oracle_median_seconds": 3.2500000088475645e-05,
+      "oracle_assignments": 6
+    },
+    {
+      "nodes": 5,
+      "options_per_node": 3,
+      "dp_median_seconds": 4.549999721348286e-05,
+      "dp_cost": 2,
+      "compatibility_checks": 27,
+      "oracle_median_seconds": 8.030000026337802e-05,
+      "oracle_assignments": 54
+    },
+    {
+      "nodes": 7,
+      "options_per_node": 3,
+      "dp_median_seconds": 6.199999188538641e-05,
+      "dp_cost": 2,
+      "compatibility_checks": 45,
+      "oracle_median_seconds": 0.0005052000051364303,
+      "oracle_assignments": 486
+    },
+    {
+      "nodes": 9,
+      "options_per_node": 3,
+      "dp_median_seconds": 7.660000119358301e-05,
+      "dp_cost": 2,
+      "compatibility_checks": 63,
+      "oracle_median_seconds": 0.005914699999266304,
+      "oracle_assignments": 4374
+    },
+    {
+      "nodes": 11,
+      "options_per_node": 3,
+      "dp_median_seconds": 9.190000128000975e-05,
+      "dp_cost": 2,
+      "compatibility_checks": 81,
+      "oracle_median_seconds": 0.051584100001491606,
+      "oracle_assignments": 39366
+    },
+    {
+      "nodes": 100,
+      "options_per_node": 3,
+      "dp_median_seconds": 0.0009571000118739903,
+      "dp_cost": 2,
+      "compatibility_checks": 882
+    },
+    {
+      "nodes": 1000,
+      "options_per_node": 3,
+      "dp_median_seconds": 0.011536200006958097,
+      "dp_cost": 2,
+      "compatibility_checks": 8982
+    },
+    {
+      "nodes": 10000,
+      "options_per_node": 3,
+      "dp_median_seconds": 0.11744539999926928,
+      "dp_cost": 2,
+      "compatibility_checks": 89982
+    }
+  ]
+}

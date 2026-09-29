@@ -1,0 +1,29 @@
+{
+  "role": "Development test of observed-input relational effect admission, designed after the prior global-advice and type-only outcomes",
+  "n_frozen_failure_prefixes": 29,
+  "run_ids": {
+    "advice": "r3_fork_instance_advice",
+    "instance_advice": "r3_fork_instance_advice"
+  },
+  "comparison_run_ids": {
+    "native": "r3_fork_native",
+    "global_advice": "r3_fork_advice",
+    "type_only_advice": "r3_fork_typed_advice"
+  },
+  "primary_comparison": "Observed-input certificate advice minus global certificate advice on all 29 identical failure prefixes",
+  "secondary": "Comparison with native and type-only advice; structural 11-task exposure set is descriptive",
+  "analysis": "Paired task bootstrap 100000 draws and exact two-sided McNemar",
+  "source_sha256": {
+    "research/planbench_controller.py": "bcc393bc41feef080752d3ddce00a5df543186485fa28f7a024f1fa1b3e19aa2",
+    "research/planbench_instance_advice.py": "805bec68f270905ba47ba808f5db1b743762d88e781197169a7bb871a468cade",
+    "research/compile_planbench_instance_contracts.py": "01d101da82703bd3dd877c73f5082948f67f3f2db4946e9959e4ab639fab4ae3",
+    "research/run_planbench_pilot.py": "de2d9c95d96050a6834edd9f1c18f780facf47f57f231f6344464abfe902c656",
+    "research/run_planbench_failure_forks.py": "042633f23914380058cf2d044cf7e480402eb124ad04cb5a1f101eff273ace27",
+    "research/run_planbench_r3_failure_forks.py": "ed4bca8922c6e7dc3568e7eeca9d1877efe1ac5133b0c2b3f548df4f63edc948",
+    "research/run_planbench_r3_instance_forks.py": "1601f92582f8f1dcbe932da3c3acb9d69f566f1c1f345ea47e33003d3cc7319b",
+    "research/analyze_planbench_r3_instance_forks.py": "4a6b6d5400836d8b9aae235baf1946a50f17f8b45d705d835eaf4e4ebd5cb709",
+    "research/continuation_repair/planbench_r3_failure_fork_cohort.json": "8fe3a7318d8503e1ea88d66c8a0d5ac6fbcd723d360a0411d0f658cae1b52c1d",
+    "research/continuation_repair/planbench_instance_contracts.json": "911858936f750b6863c79e0e35f4d67ebd09bb318889e4dab9670366a0fc4fd5",
+    "research/continuation_repair/planbench_instance_effect_opportunity.json": "4727d248f1787cab98e71013ed6dc6f4c46db72986d1612fadc7bd758b164720"
+  }
+}

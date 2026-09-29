@@ -1,0 +1,81 @@
+% IEEE ISPA 2026 full regular paper.
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage[T1]{fontenc}
+\usepackage{cite,amsmath,amssymb,graphicx,booktabs,array,url,balance,needspace}
+\usepackage{algorithm,algorithmic}
+\begin{document}
+\title{Interface-Closed Recovery: Joint Workflow Repair with Observed-Input Certificates}
+\author{%
+\IEEEauthorblockN{1\textsuperscript{st} Zhengyuan Dai}
+\IEEEauthorblockA{\textit{Southwest University}\\
+Chongqing, China\\
+Zhengyuan-Dai@outlook.com}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Yuhang Zou}
+\IEEEauthorblockA{\textit{Southwest University}\\
+Chongqing, China\\
+zyh18769362802@email.swu.edu.cn}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Yuming Fu}
+\IEEEauthorblockA{\textit{Southwest University}\\
+Chongqing, China\\
+fym10276612@email.swu.edu.cn}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Bo Liu\textsuperscript{*}}
+\IEEEauthorblockA{\textit{Southwest University}\\
+Chongqing, China\\
+liubocq@swu.edu.cn}
+\thanks{\textsuperscript{*}Corresponding author: Bo Liu.}}
+\maketitle
+\begin{abstract}
+\input{generated_candidate_abstract.tex}
+\end{abstract}
+\begin{IEEEkeywords}
+language-model agents, workflow recovery, interface contracts, program synthesis
+\end{IEEEkeywords}
+
+\section{Introduction}
+Language-model agents coordinate tools for multi-step tasks. When a tool fails,
+the agent must find an alternative whose result still supports the remaining
+workflow. Interleaved reasoning and action~\cite{react} leaves dependency
+repair to repeated local decisions.
+
+Call-level substitution is insufficient when a replacement changes the
+representation consumed downstream. Conversely, replacing an entire suffix
+discards valid work and enlarges the surface on which the model can err. The
+missing abstraction is a recovery program whose changed region ends exactly
+where it reconnects to the unchanged workflow. Such a program must also
+preserve the failed operation's boundary value at the observed input; interface
+connectivity alone cannot establish this property.
+
+We introduce Interface-Closed Recovery (ICR) and make three contributions.
+First, we formulate failed-tool recovery as joint implementation and scope
+selection, define its least reconnection boundary, and derive exact solvers for
+forests and bounded-width port-bound directed acyclic graphs (DAGs).
+Second, we construct a recovery packet from function-eligible programs,
+validated context, observed-value binding, and admitted boundary-value effects. For
+relational tools, a compositional dependency-and-support certificate proves
+equivalence at the observed failed input under trusted tool contracts and a
+fixed relation snapshot, without executing candidate paths. This retains safe
+alternatives excluded by global equivalence. The packet can guide model choice
+or, under a separate policy, authorize local dispatch. Third,
+we test structural exactness on TaskBench, executable boundary-value contracts and
+native-agent recovery on PlanBench-XL, including a separately frozen 72-task
+confirmation and a 20-prefix same-state test of the observed-input certificate.
+
+\input{motivation_problem.tex}
+
+\input{continuation_method.tex}
+
+\input{continuation_evaluation_revised.tex}
+
+\input{related_work.tex}
+
+\section{Conclusion}
+\input{generated_candidate_conclusion.tex}
+
+\balance
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,references,continuation_references,repair_related_references,closure_related_references}
+\end{document}

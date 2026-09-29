@@ -1,0 +1,128 @@
+{
+  "20260924": {
+    "1": {
+      "beam_feasible": 3449,
+      "missed_optimal_feasible": 484,
+      "absolute_gap": 0.06939068100358423,
+      "gap_ci95": [
+        0.06305659293306522,
+        0.07571657305971996
+      ],
+      "cost_suboptimal": 19
+    },
+    "2": {
+      "beam_feasible": 3745,
+      "missed_optimal_feasible": 188,
+      "absolute_gap": 0.026953405017921147,
+      "gap_ci95": [
+        0.023086680427410543,
+        0.0309205255192858
+      ],
+      "cost_suboptimal": 1
+    },
+    "4": {
+      "beam_feasible": 3914,
+      "missed_optimal_feasible": 19,
+      "absolute_gap": 0.0027240143369175627,
+      "gap_ci95": [
+        0.0015752541887440927,
+        0.004015488312060806
+      ],
+      "cost_suboptimal": 0
+    },
+    "8": {
+      "beam_feasible": 3933,
+      "missed_optimal_feasible": 0,
+      "absolute_gap": 0.0,
+      "gap_ci95": [
+        0.0,
+        0.0
+      ],
+      "cost_suboptimal": 0
+    }
+  },
+  "20260925": {
+    "1": {
+      "beam_feasible": 3518,
+      "missed_optimal_feasible": 429,
+      "absolute_gap": 0.061505376344086024,
+      "gap_ci95": [
+        0.05572207787735873,
+        0.06734343723191306
+      ],
+      "cost_suboptimal": 20
+    },
+    "2": {
+      "beam_feasible": 3795,
+      "missed_optimal_feasible": 152,
+      "absolute_gap": 0.021792114695340502,
+      "gap_ci95": [
+        0.0182648401826484,
+        0.025446811910941825
+      ],
+      "cost_suboptimal": 6
+    },
+    "4": {
+      "beam_feasible": 3934,
+      "missed_optimal_feasible": 13,
+      "absolute_gap": 0.0018637992831541219,
+      "gap_ci95": [
+        0.0008656759486365604,
+        0.002988473032588587
+      ],
+      "cost_suboptimal": 0
+    },
+    "8": {
+      "beam_feasible": 3947,
+      "missed_optimal_feasible": 0,
+      "absolute_gap": 0.0,
+      "gap_ci95": [
+        0.0,
+        0.0
+      ],
+      "cost_suboptimal": 0
+    }
+  },
+  "20260926": {
+    "1": {
+      "beam_feasible": 3492,
+      "missed_optimal_feasible": 481,
+      "absolute_gap": 0.06896057347670251,
+      "gap_ci95": [
+        0.06286682034983392,
+        0.07539569783556277
+      ],
+      "cost_suboptimal": 15
+    },
+    "2": {
+      "beam_feasible": 3799,
+      "missed_optimal_feasible": 174,
+      "absolute_gap": 0.024946236559139787,
+      "gap_ci95": [
+        0.021215520310509106,
+        0.028762788614820893
+      ],
+      "cost_suboptimal": 5
+    },
+    "4": {
+      "beam_feasible": 3961,
+      "missed_optimal_feasible": 12,
+      "absolute_gap": 0.0017204301075268817,
+      "gap_ci95": [
+        0.0007159221076746849,
+        0.002979304803819934
+      ],
+      "cost_suboptimal": 2
+    },
+    "8": {
+      "beam_feasible": 3972,
+      "missed_optimal_feasible": 1,
+      "absolute_gap": 0.00014336917562724014,
+      "gap_ci95": [
+        0.0,
+        0.0004325883201153569
+      ],
+      "cost_suboptimal": 0
+    }
+  }
+}

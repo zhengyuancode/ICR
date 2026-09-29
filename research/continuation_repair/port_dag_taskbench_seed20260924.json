@@ -1,0 +1,4083 @@
+{
+  "protocol": "Released 3-8-node connected TaskBench multi-input DAGs with unique resource-compatible input-port mapping; controlled same-operation format variants; same-information exact VE and topological beam widths 1/2/4/8",
+  "seed": 20260924,
+  "domains": {
+    "multimedia": {
+      "graphs": 104,
+      "counts": {
+        "instances": 388,
+        "exact_feasible": 176,
+        "oracle_checked": 366,
+        "beam1_feasible": 160,
+        "beam1_miss": 16,
+        "beam1_cost_suboptimal": 0,
+        "beam2_feasible": 170,
+        "beam2_miss": 6,
+        "beam2_cost_suboptimal": 0,
+        "beam4_feasible": 174,
+        "beam4_miss": 2,
+        "beam4_cost_suboptimal": 0,
+        "beam8_feasible": 176,
+        "beam8_miss": 0,
+        "beam8_cost_suboptimal": 0
+      },
+      "by_width": {
+        "2": {
+          "instances": 16,
+          "exact_feasible": 9,
+          "oracle_checked": 16,
+          "beam1_feasible": 7,
+          "beam1_miss": 2,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 9,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 9,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 9,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "1": {
+          "instances": 372,
+          "exact_feasible": 167,
+          "oracle_checked": 350,
+          "beam1_feasible": 153,
+          "beam1_miss": 14,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 161,
+          "beam2_miss": 6,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 165,
+          "beam4_miss": 2,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 167,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        }
+      },
+      "by_size": {
+        "3": {
+          "instances": 129,
+          "exact_feasible": 56,
+          "oracle_checked": 129,
+          "beam1_feasible": 51,
+          "beam1_miss": 5,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 53,
+          "beam2_miss": 3,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 55,
+          "beam4_miss": 1,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 56,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "4": {
+          "instances": 216,
+          "exact_feasible": 98,
+          "oracle_checked": 216,
+          "beam1_feasible": 89,
+          "beam1_miss": 9,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 95,
+          "beam2_miss": 3,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 97,
+          "beam4_miss": 1,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 98,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "5": {
+          "instances": 15,
+          "exact_feasible": 5,
+          "oracle_checked": 15,
+          "beam1_feasible": 5,
+          "beam1_miss": 0,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 5,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 5,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 5,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "8": {
+          "instances": 8,
+          "exact_feasible": 5,
+          "oracle_checked": 0,
+          "beam1_feasible": 4,
+          "beam1_miss": 1,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 5,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 5,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 5,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "7": {
+          "instances": 14,
+          "exact_feasible": 8,
+          "oracle_checked": 0,
+          "beam1_feasible": 7,
+          "beam1_miss": 1,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 8,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 8,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 8,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "6": {
+          "instances": 6,
+          "exact_feasible": 4,
+          "oracle_checked": 6,
+          "beam1_feasible": 4,
+          "beam1_miss": 0,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 4,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 4,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 4,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        }
+      },
+      "by_graph": [
+        {
+          "signature_sha256": "c654823522cf7406166cff30027856af4644e61209e80b903a383a511ac1507f",
+          "nodes": 3,
+          "widths": [
+            2
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 3,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "51d8aa891975be1ed05700ab16d806d79ad72b670f56393624b3b6fa318bf7e5",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "3b89c4ad7174c1bb675459b94e6422d30ba80cec4d874a8282b14180301ae23d",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "ee822d46f257727ebc52ce2d524e340a9afe45ba57cfe863783e1b783c76833e",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "42b8b1f3935d3f3942e9baae09990d93971b077c5128154be74b0b27aa4b85a3",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "d4f5fd4749737bdd8ace4c17dbee513e429affe7fc0191fa1de4392a042b717b",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "18a191a73e8350b9884bf31f9f23f2175f60d9ff02c0719496f443477eb7b4ae",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "024264c821761f7306c9dddcef2066b66025d3ba20d8ffbe4ec908561fcd8c71",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "a303b0e0a155cd60d7c3ba6cab687330267cb93418920b10c55db4ddbbc2fbb0",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "a55d74b3c8d9e8ae4396dc253faef17ba3b635e047ace44eb8e99eec83e5799c",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "e50357e5f70bd9ef9365fc80d1631ce0d51b6b6648157b85306c0b7eb969d575",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "d3c9f311bbd94a2f4f079fe9806ab3c7004968b3dfd6a59545a675242a73a776",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "59b5e8c270b871fc6537e02cb4cc5c1c0a6bd9316dfa29c3fe80724c6db29092",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 2,
+            "oracle_checked": 5,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "7e1121d46fb2e4b3244ca115ece4790314adf6d2846f997f308f2750724053ec",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "d3291fd2f927772fc973660eff03f38bdc8f48f9ed7582c2de894d5bc7bbf580",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "0730e6291fe740f6a8294cda3f904e1d4755eee5f99da8bf745b2747ed484954",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "421d56e83a60a81a49fd77d31c30f12759d430d955e25ae7458963ab0edfd0ff",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "c819dce81d21055c6164aa3d49719563b00629df4c42df75d3dfb62f48b53492",
+          "nodes": 8,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 8,
+            "exact_feasible": 5,
+            "oracle_checked": 0,
+            "beam1_feasible": 4,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 5,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 5,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 5,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "d74dc81b9d7553f74997db4dd82612df8b0dff63245a35b4817177bfa225f8d1",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "babe578f23382e01186d86952283189d3cd7921323302a09db3552dabf8529e8",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "148f3a067b2b1e3545bfc97e1fe374030a467ab00344303682ee77dfbcd7028b",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "2bd851dedec6bb6eb281570f6a1da3954c465f228864af14ac022828179d3f40",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "2dfb9505d9302f927692afe63be03d47257711111048dcba6710a92c312bb0e6",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "64570df2c0c2d8915b43c1ac96fab688edde4ffbf8c1033c8de9cead4584c518",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "6698f9985b9f603a236f4c5fd273fa149616de0900ea1abe83e59da5ffa96aa9",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "4fd43b6a2e61f52f1208e31a1d4a3c785a496d71573b0f9116ef47913aeaab98",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "258f98add561e43dacd3e4d00abe3abde055e419a33c6cb539b93cf209430c39",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "d1c01b512345121e4a6f2ad615b5e35fd77f8dd5d76309c98e9a76e028f8fcd8",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "20b33800771185e19847acee082b4627fcfe7bda624aeb192d6bb92d92add5a4",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "72b7e0f659781c10f9aab862acc27f8a4390f38ea6c6553a7ab47b79e441acdf",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "709d54f679355bbd9f126c03158c49c16f820d75ab2425eb924418060321d7f7",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "115ea9dc537263e998d29d8658d52896d33649883a6462542c94b987b4c9dc93",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "e8eb7e23949cc92cfe4dc1101d74425e73e27cfbd31a03b42174ed985a712cff",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 1,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "107d7e7b49d8d0800c57eb4152cd04430427e19148842de87f1bcd69dc4e31d6",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "cde4c28f1d7c3b9b50013d4dd2eafb0f1a4ea526463e59984691b5310c1cde2e",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "df1b91ab632dba33b6f14f2eb6d8f21747ee4ea6cec9784edacdd23712edfff2",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "f38cd1433f55149dc8d0a526c81ebd85ee79472a9dcb00520e038e3dbca9e972",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "fd5366cdad3b61dd55fe89c3e3c3cad3940f8ba975c17323f223f7edb41dd61b",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "3ae1bc1b3ba16ab38e2811d7688e84f6bcb3ad2ff22d260da27cfbfe4bd80916",
+          "nodes": 4,
+          "widths": [
+            2
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "c1dadd729fac0ffb9c9d62b17b264ceba572a1eeb7add32a12f5cce327399f47",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "50ab9e7c31b76b82a94eba64cc7cc2fb9215ca6a2ed71a761cdb540723019d06",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "b55516b9359cc490f3c1aca826e5888d1da94f30b894c356333f7f3bace16592",
+          "nodes": 7,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 7,
+            "exact_feasible": 4,
+            "oracle_checked": 0,
+            "beam1_feasible": 4,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 4,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "bf32dfec821ef4fa4364c8214aa53aff8585a87cc854c2d8f2fd622c5d198419",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "073952c413d50b5e2d9180960f66c6ca02335acad98035b60bfbb7da732d3f04",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "05b2fa64913164e79b1a196703ece940a99b113aee9a0ffbd4daafd3bf8ac01e",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "cc3b3c337d6ad511f52ab019fde8b5f581fd55a04640af3ec6e15bd4f4c54c76",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "08155113bb1e587ffb84b8101293e514921811363d365f8b55c0648f8a5309a4",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "21819aa86fb64eeb5cac551115394fbfda149f13ad18f7f8d6a310e4a97bc7f4",
+          "nodes": 7,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 7,
+            "exact_feasible": 4,
+            "oracle_checked": 0,
+            "beam1_feasible": 3,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 4,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "5a387d3f774851e1066cc4be7e492849d40f372673789fd9b861a5a35353ed05",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "33b913f9c389f82453adaed753403a56c41b9490cf4592c1605d954e5af0e870",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "5422c7d75998e53aeeb8e41a7b1fe58f1f4b2434c2e7de316ff51e77b8cc3819",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "8860855d57c71a24628115567227316ec00b2c4d8f0045bd63fbc8a46f21e747",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "cdf743e8f165d7ec35ef98ddb68d9f93ef12aad9ab975ebee580c4c96ddb2aca",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "57980aeb20b1e04563f4c6cca9f12df0ce66f2ae152951aad156cc06c18b0697",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "0064190acf932eab7c9e46188e36be7cea6ddaf00a10f3fde7c8ca3c2bc10b1e",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 3,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 1,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "29b55b3b88b60c9839c003b60f0495fc456f95dfff9badccb3c61e100ada54bc",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "2e9b15252b5a91ca54c09adab2685a6cefb03cf839fe54838eb6310e02557114",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "b8c661a16f5d43587b2ddf83f2c34651d4b9444a8feab59fe5a27dc295a1b7f6",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 4,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 1,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "14dd387da0a2e2d4134e72551d4c78a1c3d542ad75555bdb1ada75fef4a0b212",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "52534157b712b5e59aefd7b9a0f4886645a05346750fbc9480eeb3478c32d740",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "9a7da097a445ba3f6338bc2c9d05af43df58daab1e87e2bcbe5ce7c6eddfea8f",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 3,
+            "oracle_checked": 3,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "06bf312cf432fa75d74aac1e36701b8b04a0a61b545630e0e210053e0c20ed65",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "cc3342676069d4d15806d5d0fe3b5a2356abe578c23d3ddddff41be8b13241e0",
+          "nodes": 4,
+          "widths": [
+            2
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "9a6b0cdcb198bf6282a5d860eae5cc617c6e41d0c2005ad8a6d60c7f2454aaea",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "fc2dc7289b1132bc4708a6a5c852dce58b4953dee4ea98468978cccc68aeac96",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "499088ebcc68009652a2ec83499aff05964e3e0144a9db2a6d6df6660cd3bbc3",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "ca1992646db660e38764742be567d58a78b33c29d17e0c2d56bcdabefdcf0f12",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "7df4f50c041c75c6d14a3731159914d33ea377b102feb956fe44b99e86923e00",
+          "nodes": 5,
+          "widths": [
+            2
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 1,
+            "oracle_checked": 5,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "10e356ee4d101c2b1acbc6d79d580aeaa47dca7d427e8cca5de297a683a63017",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 3,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 1,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 1,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "2c41edf9a3944d0488b5f480a0a3fca0a21cf41b954e1d6a6fc85bca1b8b3c1a",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "5312bbbc27abfb24a82c4a84954d87069cc05239445be1e256ac32ed8ce874a8",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "a647ad0242a4a28600434d7ceda3cd716a151b84b6b126b8511f9bae67bb6cba",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 2,
+            "oracle_checked": 5,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "63db3952c72f09cac94ed18bcbfe083e7d0e3c99e3a8bbfc85a1ff27aa09800b",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "7003f831668327c239c82c1b378e58360c3b79e7444be34a5a586fc774582001",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 4,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 4,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "3962953c738c0d925846fe60da47f1320f1a112ecf6de8852f4b0df8b39240e7",
+          "nodes": 6,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 6,
+            "exact_feasible": 4,
+            "oracle_checked": 6,
+            "beam1_feasible": 4,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 4,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "668e96cdcf9c88eec12eea0f527ff6cd21dd0a628dfe6b458443da03a9c2926d",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 4,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 1,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 1,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "9e3a5c6ce75633bbc31ba710fc7df0722f07e461ba94a48d06368296e7f13377",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "6cf1f1b040ce6a9e050f4039a9d0f0296005d72a48e80f2831309fcfad080223",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 3,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 2,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 1,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "ca2b30f1be053f39209d3506d970777abbd1ca2c86bcaff55f143fed80372cd6",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "273dad73c185ef6b2f24e557dbeffbffdbb3ccce4ab56dbe9180889544b970ec",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "36fee52cf5e8ae8da303020e2a2bb9a36338427904800493ae160933f5f75b20",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "e1a08b20673d61372d96592c62cfc62747363eb1c4e7412a99b90ae0f778da42",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "041ce010d3f25968dc4ba08440844e79b50c6021f9f56253949e0c4c64ea3463",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "ac81f16305b804e59b6561d88b966481c08181ad980501d06f5f5371d9fb6c59",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "26f04c30f244498304b5e720c0d1437cfa7a658e454dd9e9627b40bd6f0484be",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "0eb8161bc6b2e7562ee5205a3ec1601123631c35b8fa4284175a57ff774c7431",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "7e4724bba53bd74a2906e94ca013e09e44a733963292b56f4fcaac9f09efdce6",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "7d4748b72f15479ced0ce63ac4189fafa46fd2a3855fca479de1f0f853066cd8",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "79fc5932f4a5bc9aef16b8abcc8ccfcb3905cd68473eb9fd74a37aa8ba1b1698",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "6f51ea0a70629e9d7a5b6f5a57f49a276e100012a7d6cae0d1ed2204c2e7f870",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "1a846b84bf172638602cec9d2c11879aeb5b27ce38d037ea283cfba194f05574",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "e8b394a4fb18f9118cabf090182800f43ddefc744118d146f93b367389d49e83",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "a059babbf673a8df9f791e153909286bbf6c1a9c874dbcc6c3c9fc229b197130",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "9faf5f579d4d52ed1762492e74c368d75922dae47cedaa016c177eff0c2b6d6f",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "d667147a16c26b4c8a3e8f06a3632cd2f74e3f4da75a852b71ce1024ffa839a8",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "b78685cafcddb5facc274cf414daecf72054d70c4662c07f78915e29c688d4cc",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "6928474783cc8a51a0fa793e8011fb3dd9de8a5451010773455ff9945e308636",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "fba8e4543ed753e887d5d4e833be02a22a277b95938d0fbef55c996450882cb4",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "3911fe807ba50c324d43540db8fc6f3cbc78bfa0e200850babd11c33f910579e",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "f88526bbef608744e0eec2de1efb6ca4f848f628823f602c5e5c663d6d53b921",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "f97d19d773f04208f49880a6c19f18f77bb9b4d9a60b29aa5e3a7cf2e5b8901c",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 3,
+            "oracle_checked": 3,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "21018fadb8241a1180dc681f30705a7cb248623333a9b6c88380864860c12317",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "8938b7ef4d03b61de71baec2ef0ab53ffc643269d3a26cf2da075528d6a5c4b6",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "381d570030bee4b84be825d90ae11ea3e091dbca43b7a6fe0818b963623c25fa",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        }
+      ],
+      "source_sha256": "a809825f62da8addc5c05b94108a06b1041b9f46d9a1fa3a67ebfd199538b2e5"
+    },
+    "huggingface": {
+      "graphs": 53,
+      "counts": {
+        "instances": 209,
+        "exact_feasible": 87,
+        "oracle_checked": 202,
+        "beam1_feasible": 81,
+        "beam1_miss": 6,
+        "beam1_cost_suboptimal": 0,
+        "beam2_feasible": 85,
+        "beam2_miss": 2,
+        "beam2_cost_suboptimal": 0,
+        "beam4_feasible": 87,
+        "beam4_miss": 0,
+        "beam4_cost_suboptimal": 0,
+        "beam8_feasible": 87,
+        "beam8_miss": 0,
+        "beam8_cost_suboptimal": 0
+      },
+      "by_width": {
+        "1": {
+          "instances": 200,
+          "exact_feasible": 83,
+          "oracle_checked": 193,
+          "beam1_feasible": 77,
+          "beam1_miss": 6,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 81,
+          "beam2_miss": 2,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 83,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 83,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "2": {
+          "instances": 9,
+          "exact_feasible": 4,
+          "oracle_checked": 9,
+          "beam1_feasible": 4,
+          "beam1_miss": 0,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 4,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 4,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 4,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        }
+      },
+      "by_size": {
+        "3": {
+          "instances": 54,
+          "exact_feasible": 23,
+          "oracle_checked": 54,
+          "beam1_feasible": 22,
+          "beam1_miss": 1,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 23,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 23,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 23,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "4": {
+          "instances": 96,
+          "exact_feasible": 38,
+          "oracle_checked": 96,
+          "beam1_feasible": 36,
+          "beam1_miss": 2,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 37,
+          "beam2_miss": 1,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 38,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 38,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "5": {
+          "instances": 40,
+          "exact_feasible": 16,
+          "oracle_checked": 40,
+          "beam1_feasible": 14,
+          "beam1_miss": 2,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 15,
+          "beam2_miss": 1,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 16,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 16,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "6": {
+          "instances": 12,
+          "exact_feasible": 8,
+          "oracle_checked": 12,
+          "beam1_feasible": 7,
+          "beam1_miss": 1,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 8,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 8,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 8,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        },
+        "7": {
+          "instances": 7,
+          "exact_feasible": 2,
+          "oracle_checked": 0,
+          "beam1_feasible": 2,
+          "beam1_miss": 0,
+          "beam1_cost_suboptimal": 0,
+          "beam2_feasible": 2,
+          "beam2_miss": 0,
+          "beam2_cost_suboptimal": 0,
+          "beam4_feasible": 2,
+          "beam4_miss": 0,
+          "beam4_cost_suboptimal": 0,
+          "beam8_feasible": 2,
+          "beam8_miss": 0,
+          "beam8_cost_suboptimal": 0
+        }
+      },
+      "by_graph": [
+        {
+          "signature_sha256": "ccb1868378813a851d06b9ca7a9ea9a7396aae7ebe57aff39e323f95f37d11f3",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "65e1dfa01aa6438263ce26584e3e0771fe6c6a931368f92a766f48201f7bb8e9",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "9ca057e4129239d9da6ec6678cf7296a94d43087d0e72a08e5818024af6cab44",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 1,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "c189cb542f9039bd76f616e8e796b8094269133c6194286d8cc6a679a26fc0e4",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 3,
+            "oracle_checked": 5,
+            "beam1_feasible": 2,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "c2a7504609edefdbecde4efd2dc16a116eb89f9559736cbf36b2c13ea90e2b25",
+          "nodes": 4,
+          "widths": [
+            2
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "00d4f564da70616b6d72917682f8e22ebd6eb0bee34407e440a5579240898d77",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "bb5b350ba7f6483958c594958a7c81f344e7c9be4db17567afe63c66ed94b784",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "cc170e6a3892dac7c5979e2fe527e0729d9fa637f97cc87b555226a2efe5ccad",
+          "nodes": 6,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 6,
+            "exact_feasible": 4,
+            "oracle_checked": 6,
+            "beam1_feasible": 3,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 4,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "15b53bc7b18e1bd5bc6886c0a0af7cec1c03a5d0d4dc7e242f65476d3c666c06",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 3,
+            "oracle_checked": 3,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "becb7727465eb28b2341885f487a44517a99b585a9c56842231fc353b4c73e66",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "4c299cd07481f026ec799b0d09703dd14e35487f2a9f4bb27524f4f3f350a5e5",
+          "nodes": 5,
+          "widths": [
+            2
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 1,
+            "oracle_checked": 5,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "55c3c580ab33e8bacec15f23b9a780105c7cdbecdd3af77ba2b35517d7e43264",
+          "nodes": 7,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 7,
+            "exact_feasible": 2,
+            "oracle_checked": 0,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "f3e99e5883d378e2d2aef6a45550548205a65b2aef5e8a0e546cdde5becf566d",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "d8621dbeef546878be42da2e7910ec8befa61c46d08b8b3830506a509e03e78d",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "c527e0a00c0cd348ba6a1805fb72a57013ab8c47c175c5b5cc68feb5212ed752",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 1,
+            "oracle_checked": 5,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "38a513b3c4634181570755d9b2073919a4b16bb07d195b26b7790ebebd76de78",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "cdc8e9f9b8e2beda7485590cdf0d95adf5c603c22e3da07e47688381a78e3ace",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "6a17f4cb5b9f1f0e6927d6b8c2863d303264d9d91c5edab6b9b63f5e74b2ef43",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "e2007408f0ad399ec6da0df0ae3441d66c7a33752e22d00ff71bd2b126c894e4",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "3655e45c7a9584c013702094eb7a5a965d286249b1ac970cc31d035a24c6dfa6",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "5e492bf339125b28c65eda0fba69739b8c5d9b7ef92b7bc5f425ec6189765799",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 4,
+            "oracle_checked": 5,
+            "beam1_feasible": 3,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 1,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "01950f2021f53bf8f01ebe6cd88d48e7173378f2c830a09c83e7543a117ed3df",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 3,
+            "oracle_checked": 3,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "7d728dc664dc8a2f643af75ea12cbca1b4bd6c9eea3ed8949f0a13d3ccfe10f8",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 2,
+            "oracle_checked": 5,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "4be7e15e500197dec5a52ff572d4000fedca6390b56f979ab835beaede4f9ae5",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "328e7a2a1ddea7a9a950c8b06a68ada7a620b65295b5626bd1f369a94e6c1dab",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "af422ab50b929dc1444bde0b666f721ade2fa36b667f2ee79389260841ecc7bc",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "dc9c402671d27ea869a5fce3b43a91796ab077ee9c0f95f8f00dc0d89bfda969",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "6ea4be3a633a01a8c990a611320d1bd07f2953cf406439c25b2df571b06e03d3",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "c233961457590bb8c00949facf6728882a7fe63688f0656cd5547d6e58099122",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "257351e95b4f754a3e8d2b80da51bb1f39a84b08835e872bba786ba936ec5c38",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "440ddd923f5eaa79671d2d4e74df8a964a50a29cc9016bc6bbe7d332e18143e3",
+          "nodes": 6,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 6,
+            "exact_feasible": 4,
+            "oracle_checked": 6,
+            "beam1_feasible": 4,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 4,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "c062b2f3579cb1c34f098fe1ed65ab0c0efd59291c03306f7cc4b4cc9f1e6cc4",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 1,
+            "oracle_checked": 5,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "78b71f7adc4f67a4807d5f8e1977fbcf53d3f8e11a65b7b0a62bb21077dfdc38",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "4fbdea2789e939779e713ff06e9d5a12bb5d958bc42134f478085cf45ad66832",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "d8c8f24b15b0fa48a3c4d77680ccc96e6b185879c01c18cdd26120e9d0a6cb36",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "5ab9725f111d9125ddd68fcc8672ef024b5c2c8ca982b0275112c52dd16480c2",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "9a44580f77542c988d17b8b78bf0b1b9e1b6f9b0b71a1a68e76e13c87b4ce912",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 2,
+            "oracle_checked": 5,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "ad657f8fead64bc849a5a6d9e2a5bef40ab50ae34a020a2188cfb2befdcbbcb2",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 4,
+            "oracle_checked": 4,
+            "beam1_feasible": 4,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 4,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 4,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 4,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "dd50c53892095afb18ab3c84827001225493c917cfe7300c3f7477c004ac624c",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "95aaad4b3a29f8f35c97076d1e4b08e1af2ac21df1d3e7af09204cc501a12fb4",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "0c2311a415f2443f62c099f8ceb4343b7b6caf1062c742652b6e6f45138a5e1e",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 2,
+            "oracle_checked": 4,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "83de4a501d21ad20728855c04f8d6c4233179af7991826031dee0de782116bca",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 1,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "aa28be525797617a1c16a88ffccbfe1ef337f1557e36a80450e77a0f665a09bd",
+          "nodes": 5,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 5,
+            "exact_feasible": 2,
+            "oracle_checked": 5,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "b97bf7c66cb2786bc90189af1c5203e1b6c43c34c7d41b432bf27fac92ee360e",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "39f3fdb34dbf5b647cb49d53e119b38c689912ca89b532d71cfd7d63ba68e2f2",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 0,
+            "oracle_checked": 4,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "aca7c831bef1c79de684e0ab1e644966804f6b625d23340d097047a0a46d229c",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 3,
+            "oracle_checked": 4,
+            "beam1_feasible": 3,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 3,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 3,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 3,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "a9104ce765b11e2b0510879811b4aa81f15218a1b21c814f9c12430de57d015f",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "7f9ac0e1855e6730d3f2e95e987f3ebd44241ead2f8a75cf94347916c921fa49",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "37c71005ab23ca08c6fd8d93c0dc524392db456d65abadd1b22fcf988fe2e229",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "62dcba8cfbe98a9aeaa70291356b4c3432a8242981c69cd78f8c68719c360281",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 2,
+            "oracle_checked": 3,
+            "beam1_feasible": 2,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 2,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 2,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 2,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "3abdc14f167846e0b2601fac11849487bda84e4f952335948df6df88f5106afe",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 0,
+            "oracle_checked": 3,
+            "beam1_feasible": 0,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 0,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 0,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 0,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "3a09f4fe6644edc9a06bb75b3b7fd04bf4fe5fd0fac8cd71c2d7c01320965fd1",
+          "nodes": 3,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 3,
+            "exact_feasible": 1,
+            "oracle_checked": 3,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        },
+        {
+          "signature_sha256": "30c69dc0880446efc5fb3ef4bd87470a81bb36df810b16cf2e6d7c45b452686d",
+          "nodes": 4,
+          "widths": [
+            1
+          ],
+          "counts": {
+            "instances": 4,
+            "exact_feasible": 1,
+            "oracle_checked": 4,
+            "beam1_feasible": 1,
+            "beam1_miss": 0,
+            "beam1_cost_suboptimal": 0,
+            "beam2_feasible": 1,
+            "beam2_miss": 0,
+            "beam2_cost_suboptimal": 0,
+            "beam4_feasible": 1,
+            "beam4_miss": 0,
+            "beam4_cost_suboptimal": 0,
+            "beam8_feasible": 1,
+            "beam8_miss": 0,
+            "beam8_cost_suboptimal": 0
+          }
+        }
+      ],
+      "source_sha256": "10f6fbfed1ec88a479de1114be6f94c4e1cfcb719cdecc1af09c82b3aab4a301"
+    }
+  }
+}

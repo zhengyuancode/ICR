@@ -1,0 +1,37 @@
+{
+  "role": "Reserved final untouched task holdout for any revised recovery method",
+  "selection": "All remaining structurally eligible PlanBench-XL retail tasks, before the same-prefix typed-fork diagnostic completed; no sampled subset or task outcomes consulted",
+  "eligible_count": 193,
+  "previously_used_count": 180,
+  "task_ids": [
+    "retail_task_0037",
+    "retail_task_0040",
+    "retail_task_0136",
+    "retail_task_0137",
+    "retail_task_0142",
+    "retail_task_0153",
+    "retail_task_0160",
+    "retail_task_0166",
+    "retail_task_0175",
+    "retail_task_0208",
+    "retail_task_0223",
+    "retail_task_0226",
+    "retail_task_0243",
+    "retail_task_0245",
+    "retail_task_0252",
+    "retail_task_0260",
+    "retail_task_0261",
+    "retail_task_0272",
+    "retail_task_0282",
+    "retail_task_0294",
+    "retail_task_0325"
+  ],
+  "n_tasks": 21,
+  "source_sha256": {
+    "planbench_opportunity.json": "7d27bb2d35e2e2248b4ff24fc26779806b7988f55a477f40b33ad7b19677f512",
+    "planbench_online_cohort.json": "fa8d55e6e8c4f4fba693b9c91392e554f5ec1af8db6448c7cc9eedddb5669460",
+    "planbench_multicandidate_cohort.json": "9aa59a01a23bf148b07b4d643f07daa40b8275073eb6fbd44dc3406d7af27db0",
+    "planbench_confirmatory_cohort.json": "6bb6ff22e971e0fc4b9dc8c3b321cd2484d75a985d5439bfabf4a6894bfd9bc6",
+    "planbench_advice_confirmation_protocol.json": "8b45bbb09847b128750dfdc5a66a457e4fdbe84d3abe0d4403bf35a69e18751e"
+  }
+}

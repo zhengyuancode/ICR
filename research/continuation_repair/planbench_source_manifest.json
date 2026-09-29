@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/JiayuJeff/PlanBench-XL",
+  "commit": "a24bfd5f1a6ad7ad3c5d5204525272c6488225ac",
+  "verified_against_commit_archive": [
+    "src/data/retail/baseline_tools.json",
+    "src/data/retail/database.json",
+    "src/env/domains/executor.py"
+  ],
+  "sha256": {
+    "src/data/retail/baseline_tools.json": "b46dda31f10a2b427d82d3f58995b1201075c03f98cd3a14d7ec1a19217fd212",
+    "src/data/retail/database.json": "cd17e2f8b82c87af25c7a674bc2143e6b35bc84ec616760c1d25fb6e237215d8",
+    "src/data/retail/paths_set_catalog.json": "887bb9e0f17cd4c9105958694a6b8bba4cd4c88cb8835126dd609482ee5c33bc",
+    "src/data/retail/tasks.json": "924c018313fb9e2ea59152b30ab59d31f40c052a51732f515cbc49bb5b2e804b",
+    "src/data/retail/queries.json": "aa708b84ae7d90a49bed5aadbe95fd0c420927f559fee2e4ace4e823132ad2a5",
+    "src/env/domains/executor.py": "830fa805c8f03a82d9c19704a0dc3d7adab7683d20e9f215a981f0b9e338e777",
+    "src/env/runtime/runner.py": "38401661b7f3905b2e90576e0cf0fcb6764e26aa237c3c84be83acbb0a329323"
+  }
+}

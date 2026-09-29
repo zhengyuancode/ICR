@@ -1,0 +1,17 @@
+{
+  "role": "post_review_ancillary_type_only_control",
+  "frozen_at_utc": "2026-09-28T14:26:33.942358+00:00",
+  "cohort_sha256": "bf3697c5fe69cc1a32fec76476e9b4c2d8a108944debcd2a112451b364a5d3a6",
+  "source_sha256": {
+    "research/run_planbench_prefix_type_control.py": "82ee220eb388f70e13290d5eba56a280e3aadea222b3187dd64d53ccafb937bc",
+    "research/planbench_typed_advice.py": "bc871d0c4c8063cbb1397feb8740addc3d9afed9c9b242a9b9a1baf455e4c8cb"
+  },
+  "population": "all 20 originally sealed confirmation prefixes; six pilot excluded",
+  "arm": "type-only boundary-compatible shortest lexicographic advice, same model and frozen prefix",
+  "endpoints": [
+    "trusted original-tool target within 12 post-failure model turns",
+    "whole-task native judge"
+  ],
+  "analysis": "paired comparison with both original certificate arms; counts, discordance, exact McNemar; exploratory post-review control",
+  "selection": "No prefix selection or tuning based on type-only outcomes"
+}

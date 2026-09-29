@@ -1,0 +1,404 @@
+{
+  "protocol": "planbench_final_holdout_protocol.json",
+  "n_untouched_tasks": 21,
+  "primary_instance_minus_global": {
+    "n": 21,
+    "native_successes": 15,
+    "advice_successes": 15,
+    "advice_minus_native": 0.0,
+    "paired_task_bootstrap_95": [
+      -0.14285714285714285,
+      0.14285714285714285
+    ],
+    "mcnemar_two_sided_exact_p": 1.0,
+    "improved": 1,
+    "worsened": 1,
+    "tied": 19
+  },
+  "secondary": {
+    "instance_minus_native": {
+      "n": 21,
+      "native_successes": 8,
+      "advice_successes": 15,
+      "advice_minus_native": 0.3333333333333333,
+      "paired_task_bootstrap_95": [
+        0.14285714285714285,
+        0.5238095238095238
+      ],
+      "mcnemar_two_sided_exact_p": 0.015625,
+      "improved": 7,
+      "worsened": 0,
+      "tied": 14
+    },
+    "instance_minus_type_only": {
+      "n": 21,
+      "native_successes": 15,
+      "advice_successes": 15,
+      "advice_minus_native": 0.0,
+      "paired_task_bootstrap_95": [
+        -0.14285714285714285,
+        0.14285714285714285
+      ],
+      "mcnemar_two_sided_exact_p": 1.0,
+      "improved": 1,
+      "worsened": 1,
+      "tied": 19
+    },
+    "global_minus_native": {
+      "n": 21,
+      "native_successes": 8,
+      "advice_successes": 15,
+      "advice_minus_native": 0.3333333333333333,
+      "paired_task_bootstrap_95": [
+        0.09523809523809523,
+        0.5714285714285714
+      ],
+      "mcnemar_two_sided_exact_p": 0.0390625,
+      "improved": 8,
+      "worsened": 1,
+      "tied": 12
+    }
+  },
+  "model_requests_mean": {
+    "baseline": 36.23809523809524,
+    "global_advice": 37.0,
+    "instance_advice": 37.476190476190474,
+    "type_only_advice": 31.761904761904763
+  },
+  "instance_minus_global_requests": {
+    "mean": 0.47619047619047616,
+    "paired_task_bootstrap_95": [
+      -3.4761904761904763,
+      4.0476190476190474
+    ]
+  },
+  "recovery_events": {
+    "baseline": {},
+    "global_advice": {
+      "advised": 14
+    },
+    "instance_advice": {
+      "advised": 15
+    },
+    "type_only_advice": {
+      "advised": 15
+    }
+  },
+  "task_rows": [
+    {
+      "query_id": "retail_query_0037",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "failed"
+      },
+      "steps": {
+        "baseline": 45,
+        "global_advice": 51,
+        "instance_advice": 41,
+        "type_only_advice": 45
+      }
+    },
+    {
+      "query_id": "retail_query_0040",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "failed",
+        "instance_advice": "failed",
+        "type_only_advice": "failed"
+      },
+      "steps": {
+        "baseline": 29,
+        "global_advice": 41,
+        "instance_advice": 44,
+        "type_only_advice": 42
+      }
+    },
+    {
+      "query_id": "retail_query_0136",
+      "statuses": {
+        "baseline": "success",
+        "global_advice": "failed",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 81,
+        "global_advice": 95,
+        "instance_advice": 70,
+        "type_only_advice": 56
+      }
+    },
+    {
+      "query_id": "retail_query_0137",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "success",
+        "instance_advice": "failed",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 100,
+        "global_advice": 81,
+        "instance_advice": 68,
+        "type_only_advice": 99
+      }
+    },
+    {
+      "query_id": "retail_query_0142",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "failed",
+        "instance_advice": "failed",
+        "type_only_advice": "failed"
+      },
+      "steps": {
+        "baseline": 32,
+        "global_advice": 31,
+        "instance_advice": 40,
+        "type_only_advice": 45
+      }
+    },
+    {
+      "query_id": "retail_query_0153",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 28,
+        "global_advice": 32,
+        "instance_advice": 48,
+        "type_only_advice": 31
+      }
+    },
+    {
+      "query_id": "retail_query_0160",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "failed",
+        "instance_advice": "failed",
+        "type_only_advice": "failed"
+      },
+      "steps": {
+        "baseline": 27,
+        "global_advice": 29,
+        "instance_advice": 30,
+        "type_only_advice": 30
+      }
+    },
+    {
+      "query_id": "retail_query_0166",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "failed",
+        "instance_advice": "failed",
+        "type_only_advice": "failed"
+      },
+      "steps": {
+        "baseline": 38,
+        "global_advice": 32,
+        "instance_advice": 29,
+        "type_only_advice": 22
+      }
+    },
+    {
+      "query_id": "retail_query_0175",
+      "statuses": {
+        "baseline": "success",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 18,
+        "global_advice": 19,
+        "instance_advice": 33,
+        "type_only_advice": 24
+      }
+    },
+    {
+      "query_id": "retail_query_0208",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 22,
+        "global_advice": 12,
+        "instance_advice": 20,
+        "type_only_advice": 12
+      }
+    },
+    {
+      "query_id": "retail_query_0223",
+      "statuses": {
+        "baseline": "success",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 16,
+        "global_advice": 16,
+        "instance_advice": 15,
+        "type_only_advice": 14
+      }
+    },
+    {
+      "query_id": "retail_query_0226",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 24,
+        "global_advice": 32,
+        "instance_advice": 30,
+        "type_only_advice": 27
+      }
+    },
+    {
+      "query_id": "retail_query_0243",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 24,
+        "global_advice": 17,
+        "instance_advice": 16,
+        "type_only_advice": 15
+      }
+    },
+    {
+      "query_id": "retail_query_0245",
+      "statuses": {
+        "baseline": "success",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 18,
+        "global_advice": 21,
+        "instance_advice": 17,
+        "type_only_advice": 17
+      }
+    },
+    {
+      "query_id": "retail_query_0252",
+      "statuses": {
+        "baseline": "success",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 28,
+        "global_advice": 33,
+        "instance_advice": 34,
+        "type_only_advice": 30
+      }
+    },
+    {
+      "query_id": "retail_query_0260",
+      "statuses": {
+        "baseline": "success",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 92,
+        "global_advice": 72,
+        "instance_advice": 73,
+        "type_only_advice": 44
+      }
+    },
+    {
+      "query_id": "retail_query_0261",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 35,
+        "global_advice": 51,
+        "instance_advice": 52,
+        "type_only_advice": 31
+      }
+    },
+    {
+      "query_id": "retail_query_0272",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "failed",
+        "instance_advice": "failed",
+        "type_only_advice": "failed"
+      },
+      "steps": {
+        "baseline": 22,
+        "global_advice": 29,
+        "instance_advice": 29,
+        "type_only_advice": 18
+      }
+    },
+    {
+      "query_id": "retail_query_0282",
+      "statuses": {
+        "baseline": "failed",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 53,
+        "global_advice": 56,
+        "instance_advice": 60,
+        "type_only_advice": 32
+      }
+    },
+    {
+      "query_id": "retail_query_0294",
+      "statuses": {
+        "baseline": "success",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 14,
+        "global_advice": 14,
+        "instance_advice": 22,
+        "type_only_advice": 16
+      }
+    },
+    {
+      "query_id": "retail_query_0325",
+      "statuses": {
+        "baseline": "success",
+        "global_advice": "success",
+        "instance_advice": "success",
+        "type_only_advice": "success"
+      },
+      "steps": {
+        "baseline": 15,
+        "global_advice": 13,
+        "instance_advice": 16,
+        "type_only_advice": 17
+      }
+    }
+  ]
+}

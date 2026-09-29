@@ -1,0 +1,8 @@
+{
+  "schema_version": "2.0",
+  "profile_id": "ICR-COMPUTATIONAL-BENCHMARK",
+  "study_types": ["computational_benchmark"],
+  "report_kind": "results",
+  "features": ["paired_template_repetitions", "formal_method", "public_benchmark"],
+  "domains": ["computer_science"]
+}

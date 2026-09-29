@@ -1,0 +1,402 @@
+{
+  "status": "exploratory_adaptive_checkpoint_not_independent_confirmation",
+  "parent_protocol": "planbench_seed43_transfer_protocol.json",
+  "stage_gate": "planbench_seed43_stage_gate.json",
+  "first_frozen_order_task_count": 30,
+  "comparison": {
+    "n": 30,
+    "native_successes": 15,
+    "advice_successes": 21,
+    "advice_minus_native": 0.2,
+    "paired_task_bootstrap_95": [
+      -0.03333333333333333,
+      0.43333333333333335
+    ],
+    "mcnemar_two_sided_exact_p": 0.1795654296875,
+    "improved": 10,
+    "worsened": 4,
+    "tied": 16
+  },
+  "advice_events": {
+    "advised": 17
+  },
+  "gains_with_recovery_event": 9,
+  "losses_with_recovery_event": 1,
+  "model_requests": {
+    "native_mean": 31.966666666666665,
+    "advice_mean": 33.666666666666664,
+    "paired_difference_mean": 1.7,
+    "paired_difference_bootstrap_95": [
+      -4.133333333333334,
+      7.5
+    ]
+  },
+  "rows": [
+    {
+      "query_id": "retail_query_0011",
+      "native_status": "success",
+      "advice_status": "failed",
+      "native_steps": 59,
+      "advice_steps": 45,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_live_order_id_from_warehouse_request_max"
+      ]
+    },
+    {
+      "query_id": "retail_query_0019",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 40,
+      "advice_steps": 22,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0023",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 60,
+      "advice_steps": 71,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_payment_id_from_refund_record_id_instant"
+      ]
+    },
+    {
+      "query_id": "retail_query_0027",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 20,
+      "advice_steps": 33,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_order_reference_from_placed_order_item_id_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0030",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 17,
+      "advice_steps": 18,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0032",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 16,
+      "advice_steps": 19,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_order_reference_from_placed_order_item_id_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0034",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 16,
+      "advice_steps": 30,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_payment_id_from_refund_record_id_instant"
+      ]
+    },
+    {
+      "query_id": "retail_query_0046",
+      "native_status": "failed",
+      "advice_status": "failed",
+      "native_steps": 41,
+      "advice_steps": 46,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_order_reference_from_placed_order_item_id_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0049",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 24,
+      "advice_steps": 27,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_order_reference_from_placed_order_item_id_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0050",
+      "native_status": "success",
+      "advice_status": "failed",
+      "native_steps": 56,
+      "advice_steps": 23,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0052",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 16,
+      "advice_steps": 17,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0053",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 16,
+      "advice_steps": 17,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_order_reference_from_placed_order_item_id_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0055",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 12,
+      "advice_steps": 10,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0057",
+      "native_status": "failed",
+      "advice_status": "failed",
+      "native_steps": 73,
+      "advice_steps": 35,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0060",
+      "native_status": "success",
+      "advice_status": "failed",
+      "native_steps": 44,
+      "advice_steps": 83,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0065",
+      "native_status": "failed",
+      "advice_status": "failed",
+      "native_steps": 36,
+      "advice_steps": 55,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0067",
+      "native_status": "success",
+      "advice_status": "failed",
+      "native_steps": 26,
+      "advice_steps": 30,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0071",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 28,
+      "advice_steps": 24,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0072",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 30,
+      "advice_steps": 27,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_payment_id_from_refund_record_id_instant"
+      ]
+    },
+    {
+      "query_id": "retail_query_0084",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 13,
+      "advice_steps": 14,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0086",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 7,
+      "advice_steps": 16,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_placed_order_id_from_shipment_reference_quick"
+      ]
+    },
+    {
+      "query_id": "retail_query_0093",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 25,
+      "advice_steps": 33,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_live_order_id_from_warehouse_request_max"
+      ]
+    },
+    {
+      "query_id": "retail_query_0098",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 13,
+      "advice_steps": 14,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0099",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 17,
+      "advice_steps": 14,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_quote_from_fulfillment_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0103",
+      "native_status": "success",
+      "advice_status": "success",
+      "native_steps": 49,
+      "advice_steps": 40,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_live_order_id_from_warehouse_request_max"
+      ]
+    },
+    {
+      "query_id": "retail_query_0106",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 94,
+      "advice_steps": 74,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_payment_id_from_refund_record_id_instant"
+      ]
+    },
+    {
+      "query_id": "retail_query_0108",
+      "native_status": "failed",
+      "advice_status": "failed",
+      "native_steps": 48,
+      "advice_steps": 55,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    },
+    {
+      "query_id": "retail_query_0110",
+      "native_status": "failed",
+      "advice_status": "failed",
+      "native_steps": 3,
+      "advice_steps": 44,
+      "advice_recovery_event_count": 1,
+      "advice_recovery_event_statuses": [
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_outbound_shipment_id_from_attempt_record_id_v2"
+      ]
+    },
+    {
+      "query_id": "retail_query_0112",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 44,
+      "advice_steps": 56,
+      "advice_recovery_event_count": 2,
+      "advice_recovery_event_statuses": [
+        "advised",
+        "advised"
+      ],
+      "advice_recovery_original_tools": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_payment_timestamp_from_payment_id_v2"
+      ]
+    },
+    {
+      "query_id": "retail_query_0113",
+      "native_status": "failed",
+      "advice_status": "success",
+      "native_steps": 16,
+      "advice_steps": 18,
+      "advice_recovery_event_count": 0,
+      "advice_recovery_event_statuses": [],
+      "advice_recovery_original_tools": []
+    }
+  ]
+}

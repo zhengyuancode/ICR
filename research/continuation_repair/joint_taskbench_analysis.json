@@ -1,0 +1,66 @@
+{
+  "unit": "distinct TaskBench workflow graph; stratified graph-cluster bootstrap",
+  "draws": 20000,
+  "seeds": {
+    "20260924": {
+      "counts": {
+        "instances": 6975,
+        "dp_feasible": 3933,
+        "greedy_feasible": 3449,
+        "greedy_false_negative": 484,
+        "greedy_cost_suboptimal": 19,
+        "three_node_repairs": 190
+      },
+      "feasibility_gap": 0.06939068100358423,
+      "feasibility_gap_ci95": [
+        0.06305659293306522,
+        0.07571657305971996
+      ],
+      "conditional_greedy_miss": 0.12306127637935418,
+      "conditional_greedy_miss_ci95": [
+        0.11279154682721397,
+        0.1330625194547748
+      ]
+    },
+    "20260925": {
+      "counts": {
+        "instances": 6975,
+        "dp_feasible": 3947,
+        "greedy_feasible": 3518,
+        "greedy_false_negative": 429,
+        "greedy_cost_suboptimal": 20,
+        "three_node_repairs": 134
+      },
+      "feasibility_gap": 0.061505376344086024,
+      "feasibility_gap_ci95": [
+        0.0557711657323559,
+        0.06744495091982923
+      ],
+      "conditional_greedy_miss": 0.10869014441347859,
+      "conditional_greedy_miss_ci95": [
+        0.09932109630374654,
+        0.11834178303833069
+      ]
+    },
+    "20260926": {
+      "counts": {
+        "instances": 6975,
+        "dp_feasible": 3973,
+        "greedy_feasible": 3492,
+        "greedy_false_negative": 481,
+        "greedy_cost_suboptimal": 15,
+        "three_node_repairs": 141
+      },
+      "feasibility_gap": 0.06896057347670251,
+      "feasibility_gap_ci95": [
+        0.06287592388983133,
+        0.0752486732348913
+      ],
+      "conditional_greedy_miss": 0.12106720362446514,
+      "conditional_greedy_miss_ci95": [
+        0.11108205724414812,
+        0.13115565764979314
+      ]
+    }
+  }
+}

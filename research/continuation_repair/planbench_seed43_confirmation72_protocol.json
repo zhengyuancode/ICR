@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-09-26T11:43:38Z",
+  "role": "Independent-task confirmation subset after exploratory inspection of the first 30 frozen-order seed-43 tasks",
+  "parent_protocol": "planbench_seed43_transfer_protocol.json",
+  "parent_protocol_sha256": "e518977e153074b4503ba588d45ca1c230ae64491ceaff0980f3890cfb769a13",
+  "task_selection": "Positions 31 through 102, inclusive, in the parent protocol's immutable task_ids order",
+  "n_tasks": 72,
+  "status_at_freeze": "No success outcomes or trajectories of these 72 tasks were inspected; some API requests may already have been in progress or checkpointed",
+  "arms": {
+    "native": "seed43_native",
+    "icr_advice": "seed43_instance_advice"
+  },
+  "primary": "Paired whole-task success difference, ICR advice minus native, across all 72 selected tasks",
+  "analysis": "Two-sided exact McNemar test and 100000 paired task-bootstrap draws, without interim outcome inspection",
+  "robustness": "Also report 100000-draw cluster-bootstrap intervals after grouping tasks by identical released reference path and separately by target datatype; these use public task metadata only and are descriptive sensitivity checks",
+  "mechanism_diagnostic": "For each discordant pair, record whether an ICR recovery event occurred; this post-treatment association is descriptive, not a causal subgroup estimand",
+  "decision_rule": "The main paper may state a confirmed task-level improvement only if the independent 72-task difference is positive, the exact two-sided McNemar p-value is below 0.05, and the paired bootstrap 95% interval excludes zero; otherwise lead with the validated structural and effect-certificate claims",
+  "third_arm": "Global-certified advice is deferred as a separately costed attribution question"
+}

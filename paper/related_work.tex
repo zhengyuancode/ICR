@@ -1,0 +1,37 @@
+\section{Related Work}
+\textbf{Tool planning and recovery.}
+ReAct and LLMCompiler establish model-led tool reasoning and program
+execution~\cite{react,llmcompiler}; TaskBench and PlanBench-XL provide typed
+workflows and path-preserving failure tests~\cite{taskbench,planbenchxl}.
+HEART, ParaRecover, AgentTether, and AgentRewind address schema-guided recovery,
+replanning, guarded actions, and rollback~\cite{heart,pararecover,agenttether,
+agentrewind}. ICR instead resolves a concrete failed call by jointly selecting
+replacement implementations and the least region that reconnects to the
+continuation.
+
+\textbf{Contracts and graph repair.}
+Contract2Tool and ToolGate encode operation preconditions, effects, and
+invocation guards~\cite{contract2tool,toolgate_published}; Atomic Task Graph,
+counterfactual replay, DART, and REVISE structure tasks or repair execution
+graphs~\cite{atg,gcjr,dart,revise}. Service reconfiguration addresses component
+interfaces~\cite{servicereconfiguration}. ICR combines implementation and scope
+optimization with observed-value binding; conditional equivalence and path-view
+rewriting motivate its input-specific boundary-value certificate
+~\cite{kawaguchi2010conditional,romero2020pathviews}.
+
+For a fixed assignment, ICR closure is Horn-style implication reachability;
+joint choice is a weighted constraint problem solved by tree DP or standard
+variable elimination~\cite{dechter1999bucket}. The contribution is the repair
+formulation that makes the reconnection boundary a decision variable and
+composes it with observed-input value evidence. DART, REVISE, and AgentRewind
+repair or roll back execution graphs, whereas Contract2Tool and ToolGate guard
+individual calls; none of these abstractions jointly selects an implementation,
+its least closed scope, and an input-specific relational witness.
+
+\textbf{Execution authority and evaluation.}
+Agent-First Tooling and transactional runtimes separate proposed from committed
+effects~\cite{aft,cordon,mnemosyne2026}; provenance and AgentProp-Bench expose
+authorization and parameter-propagation failures~\cite{pactprovenance,
+agentprop}. ICR makes this boundary explicit: local interface and boundary-value
+evidence determines admissibility, while grounded task context determines
+authority to commit.

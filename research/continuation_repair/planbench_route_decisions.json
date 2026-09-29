@@ -1,0 +1,85 @@
+{
+  "scope": "Every defined failed-tool input over public retail rows, all typed paths of length 2--5",
+  "selection": "Shortest path, lexicographic tie break; identical typed candidates for all policies",
+  "native_executor_only_for_scoring": true,
+  "source_sha256": {
+    "external/PlanBench-XL-main/src/data/retail/baseline_tools.json": "b46dda31f10a2b427d82d3f58995b1201075c03f98cd3a14d7ec1a19217fd212",
+    "external/PlanBench-XL-main/src/data/retail/database.json": "cd17e2f8b82c87af25c7a674bc2143e6b35bc84ec616760c1d25fb6e237215d8",
+    "research/continuation_repair/planbench_relational_contracts.json": "99feb23ed6a441f2dbf96f32fa772439c1809a48030631f76aa15214c8eeb6db",
+    "research/continuation_repair/planbench_instance_contracts.json": "911858936f750b6863c79e0e35f4d67ebd09bb318889e4dab9670366a0fc4fd5",
+    "research/analyze_planbench_route_decisions.py": "5e444ccd4cb34d0750e7f322ac8d1d6bc1b430157a12ecf992c06304d6764195"
+  },
+  "totals": {
+    "oracle_path_input_pairs": 31565,
+    "defined_decisions": 9250,
+    "oracle_wrong_pairs": 826,
+    "new_safe_decisions": 774
+  },
+  "policies": {
+    "type_only": {
+      "route_selected": 9250,
+      "calls_selected": 19358,
+      "native_correct": 9124,
+      "native_wrong": 126
+    },
+    "global": {
+      "route_selected": 8350,
+      "calls_selected": 16958,
+      "native_correct": 8350,
+      "no_route": 900
+    },
+    "input_indexed": {
+      "route_selected": 9124,
+      "calls_selected": 19022,
+      "native_correct": 9124,
+      "no_route": 126
+    }
+  },
+  "first_new_safe_examples": [
+    {
+      "failed_tool": "get_quote_record_id_from_order_reference_fast",
+      "input_datatype": "order_id",
+      "input": "ord_7001",
+      "input_indexed_route": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ]
+    },
+    {
+      "failed_tool": "get_quote_record_id_from_order_reference_fast",
+      "input_datatype": "order_id",
+      "input": "ord_7002",
+      "input_indexed_route": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ]
+    },
+    {
+      "failed_tool": "get_quote_record_id_from_order_reference_fast",
+      "input_datatype": "order_id",
+      "input": "ord_7003",
+      "input_indexed_route": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ]
+    },
+    {
+      "failed_tool": "get_quote_record_id_from_order_reference_fast",
+      "input_datatype": "order_id",
+      "input": "ord_7004",
+      "input_indexed_route": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ]
+    },
+    {
+      "failed_tool": "get_quote_record_id_from_order_reference_fast",
+      "input_datatype": "order_id",
+      "input": "ord_7005",
+      "input_indexed_route": [
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ]
+    }
+  ]
+}

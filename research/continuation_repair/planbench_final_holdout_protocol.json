@@ -1,0 +1,59 @@
+{
+  "status": "Frozen before input-indexed development fork results and before any final task API call",
+  "study_role": "Independent final task confirmation of input-indexed effect-certified recovery",
+  "task_ids": [
+    "retail_task_0037",
+    "retail_task_0040",
+    "retail_task_0136",
+    "retail_task_0137",
+    "retail_task_0142",
+    "retail_task_0153",
+    "retail_task_0160",
+    "retail_task_0166",
+    "retail_task_0175",
+    "retail_task_0208",
+    "retail_task_0223",
+    "retail_task_0226",
+    "retail_task_0243",
+    "retail_task_0245",
+    "retail_task_0252",
+    "retail_task_0260",
+    "retail_task_0261",
+    "retail_task_0272",
+    "retail_task_0282",
+    "retail_task_0294",
+    "retail_task_0325"
+  ],
+  "run_ids": {
+    "baseline": "final_r4_native",
+    "global_advice": "final_r4_global_advice",
+    "instance_advice": "final_r4_instance_advice",
+    "type_only_advice": "final_r4_type_only_advice"
+  },
+  "model": "Configured DeepSeek Flash endpoint, same in all arms",
+  "runtime": {
+    "max_steps": 100,
+    "workers_per_arm": 4,
+    "response_max_tokens": 4096
+  },
+  "primary_outcome": "Native whole-task success on all 21 untouched tasks",
+  "primary_contrast": "input-indexed effect-certified advice minus global effect-certified advice",
+  "secondary_contrasts": [
+    "instance advice minus native",
+    "instance advice minus type-only advice",
+    "global advice minus native"
+  ],
+  "analysis": "All 21 tasks; paired task bootstrap 100000 draws and exact two-sided McNemar",
+  "source_sha256": {
+    "research/run_planbench_pilot.py": "de2d9c95d96050a6834edd9f1c18f780facf47f57f231f6344464abfe902c656",
+    "research/planbench_controller.py": "bcc393bc41feef080752d3ddce00a5df543186485fa28f7a024f1fa1b3e19aa2",
+    "research/planbench_typed_advice.py": "bc871d0c4c8063cbb1397feb8740addc3d9afed9c9b242a9b9a1baf455e4c8cb",
+    "research/planbench_instance_advice.py": "805bec68f270905ba47ba808f5db1b743762d88e781197169a7bb871a468cade",
+    "research/compile_planbench_instance_contracts.py": "01d101da82703bd3dd877c73f5082948f67f3f2db4946e9959e4ab639fab4ae3",
+    "research/run_planbench_final_holdout.py": "d4304154de46263e0d451972e6597e8a95bf6c61c5a670f2fed2071b5f08adec",
+    "research/analyze_planbench_final_holdout.py": "300c61db6a64b0df89891a3e615e01fceca5927ea86e8458901e94a7c65d25d4",
+    "research/continuation_repair/planbench_final_untouched_holdout.json": "0a97fe97ae38991a12cc6101de162e3bcaa78f173867cff3df97de02c3bb108d",
+    "research/continuation_repair/planbench_calibrated_contracts.json": "9a8500d0cca21eb4de184a2e316fd98ed423632f2bc7eef0aa85507dfebdfa4c",
+    "research/continuation_repair/planbench_instance_contracts.json": "911858936f750b6863c79e0e35f4d67ebd09bb318889e4dab9670366a0fc4fd5"
+  }
+}
