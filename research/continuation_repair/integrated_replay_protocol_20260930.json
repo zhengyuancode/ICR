@@ -1,0 +1,17 @@
+{
+  "role": "Post-review exploratory, executor-backed integration replay",
+  "selection": "Enumerate every globally rejected but observed-input-supported compiled path in the frozen PlanBench-XL retail relation. Pair it with every distinct two-call original chain sharing its external input and output types, provided the replacement path's first intermediate type differs from the original consumer input. Do not select on executor outcomes.",
+  "unit": "Original two-call workflow, replacement path, and distinct observed input",
+  "comparators": [
+    "Producer-only replacement retaining the original consumer",
+    "Joint two-node structural repair without value certification",
+    "Joint two-node repair with global certificate",
+    "Joint two-node repair with observed-input certificate"
+  ],
+  "primary_checks": [
+    "Compatibility and least changed region returned by the existing joint tree solver",
+    "Native-executor output equality to the original two-call workflow where defined",
+    "Unsafe admissions among unsupported input values"
+  ],
+  "interpretation": "An exploratory component-integration replay on compositional tool workflows, not an online agent task trial or an independently held-out benchmark."
+}

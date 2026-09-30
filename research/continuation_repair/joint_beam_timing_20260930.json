@@ -1,0 +1,25 @@
+{
+  "role": "Post-review single-process wall-time measurement, Python 3, same generated instances; five alternating-order repetitions per method and instance",
+  "seed": 20260924,
+  "graph_node_count_distribution": {
+    "3": 876,
+    "4": 778,
+    "5": 247
+  },
+  "agreement": {
+    "instances": 6975,
+    "same_status_and_cost": 6975
+  },
+  "timing_ms": {
+    "dp": {
+      "median": 0.035,
+      "p95": 0.0518,
+      "sum": 253.2885
+    },
+    "beam8": {
+      "median": 0.0288,
+      "p95": 0.0731,
+      "sum": 234.5156
+    }
+  }
+}

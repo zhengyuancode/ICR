@@ -56,17 +56,25 @@ additional-seed runs test sensitivity. These interventions isolate interface
 optimization; the executable catalog in RQ2 tests boundary-value effects.
 
 \textbf{RQ2: boundary-value admission and native-agent recovery.}
-PlanBench-XL supplies 327 retail queries, 185 typed tools, and a released
+PlanBench-XL supplies 327 retail queries, 185 baseline executable tools, and a released
 100-row read-only relation. Without reading task solutions, we enumerate
-boundary-compatible paths of at most five calls. For the relational
+boundary-compatible paths of at most five calls. Admitted paths are ordered
+by call count and then tool name, separately from the structural change-cost
+objective. For the relational
 certificate, all 136 unary edge dependencies are checked exhaustively on the
 fixed relation; this is a finite-snapshot guarantee, not an inference about
 future data. The compiler then indexes non-null row witnesses. Compilation
 takes 0.172\,s and no tool or model calls. The index occupies 2.36\,MiB on disk
 and 6.23\,MiB when parsed; 9,850 hash-and-lookup probes take a median
 1.72\,$\mu$s each on one processor. Exhaustive native replay is used
-only after compilation to audit all 31,565 path--input classifications. A
-separate calibration/held-out replay rule provides an empirical comparator.
+only after compilation to audit all 31,565 path--input classifications. We additionally replay all paths under a calibration/held-out split to obtain an empirical baseline for comparison.
+
+An exploratory integration replay pairs globally rejected but observed-input-
+supported routes with two-call programs having the same external types and a
+different intermediate type. The joint solver determines repair scope; native
+execution audits boundary values on defined relation inputs. We append every
+compatible one-call consumer to audit unchanged downstream execution.
+
 
 The online policies are native execution, type-only advice,
 global-certificate advice, and ICR advice using the observed-input certificate.
@@ -82,11 +90,11 @@ the sealed same-prefix comparison, with identical histories, states, and
 failed actions. Its predeclared primary endpoint is restoration of the trusted
 target value within 12 subsequent model turns; whole-task success is
 secondary. An ancillary post-primary type-only arm replays the same 20
-prefixes. Table~\ref{tab:study-map} separates their estimands and units.
+prefixes. Table~\ref{tab:study-map} separates their endpoints and units.
 
 \begin{table*}[t]
 \centering\footnotesize\setlength{\tabcolsep}{5pt}
-\caption{Evaluation cohorts and primary estimands.}
+\caption{Evaluation cohorts and primary endpoints.}
 \label{tab:study-map}
 \begin{tabular}{llll}
 \toprule
@@ -94,16 +102,17 @@ prefixes. Table~\ref{tab:study-map} separates their estimands and units.
 \midrule
 Structural oracle & 6,975 node failures in 1,901 graphs & DP, greedy, beams, oracle & Feasibility and minimum cost\\
 Static certificate & 31,565 path--input pairs & Global, type only, observed input & Native-executor value equality\\
+Integration replay & 32 programs; 117 extensions & Single call, global, observed & Closure and final-value equality\\
 System confirmation & 72 globally certified-bypass tasks & Native vs. complete ICR advice & Whole-task completion\\
-Admission holdout & 21 reserved tasks & Three certificate policies & Whole-task completion\\
-Same-prefix confirmation & 20 input-only failure states & Three certificate policies & Target restoration within 12 turns\\
+Admission holdout & 21 reserved tasks & Three admission rules & Whole-task completion\\
+Same-prefix confirmation & 20 input-only failure states & Three admission rules & Target restoration within 12 turns\\
 \bottomrule
 \end{tabular}
 \end{table*}
 
 \subsection{Online Settings and Statistics}
 All online arms use the same hosted endpoint, which reports the served-model
-identifier \texttt{deepseek-flash}.
+identifier deepseek-flash.
 Temperature is zero, thinking is disabled, and the response cap is 4,096
 tokens. PlanBench-XL retains its 100-step cap.
 We use 100,000 paired template, task, or prefix bootstrap resamples (seed

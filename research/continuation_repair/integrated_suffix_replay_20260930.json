@@ -1,0 +1,2380 @@
+{
+  "role": "Post-review exploratory continuation audit",
+  "counts": {
+    "defined_original": 11588,
+    "admitted": 10062,
+    "same_final_value": 10062,
+    "wrong_or_undefined_final_value": 0,
+    "certificate_rejected": 1526,
+    "three_call_configurations": 117,
+    "distinct_downstream_tools": 34
+  },
+  "configurations": [
+    {
+      "original": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "replacement": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_account_email_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "replacement": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_default_address_from_shopper_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "replacement": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_phone_on_file_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "replacement": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_saved_method_id_from_user_record_id_max",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "replacement": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_user_name_from_user_reference_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "replacement": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "unchanged_consumer": "get_auth_reference_code_from_processor_auth_id_quick",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "replacement": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "unchanged_consumer": "get_auth_state_from_authorization_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "replacement": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "unchanged_consumer": "get_checkout_intent_status_from_authorization_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "replacement": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "unchanged_consumer": "get_completed_payment_id_from_processor_approval_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "replacement": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "unchanged_consumer": "get_live_order_id_from_payment_auth_id_v3",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "replacement": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "unchanged_consumer": "get_payment_method_from_auth_id_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max"
+      ],
+      "replacement": [
+        "get_refund_from_payment_quick",
+        "get_auth_id_from_finance_refund_id_prime"
+      ],
+      "unchanged_consumer": "get_payment_setup_id_from_authorization_record_id_core",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_order_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_created_time_from_order_reference_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_draft_from_live_order_id_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_state_from_order_record_id_nano",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_quote_record_id_from_order_reference_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_quote_status_from_order_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_return_request_from_order_enterprise",
+      "counts": {
+        "defined_original": 86,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_order_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_created_time_from_order_reference_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_draft_from_live_order_id_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_state_from_order_record_id_nano",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_quote_record_id_from_order_reference_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_quote_status_from_order_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_return_request_from_order_enterprise",
+      "counts": {
+        "defined_original": 86,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_order_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_created_time_from_order_reference_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_draft_from_live_order_id_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_state_from_order_record_id_nano",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_quote_record_id_from_order_reference_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_quote_status_from_order_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_return_request_from_order_enterprise",
+      "counts": {
+        "defined_original": 86,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_order_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_created_time_from_order_reference_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_draft_from_live_order_id_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_state_from_order_record_id_nano",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_quote_record_id_from_order_reference_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_quote_status_from_order_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_return_request_from_order_enterprise",
+      "counts": {
+        "defined_original": 86,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_order_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_created_time_from_order_reference_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_draft_from_live_order_id_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_order_state_from_order_record_id_nano",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_quote_record_id_from_order_reference_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_quote_status_from_order_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_audit_id_from_refund_reference",
+        "get_return_request_record_id_from_return_review_id",
+        "get_order_reference_from_return_claim_id"
+      ],
+      "unchanged_consumer": "get_return_request_from_order_enterprise",
+      "counts": {
+        "defined_original": 86,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_order_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_created_time_from_order_reference_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_draft_from_live_order_id_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_order_state_from_order_record_id_nano",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_quote_record_id_from_order_reference_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_quote_status_from_order_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_order_from_return_review_turbo"
+      ],
+      "unchanged_consumer": "get_return_request_from_order_enterprise",
+      "counts": {
+        "defined_original": 86,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_order_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_order_created_time_from_order_reference_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_order_draft_from_live_order_id_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_order_state_from_order_record_id_nano",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_quote_record_id_from_order_reference_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_quote_status_from_order_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_payment_setup_id_from_authorization_record_id_core",
+        "get_checkout_order_id_from_intent_record_id_max"
+      ],
+      "replacement": [
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_return_request_from_order_enterprise",
+      "counts": {
+        "defined_original": 86,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_order_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ],
+      "unchanged_consumer": "get_order_created_time_from_order_reference_edge",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ],
+      "unchanged_consumer": "get_order_draft_from_live_order_id_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ],
+      "unchanged_consumer": "get_order_state_from_order_record_id_nano",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ],
+      "unchanged_consumer": "get_quote_record_id_from_order_reference_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ],
+      "unchanged_consumer": "get_quote_status_from_order_instant",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick"
+      ],
+      "unchanged_consumer": "get_return_request_from_order_enterprise",
+      "counts": {
+        "defined_original": 86,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0
+      }
+    },
+    {
+      "original": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "replacement": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "unchanged_consumer": "get_cart_state_from_order_draft_reference_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "replacement": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "unchanged_consumer": "get_default_address_on_file_from_draft_order_id_max",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "replacement": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "unchanged_consumer": "get_default_method_id_from_order_draft_reference_turbo",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "replacement": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "unchanged_consumer": "get_email_from_cart_id_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "replacement": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "unchanged_consumer": "get_phone_from_draft_cart_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "replacement": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "unchanged_consumer": "get_shopper_id_from_draft_cart_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "replacement": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "unchanged_consumer": "get_updated_timestamp_from_order_draft",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_draft_item_id_from_line_item_id",
+        "get_draft_cart_id_from_order_draft_item_record_id_turbo"
+      ],
+      "replacement": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast"
+      ],
+      "unchanged_consumer": "get_user_name_from_in_progress_order_id_realtime",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_account_id_from_pricing_quote_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_completed_order_record_id_from_pricing_quote_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_draft_cart_id_from_quote_record_id_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_price_snapshot_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_precheckout_status_from_pricing_quote_id_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_quote_state_from_quote_id_enterpri",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_live_order_id_from_warehouse_request_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_shipment_record_id_from_warehouse_job_id_prime",
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_updated_recorded_at_from_pricing_quote_id_v2",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_account_id_from_pricing_quote_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_completed_order_record_id_from_pricing_quote_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_draft_cart_id_from_quote_record_id_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_price_snapshot_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_precheckout_status_from_pricing_quote_id_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_quote_state_from_quote_id_enterpri",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_updated_recorded_at_from_pricing_quote_id_v2",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_account_id_from_pricing_quote_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_completed_order_record_id_from_pricing_quote_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_draft_cart_id_from_quote_record_id_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_estimated_order_total_from_price_snapshot_id_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_precheckout_status_from_pricing_quote_id_fast",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_quote_state_from_quote_id_enterpri",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_quote_record_id_from_order_reference_fast"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_refund_from_payment_quick",
+        "get_return_claim_id_from_refund_record_id_max",
+        "get_quote_id_from_return_request_record_id_mini"
+      ],
+      "unchanged_consumer": "get_updated_recorded_at_from_pricing_quote_id_v2",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_account_email_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_default_address_from_shopper_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_phone_on_file_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_saved_method_id_from_user_record_id_max",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_user_name_from_user_reference_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_account_email_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_default_address_from_shopper_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_phone_on_file_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_saved_method_id_from_user_record_id_max",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_user_name_from_user_reference_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_account_email_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_default_address_from_shopper_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_phone_on_file_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_saved_method_id_from_user_record_id_max",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_quote_from_payment_intent_max",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "replacement": [
+        "get_checkout_order_id_from_intent_record_id_max",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_draft_cart_id_from_quote_record_id_fast",
+        "get_shopper_id_from_draft_cart_id"
+      ],
+      "unchanged_consumer": "get_user_name_from_user_reference_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_account_email_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_default_address_from_shopper_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_phone_on_file_from_user_id",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_saved_method_id_from_user_record_id_max",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    },
+    {
+      "original": [
+        "get_billing_method_id_from_payment_session_id_fast",
+        "get_account_id_from_saved_payment_method_id"
+      ],
+      "replacement": [
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_live_order_id_from_payment_auth_id_v3",
+        "get_return_request_from_order_enterprise",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id"
+      ],
+      "unchanged_consumer": "get_user_name_from_user_reference_swift",
+      "counts": {
+        "defined_original": 100,
+        "admitted": 86,
+        "same_final_value": 86,
+        "wrong_or_undefined_final_value": 0,
+        "certificate_rejected": 14
+      }
+    }
+  ]
+}

@@ -16,7 +16,12 @@ def main() -> None:
         if (not path.is_file() or path.name in SKIP_NAMES
                 or any(part in SKIP_PARTS for part in path.parts)):
             continue
-        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        data = path.read_bytes()
+        # .gitattributes stores text with LF even when a Windows worktree has
+        # CRLF, so hash the bytes readers obtain from a fresh Git checkout.
+        if b"\0" not in data and path.suffix.lower() != ".pdf":
+            data = data.replace(b"\r\n", b"\n")
+        digest = hashlib.sha256(data).hexdigest()
         rows.append(f"{digest}  {path.relative_to(ROOT).as_posix()}")
     (ROOT / "MANIFEST.sha256").write_text("\n".join(rows) + "\n", encoding="utf-8")
     print(f"Wrote {len(rows)} checksums.")
@@ -24,4 +29,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

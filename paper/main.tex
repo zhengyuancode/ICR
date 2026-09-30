@@ -26,7 +26,7 @@ fym10276612@email.swu.edu.cn}
 \IEEEauthorblockA{\textit{Southwest University}\\
 Chongqing, China\\
 liubocq@swu.edu.cn}
-\thanks{\textsuperscript{*}Corresponding author: Bo Liu.}}
+\thanks{\textsuperscript{*}Corresponding author: Bo Liu}}
 \maketitle
 \begin{abstract}
 \input{generated_candidate_abstract.tex}
@@ -42,16 +42,15 @@ workflow. Interleaved reasoning and action~\cite{react} leaves dependency
 repair to repeated local decisions.
 
 Call-level substitution is insufficient when a replacement changes the
-representation consumed downstream. Conversely, replacing an entire suffix
-discards valid work and enlarges the surface on which the model can err. The
-missing abstraction is a recovery program whose changed region ends exactly
-where it reconnects to the unchanged workflow. Such a program must also
+representation consumed downstream. Conversely, replacing an entire suffix discards valid work and gives the model more decisions where it can fail.
+ What is needed instead is a recovery program whose changed region ends exactly where it reconnects to the unchanged workflow.
+ Such a program must also
 preserve the failed operation's boundary value at the observed input; interface
 connectivity alone cannot establish this property.
 
 We introduce Interface-Closed Recovery (ICR) and make three contributions.
 First, we formulate failed-tool recovery as joint implementation and scope
-selection, define its least reconnection boundary, and derive exact solvers for
+selection, define its least reconnection boundary, and derive exact structural solvers for
 forests and bounded-width port-bound directed acyclic graphs (DAGs).
 Second, we construct a recovery packet from function-eligible programs,
 validated context, observed-value binding, and admitted boundary-value effects. For
@@ -60,9 +59,11 @@ equivalence at the observed failed input under trusted tool contracts and a
 fixed relation snapshot, without executing candidate paths. This retains safe
 alternatives excluded by global equivalence. The packet can guide model choice
 or, under a separate policy, authorize local dispatch. Third,
-we test structural exactness on TaskBench, executable boundary-value contracts and
-native-agent recovery on PlanBench-XL, including a separately frozen 72-task
+we test structural exactness on TaskBench, joint scope and value admission in
+an executor-backed integration replay, and native-agent recovery on PlanBench-XL,
+including a separately frozen 72-task
 confirmation and a 20-prefix same-state test of the observed-input certificate.
+ICR is available at \url{https://github.com/zhengyuancode/ICR}.
 
 \input{motivation_problem.tex}
 

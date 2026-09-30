@@ -1,8 +1,7 @@
 \section{Related Work}
 \textbf{Tool planning and recovery.}
 ReAct and LLMCompiler establish model-led tool reasoning and program
-execution~\cite{react,llmcompiler}; TaskBench and PlanBench-XL provide typed
-workflows and path-preserving failure tests~\cite{taskbench,planbenchxl}.
+execution~\cite{react,llmcompiler}.
 HEART, ParaRecover, AgentTether, and AgentRewind address schema-guided recovery,
 replanning, guarded actions, and rollback~\cite{heart,pararecover,agenttether,
 agentrewind}. ICR instead resolves a concrete failed call by jointly selecting
@@ -19,14 +18,11 @@ optimization with observed-value binding; conditional equivalence and path-view
 rewriting motivate its input-specific boundary-value certificate
 ~\cite{kawaguchi2010conditional,romero2020pathviews}.
 
-For a fixed assignment, ICR closure is Horn-style implication reachability;
-joint choice is a weighted constraint problem solved by tree DP or standard
-variable elimination~\cite{dechter1999bucket}. The contribution is the repair
-formulation that makes the reconnection boundary a decision variable and
-composes it with observed-input value evidence. DART, REVISE, and AgentRewind
-repair or roll back execution graphs, whereas Contract2Tool and ToolGate guard
-individual calls; none of these abstractions jointly selects an implementation,
-its least closed scope, and an input-specific relational witness.
+For a fixed assignment, closure is Horn reachability; joint choice uses tree
+DP or standard variable elimination~\cite{dechter1999bucket}. The repair
+formulation selects a reconnection boundary and composes it with observed-input
+evidence. Prior graph-repair systems and call-level guards do not jointly
+select an implementation, its closed scope, and an input-specific witness.
 
 \textbf{Execution authority and evaluation.}
 Agent-First Tooling and transactional runtimes separate proposed from committed

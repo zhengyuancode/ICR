@@ -1,0 +1,403 @@
+{
+  "role": "Post hoc trace diagnostic, not a causal mediation estimate",
+  "confirmation72_discordant_counts": {
+    "gain_packet": 17,
+    "gain_no_packet": 3,
+    "loss_no_packet": 1
+  },
+  "confirmation72_discordant_rows": [
+    {
+      "query_id": "retail_query_0116",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 34,
+      "icr_steps": 16,
+      "native_executed_tools": 11,
+      "icr_executed_tools": 8,
+      "icr_successful_tool_names": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_refund_completed_at_from_refund_transaction_id_v3"
+      ]
+    },
+    {
+      "query_id": "retail_query_0120",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 35,
+      "icr_steps": 70,
+      "native_executed_tools": 2,
+      "icr_executed_tools": 10,
+      "icr_successful_tool_names": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_auth_state_from_posted_payment_id_edge"
+      ]
+    },
+    {
+      "query_id": "retail_query_0121",
+      "outcome": "gain",
+      "recovery_events": 2,
+      "native_steps": 47,
+      "icr_steps": 52,
+      "native_executed_tools": 5,
+      "icr_executed_tools": 11,
+      "icr_successful_tool_names": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_checkout_intent_status_from_authorization_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0124",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 22,
+      "icr_steps": 42,
+      "native_executed_tools": 5,
+      "icr_executed_tools": 9,
+      "icr_successful_tool_names": [
+        "get_outbound_shipment_id_from_attempt_record_id_v2_preview",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_payment_method_from_auth_id_edge"
+      ]
+    },
+    {
+      "query_id": "retail_query_0147",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 18,
+      "icr_steps": 26,
+      "native_executed_tools": 4,
+      "icr_executed_tools": 9,
+      "icr_successful_tool_names": [
+        "get_draft_item_id_from_cart_id_and_sku_id",
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_refund_status_from_refund_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0154",
+      "outcome": "gain",
+      "recovery_events": 0,
+      "native_steps": 33,
+      "icr_steps": 22,
+      "native_executed_tools": 7,
+      "icr_executed_tools": 6,
+      "icr_successful_tool_names": [
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0165",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 16,
+      "icr_steps": 18,
+      "native_executed_tools": 4,
+      "icr_executed_tools": 8,
+      "icr_successful_tool_names": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_refund_completed_at_from_refund_transaction_id_v3"
+      ]
+    },
+    {
+      "query_id": "retail_query_0179",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 18,
+      "icr_steps": 22,
+      "native_executed_tools": 3,
+      "icr_executed_tools": 8,
+      "icr_successful_tool_names": [
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_refund_completed_at_from_refund_transaction_id_v3"
+      ]
+    },
+    {
+      "query_id": "retail_query_0185",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 70,
+      "icr_steps": 57,
+      "native_executed_tools": 8,
+      "icr_executed_tools": 8,
+      "icr_successful_tool_names": [
+        "get_placed_order_id_from_shipment_reference_quick",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0186",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 83,
+      "icr_steps": 40,
+      "native_executed_tools": 4,
+      "icr_executed_tools": 10,
+      "icr_successful_tool_names": [
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_placed_order_id_from_shipment_reference_quick_preview"
+      ]
+    },
+    {
+      "query_id": "retail_query_0192",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 20,
+      "icr_steps": 20,
+      "native_executed_tools": 3,
+      "icr_executed_tools": 8,
+      "icr_successful_tool_names": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_live_order_id_from_warehouse_request_max",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_refund_status_from_refund_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0219",
+      "outcome": "gain",
+      "recovery_events": 0,
+      "native_steps": 11,
+      "icr_steps": 41,
+      "native_executed_tools": 2,
+      "icr_executed_tools": 8,
+      "icr_successful_tool_names": [
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_order_item_from_order_and_variant_prime",
+        "get_account_id_from_pricing_quote_id",
+        "get_selected_color_from_variant_id_core",
+        "get_order_created_time_from_order_reference_edge",
+        "get_selected_size_from_sku_id",
+        "get_main_catalog_item_id_from_sku_id_v3",
+        "get_payment_status_from_customer_and_time_and_product"
+      ]
+    },
+    {
+      "query_id": "retail_query_0237",
+      "outcome": "gain",
+      "recovery_events": 2,
+      "native_steps": 29,
+      "icr_steps": 28,
+      "native_executed_tools": 6,
+      "icr_executed_tools": 10,
+      "icr_successful_tool_names": [
+        "get_fulfillment_job_id_from_delivery_try_id",
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_payment_timestamp_from_payment_id_v2"
+      ]
+    },
+    {
+      "query_id": "retail_query_0244",
+      "outcome": "gain",
+      "recovery_events": 0,
+      "native_steps": 47,
+      "icr_steps": 37,
+      "native_executed_tools": 10,
+      "icr_executed_tools": 8,
+      "icr_successful_tool_names": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_auth_id_from_payment_record_id_core",
+        "get_auth_reference_code_from_processor_auth_id_quick"
+      ]
+    },
+    {
+      "query_id": "retail_query_0255",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 14,
+      "icr_steps": 16,
+      "native_executed_tools": 3,
+      "icr_executed_tools": 7,
+      "icr_successful_tool_names": [
+        "get_order_item_reference_from_cart_item_reference_fast",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano"
+      ]
+    },
+    {
+      "query_id": "retail_query_0267",
+      "outcome": "gain",
+      "recovery_events": 2,
+      "native_steps": 21,
+      "icr_steps": 23,
+      "native_executed_tools": 4,
+      "icr_executed_tools": 11,
+      "icr_successful_tool_names": [
+        "get_color_from_order_item_id",
+        "get_pricing_snapshot_record_id_from_order_item_id_swift",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime",
+        "get_completed_payment_id_from_processor_approval_id",
+        "get_auth_state_from_posted_payment_id_edge"
+      ]
+    },
+    {
+      "query_id": "retail_query_0268",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 100,
+      "icr_steps": 88,
+      "native_executed_tools": 4,
+      "icr_executed_tools": 14,
+      "icr_successful_tool_names": [
+        "get_order_reference_from_placed_order_item_id_enterprise",
+        "get_quote_record_id_from_order_reference_fast",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_quote_id_from_return_request_record_id_mini",
+        "get_account_id_from_pricing_quote_id",
+        "get_parent_product_id_from_final_order_line_id",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_payment_id_from_refund_record_id_instant",
+        "get_checkout_intent_id_from_charge_id",
+        "get_processor_auth_id_from_payment_intent_max",
+        "get_auth_state_from_authorization_id_swift",
+        "get_checkout_intent_status_from_authorization_id"
+      ]
+    },
+    {
+      "query_id": "retail_query_0270",
+      "outcome": "loss",
+      "recovery_events": 0,
+      "native_steps": 25,
+      "icr_steps": 38,
+      "native_executed_tools": 6,
+      "icr_executed_tools": 1,
+      "icr_successful_tool_names": [
+        "get_order_reference_from_placed_order_item_id_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0299",
+      "outcome": "gain",
+      "recovery_events": 2,
+      "native_steps": 82,
+      "icr_steps": 57,
+      "native_executed_tools": 3,
+      "icr_executed_tools": 9,
+      "icr_successful_tool_names": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_quote_from_fulfillment_enterprise",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_auth_id_from_finance_refund_id_prime"
+      ]
+    },
+    {
+      "query_id": "retail_query_0309",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 11,
+      "icr_steps": 22,
+      "native_executed_tools": 2,
+      "icr_executed_tools": 8,
+      "icr_successful_tool_names": [
+        "get_fulfillment_request_id_from_parcel_record_id_edge",
+        "get_live_order_id_from_warehouse_request_max",
+        "get_order_item_from_order_and_variant_prime",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_refund_status_from_refund_enterprise"
+      ]
+    },
+    {
+      "query_id": "retail_query_0327",
+      "outcome": "gain",
+      "recovery_events": 1,
+      "native_steps": 13,
+      "icr_steps": 14,
+      "native_executed_tools": 3,
+      "icr_executed_tools": 7,
+      "icr_successful_tool_names": [
+        "get_quote_from_payment_intent_max",
+        "get_completed_order_record_id_from_pricing_quote_id",
+        "get_return_request_from_order_enterprise",
+        "get_internal_return_review_id_from_return_ticket_id_edge",
+        "get_finance_refund_id_from_review_ticket_id_nano",
+        "get_refund_completed_at_from_refund_transaction_id_v3"
+      ]
+    }
+  ],
+  "same_prefix20_local_gain_counts": {
+    "gains": 12,
+    "full_path": 4,
+    "partial_path": 8,
+    "gains_using_packet_tool": 12
+  },
+  "same_prefix20_gain_packet_tool_overlap": {
+    "2": 6,
+    "1": 5,
+    "3": 1
+  }
+}

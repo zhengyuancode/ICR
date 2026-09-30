@@ -40,6 +40,7 @@ python -m research.joint_taskbench_study --seed 20260926
 python -m research.analyze_joint_taskbench
 python -m research.joint_beam_sensitivity
 python -m research.joint_scaling
+python -m research.benchmark_joint_beam_20260930
 ```
 
 ### Multi-input DAGs
@@ -64,11 +65,22 @@ python -m research.relational_certificate_study
 python -m research.compile_planbench_instance_contracts
 python -m research.analyze_planbench_route_decisions
 python -m research.benchmark_certificate_index
+python -m research.integrated_planbench_replay
+python -m research.integrated_planbench_suffix_replay
 ```
 
 These commands use only the released tool schemas, executor, and 100-row retail
 relation. Candidate execution is used after compilation only to audit all
 31,565 path-input classifications.
+
+The additional integration replay is post-review exploratory analysis. Its
+selection rule is saved in `integrated_replay_protocol_20260930.json`; the
+output records all 32 composed two-call configurations and their 3,200 inputs.
+The suffix replay appends every compatible unchanged one-call consumer and
+records 117 executable extensions, including 10,062 certificate-admitted,
+defined configuration-input executions.
+The same-instance beam timing uses five alternating-order repetitions per
+instance and is an implementation measurement, not a new accuracy endpoint.
 
 ## 4. Online studies (API required)
 
@@ -124,6 +136,7 @@ Then analyze the frozen rows:
 ```bash
 python -m research.analyze_planbench_prefix_trial --cohort confirmation
 python -m research.analyze_planbench_prefix_type_control
+python -m research.audit_review_mechanism_20260930
 ```
 
 Hosted model services can change after publication, so a fresh API rerun need
@@ -138,4 +151,3 @@ python paper/figure_sources/generate_figures.py
 
 Compile `paper/main.tex` with an IEEE-compatible LaTeX installation or upload
 the `paper/` directory to Overleaf.
-

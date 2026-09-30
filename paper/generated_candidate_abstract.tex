@@ -1,16 +1,13 @@
 When a tool used by a language-model agent fails, replacing one call can break
 downstream interfaces or alter values needed by the remaining workflow. We
 present Interface-Closed Recovery (ICR), which jointly selects replacements and
-the smallest changed region that reconnects to unchanged execution. Its
+an interface-closed changed region that reconnects to unchanged execution. Its
 recovery packets bind observed values and carry interface, function, and boundary-value
 evidence. On a fixed read-only relation, functional dependencies and a
 common-row witness certify candidates at the observed input without executing
-them, enabling recovery advice backed by checkable evidence. Across
+them. Across
 1,901 TaskBench graphs, ICR's exact optimizer matches exhaustive search and
-finds 484 feasible repairs missed by a matched-information greedy baseline. On
-PlanBench-XL, observed-input certification admits 774 additional shortest routes
-that match native execution while avoiding 126 incorrect choices made by
-type-only admission across 9,250 failed-tool--input cases. In a sealed 72-task
+finds 484 feasible repairs missed by a matched-information greedy baseline. On PlanBench-XL, observed-input certification recovers 774 additional shortest-safe decisions relative to global certification and avoids 126 incorrect type-only selections across 9,250 failed-tool--input cases. An executor-backed replay shows that joint repair and the certificate preserve unchanged downstream calls. In a sealed 72-task
 study, the complete ICR advice system succeeds on 58 tasks versus 39 for the native agent, a paired
 gain of 26.4 percentage points. At 20 matched failure prefixes whose native-correct path
 fails global certification, ICR restores the trusted target value within 12

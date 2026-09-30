@@ -16,9 +16,7 @@ Starting with $R_0=F$, compute
  R_{k+1}=R_k\cup\{v:\exists u\in R_k,\ u\Rightarrow v\}
  \label{eq:repair-closure}
 \end{equation}
-This inflationary monotone operator reaches a fixed point $R^*_{\rho}$ on a finite
-graph. The worklist records the implication responsible for every added node,
-providing a checkable explanation of the repair region.
+Because $R_k$ only grows and the graph is finite, iteration reaches the fixed point $R^*_{\rho}$. The worklist records the implication responsible for every added node, so every node in the region has a recorded justification.
 Figure~\ref{fig:repair-obligations} illustrates both propagation directions
 and an immutable-boundary conflict.
 
@@ -71,8 +69,9 @@ composition; functional eligibility must be supplied separately.
 \input{joint_choice_method.tex}
 
 \subsection{Compiling Local Recovery Programs}
-The compiler constructs a local graph $i\to f\to c\to o$, where $f$ is the
-failed producer, $c$ a catalog-linked continuation, and $i,o$ immutable input
+The compiler uses public producer--consumer bindings to construct a local graph
+$i\to f\to c\to o$, where $f$ is the failed producer, $c$ its catalog-linked
+continuation, and $i,o$ immutable input
 and output ports. For each alternative producer and consumer in the same
 respective public categories and domains, it constructs a compatibility table
 and invokes the fixed-point closure with $F=\{f\}$ and $M=\{i,o\}$. Enumeration includes
@@ -115,6 +114,12 @@ the program before the consumer is dispatched. The original failure and both
 recovery invocations remain in the execution trace. This separates semantic
 choice from deterministic dataflow binding.
 
+The two-node compiler instantiates closure for a producer and its linked
+consumer. In PlanBench-XL, a two- to five-call unary path is instead a
+composite implementation of the failed operation, reconnecting at its output
+port. This setting evaluates path admission and online advice; TaskBench
+evaluates multi-node joint scope.
+
 \subsection{Recovery Packet and Authority Boundary}
 At an observed failure record $\xi$ containing failed input $a$, let
 $\mathcal{P}(\xi)$ be the locally compiled interface-closed programs. A declared
@@ -151,9 +156,7 @@ selects $p$. Executing $p$
 preserves the unchanged dataflow boundary; its consumer receives a projection
 of the observed producer result, not a predicted value.
 
-Within the declared local class, this rule removes a determined choice from
-the model's action space; ambiguous or uncertified recovery remains with the
-model. The certificate establishes local execution admissibility, while eager
+The certificate establishes local execution admissibility, while eager
 dispatch is an authority policy that changes the agent's subsequent history.
 The online advice control exposes the same certificate and context but leaves
 selection and execution to the model.
@@ -169,11 +172,14 @@ dependencies $X_0\to X_\ell$ and $X_{j-1}\to X_j$ for every path edge, plus
  \exists r\in T:\ r[X_0]=a\ \land\ \bigwedge_{j=0}^{\ell}r[X_j]\ne\mathrm{NULL}
  \label{eq:input-support}
 \end{equation}
+Global certification requires this witness for every input in the original
+tool's defined domain; observed-input certification requires it only at $a$.
 Here $\mathrm{NULL}$ is a missing database cell, distinct from a tool exception
 or failed invocation. Values are compared after the benchmark executor's public
 normalization; lossy or nonunique conversions do not satisfy $\Phi$. The row witnesses a defined route; the dependencies make every edge
 single-valued. Induction proves that $\pi(a)$ equals the failed tool's result
-without executing $\pi$. This specializes database dependencies and conditional
+without executing $\pi$. The witness condition is sufficient, not necessary
+for equality on arbitrary relations. This specializes database dependencies and conditional
 equivalence~\cite{abiteboul1995foundations,kawaguchi2010conditional} to a
 failure-time gate. The guarantee is conditional on the declared projection
 semantics, the functional dependencies holding on $T$, and an unchanged
@@ -185,6 +191,6 @@ this gate with global certification and type-only admission.
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{figures/input_index_certificate_adjusted.pdf}
-\caption{Observed-input certification of a globally rejected relational route.}
+\caption{Schematic of observed-input certification for a globally rejected route.}
 \label{fig:input-index-certificate}
 \end{figure}

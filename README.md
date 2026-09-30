@@ -19,7 +19,6 @@ python -m pip install -r requirements.txt
 python scripts/verify_claims.py
 python -m pytest experiments/test_repair_region.py \
   experiments/test_joint_repair.py experiments/test_port_joint_repair.py
-python paper/figure_sources/generate_figures.py
 ```
 
 `verify_claims.py` recomputes the reported denominators, paired contrasts, and
@@ -60,10 +59,13 @@ show complete input constructions.
 | Joint implementation/scope optimization | `experiments/joint_repair.py` | `joint_taskbench_results*.json`, `joint_beam_*.json` |
 | Port-bound DAG optimization | `experiments/port_joint_repair.py` | `port_dag_taskbench_*.json` |
 | Observed-input certificate | `research/relational_certificate_study.py`, `research/compile_planbench_instance_contracts.py` | `planbench_*contracts.json`, `planbench_route_decisions.json` |
+| Exploratory two-call integration replay | `research/integrated_planbench_replay.py` | `integrated_replay_20260930.json`, `integrated_replay_protocol_20260930.json` |
+| Unchanged downstream execution audit | `research/integrated_planbench_suffix_replay.py` | `integrated_suffix_replay_20260930.json` |
+| Same-instance tree DP versus beam timing | `research/benchmark_joint_beam_20260930.py` | `joint_beam_timing_20260930.json` |
 | 72-task system confirmation | `research/analyze_planbench_seed43_confirmation.py` | `planbench_seed43_*protocol.json`, `planbench_seed43_confirmation72_analysis.json` |
 | 21-task matched policy control | `research/analyze_planbench_final_holdout.py` | `planbench_final_*` |
 | 20-prefix matched-state control | `research/analyze_planbench_prefix_trial.py` | `planbench_prefix_*` |
-| Paper figures | `paper/figure_sources/generate_figures.py` | the same frozen result records |
+| Post hoc trajectory mechanism audit | `research/audit_review_mechanism_20260930.py` | `review_mechanism_audit_20260930.json` |
 
 The evidence directory contains graph-level records for the structural studies
 and task-level rows for every online denominator used in the paper. Large

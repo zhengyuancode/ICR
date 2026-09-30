@@ -198,6 +198,38 @@ def main() -> None:
         "type_only_same_path_as_observed": typed["typed_same_path_as_instance"],
     }
 
+    integration = read("integrated_replay_20260930.json")
+    ic = integration["counts"]
+    assert (ic["structural_workflows"], ic["defined_original_inputs"]) == (32, 3200)
+    assert (ic["observed_admitted"], ic["observed_correct"], ic["observed_wrong"]) == (2752, 2752, 0)
+    assert (ic["observed_rejected"], ic["type_only_wrong"]) == (448, 448)
+    assert len({tuple(row["original"]) for row in integration["workflows"]}) == 18
+    reproduced["exploratory_integration_replay"] = ic
+
+    suffix = read("integrated_suffix_replay_20260930.json")
+    sc = suffix["counts"]
+    assert sc["three_call_configurations"] == 117
+    assert sc["admitted"] == sc["same_final_value"] == 10062
+    assert sc["wrong_or_undefined_final_value"] == 0
+    reproduced["exploratory_unchanged_continuation_replay"] = sc
+
+    mechanism = read("review_mechanism_audit_20260930.json")
+    assert mechanism["confirmation72_discordant_counts"] == {
+        "gain_packet": 17, "gain_no_packet": 3, "loss_no_packet": 1,
+    }
+    local_gain = mechanism["same_prefix20_local_gain_counts"]
+    assert (local_gain["gains"], local_gain["full_path"],
+            local_gain["partial_path"], local_gain["gains_using_packet_tool"]) == (12, 4, 8, 12)
+    reproduced["post_hoc_mechanism_diagnostics"] = {
+        "confirmation72": mechanism["confirmation72_discordant_counts"],
+        "same_prefix20": local_gain,
+    }
+
+    timing = read("joint_beam_timing_20260930.json")
+    assert timing["agreement"]["instances"] == 6975
+    assert timing["agreement"]["same_status_and_cost"] == 6975
+    reproduced["joint_solver_same_instance_timing"] = timing["timing_ms"]
+
     scaling = read("joint_scaling.json")["rows"]
     repair_scaling = read("repair_region_scaling.json")["rows"]
     index = read("certificate_index_benchmark.json")

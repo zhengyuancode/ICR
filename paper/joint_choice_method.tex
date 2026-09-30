@@ -21,6 +21,9 @@ assignment vector is $\vec{x}=(x_v)_{v\in V}$, and its repair region is
 $R(\vec{x})=\{v:x_v\ne0_v\}$. Thus candidate choice and
 scope are decided together; a cheap seed replacement that forces an expensive
 neighbor need not be chosen.
+Theorems~3 and~4 optimize this structural objective. The local compiler
+enumerates bounded candidate assignments and then applies context and
+boundary-value admission to each resulting program.
 
 For a forest, root each underlying undirected component arbitrarily. For a
 tree parent $v$ and child $w$, let $B_{vw}(s,t)=\Gamma_{vw}(s,t)$ when
@@ -97,5 +100,4 @@ With arbitrary supplied pairwise compatibility predicates, deciding whether
 any joint repair exists is nondeterministic polynomial-time (NP)-complete even when the dependency graph is a
 DAG and each failed node has only three eligible replacements: orient a
 3-coloring instance acyclically and make adjacent replacement colors
-incompatible. Bounded width is therefore a substantive tractability
-condition.
+incompatible. Bounded width therefore gives a tractable exact class.

@@ -31,7 +31,8 @@ valid program may still require task-specific arguments before commitment.
 \begin{figure*}[t]
 \centering
 \includegraphics[width=.96\textwidth]{figures/continuation_workflow.pdf}
-\caption{ICR workflow: boundary closure, certification, and policy-gated execution.}
+\caption{Interface-closed recovery from local substitution to a certified,
+policy-gated continuation.}
 \label{fig:continuation-workflow}
 \end{figure*}
 
@@ -46,17 +47,16 @@ specified by $\rho$. The original graph satisfies $C^{\rho}_{uv}(0,0)$.
 
 A repair region $R$ is feasible for $\rho$ if
 \begin{equation}
- F\subseteq R,\qquad R\cap M=\varnothing,\qquad
+ F\subseteq R\qquad R\cap M=\varnothing\qquad
  \bigwedge_{(u,v)\in E}C^{\rho}_{uv}(\mathbf{1}_{u\in R},\mathbf{1}_{v\in R})
  \label{eq:region-feasibility}
 \end{equation}
-The objective minimizes the nonnegative cost of changed nodes. External ports
+The structural objective minimizes the nonnegative cost of changed nodes. External ports
 are immutable, so feasibility explicitly preserves the interface to unchanged
 context. The least feasible region under $\rho$ induces a program $p_{\rho}$.
 Let $\Phi(p_{\rho},a)$ denote boundary-value eligibility at the observed input and
 $K(p_{\rho},\xi)$ the validated context, with $K(p_{\rho},\xi)=\bot$ on
-validation failure. Full admission minimizes change cost subject
-to~\eqref{eq:region-feasibility}, $\Phi(p_{\rho},a)=1$, and
-$K(p_{\rho},\xi)\ne\bot$. Structural closure is checked before value admission:
-ports connecting is necessary but never treated as evidence of equivalent
-behavior.
+validation failure. Structural closure supplies candidate programs satisfying
+\eqref{eq:region-feasibility}; admission additionally requires
+$\Phi(p_{\rho},a)=1$ and $K(p_{\rho},\xi)\ne\bot$. Port connectivity alone
+does not establish boundary-value equivalence.

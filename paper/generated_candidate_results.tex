@@ -30,17 +30,19 @@ forward greedy rule, a gain of 6.9 percentage points (graph-bootstrap 95\% inter
 elimination matches the oracle at every one of 568 oracle-checkable positions.
 With four implementations per operation, width-eight beams miss one to four
 feasible DAG repairs across three independent seeds; elimination remains exact.
+On the same 6,975 forest instances, five-repeat per-instance median wall times
+are 0.035\,ms for exact DP and 0.029\,ms for width-eight beam; 95th-percentile
+times are 0.052 and 0.073\,ms, respectively.
 On three-choice chains, the exact DP scales from 0.040\,ms at three nodes to
 117.4\,ms at 10,000 nodes, whereas exhaustive enumeration already takes
 51.6\,ms at 11 nodes.
-The graph experiments preserve each published operation's identity while
-varying declared interface formats, isolating repair-scope optimization from
-language-model generation.
+The graph experiments preserve each published operation's identity while varying declared interface formats. This isolates repair-scope optimization from language-model generation.
+
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=.97\textwidth]{figures/results_overview.pdf}
-\caption{PlanBench-XL results: (a) 31,565 path--input pairs; (b) 72 tasks; (c) 20 matched prefixes.}
+\caption{PlanBench-XL outcomes: (a) 31,565 path--input pairs; (b) 72 tasks; (c) 20 prefixes. In (b,c), bars show percentages and labels show counts.}
 \label{fig:results-overview}
 \end{figure*}
 
@@ -59,17 +61,23 @@ admitted by the observed-input certificate matches the native shortest-safe orac
 9,124 safe routes and 126 abstentions. Global certification finds 8,350
 safe routes and abstains 900 times; type-only routing makes 126 wrong route
 selections among these 9,250 decisions. The observed-input certificate thus recovers 774 safe decisions without
-accepting the type-only errors.
+accepting the type-only errors. A calibration/held-out replay control admits
+282 of 341 paths, all matching the original on held-out inputs; global
+certification admits the same paths without executing candidates.
+
+Across 32 two-call configurations (18 original pairs) and 3,200 defined inputs,
+a producer-only replacement is interface-infeasible, forcing both nodes into
+the joint repair region. Global certification rejects all alternatives by
+construction; observed-input certification admits 2,752, all boundary-value-
+equal in native execution, and rejects 448, all value-unequal. This exploratory
+program replay is separate from online agent evaluation.
+Across 117 defined three-call extensions, the unchanged downstream consumer
+returns the original final value in all 10,062 admitted configuration--input
+executions.
 
 \subsection{Native-Agent Recovery}
-On 29 development first-failure prefixes, observed-input advice passes 26
-continuations versus 20 for global advice (six paired gains, zero losses;
-exact McNemar $p=0.031$). Four gains follow newly available packets. The
-independent-task test below checks whole-trajectory transfer.
-
-Table~\ref{tab:online-ablation} reports matched admission-rule controls: its
-first row is whole-task pass and its second is trusted-target restoration
-within 12 turns.
+Table~\ref{tab:online-ablation} reports matched admission-rule controls at
+their respective task and prefix endpoints.
 On the sealed 72-task seed-43 confirmation
 (Fig.~\ref{fig:results-overview}(b)), ICR advice passes 58 tasks
 versus 39 natively: 20 paired gains and one loss, a gain of 26.4 percentage
@@ -79,17 +87,21 @@ and target datatype (19 groups) gives [16.1, 37.2] and [16.7, 35.5]
 percentage-point intervals. Mean model requests differ by $-0.32$ per
 task [$-3.99$, 3.32]. ICR emits 33 advice packets, and 17 of the 20 gains
 contain a recovery event.
-Across all 102 frozen eligible seed-43 tasks, including the 30-task diagnostic
-stage, descriptive completion is 79/102 for ICR and 54/102 natively.
+The other three gains and the sole loss contain no advice packet; their
+discordant outcomes are not attributed to packet use.
+This contrast measures the complete advice system against native execution;
+the matched admission-policy controls are reported separately below.
+Across all 102 frozen eligible seed-43 tasks, including the 30-task diagnostic stage, ICR completes 79/102 and the native agent 54/102. These combined counts are descriptive.
+
 
 \begin{table}[t]
 \centering\small\setlength{\tabcolsep}{4pt}
 \caption{Matched PlanBench-XL online controls.}
 \label{tab:online-ablation}
 \begin{tabular}{ccccc}\toprule
-\textbf{Frozen unit} & \textbf{Native} & \textbf{Global} & \textbf{Type only} & \textbf{ICR obs.}\\\midrule
-21 tasks & 8/21 & \textbf{15/21} & \textbf{15/21} & \textbf{15/21}\\
-20 prefixes & N/A & 7/20 & \textbf{19/20} & \textbf{19/20}\\
+\textbf{Unit / endpoint} & \textbf{Native} & \textbf{Global} & \textbf{Type only} & \textbf{ICR obs.}\\\midrule
+\shortstack{21 tasks\\task pass} & 8/21 & \textbf{15/21} & \textbf{15/21} & \textbf{15/21}\\
+\shortstack{20 prefixes\\target recovery} & N/A & 7/20 & \textbf{19/20} & \textbf{19/20}\\
 \bottomrule\end{tabular}
 \end{table}
 
@@ -107,8 +119,9 @@ confirmation (Fig.~\ref{fig:results-overview}(c)). Observed-input advice versus
 global-certificate advice yields 12 paired local gains, no losses, a difference of 60 percentage
 points (paired bootstrap 95\% interval [40, 80]; two-sided exact McNemar
 $p=0.00049$). Whole-task success has 13 gains, no losses ($p=0.00024$).
-Every local gain invokes a packet tool; four execute the full path. The
-pilot enters neither test. In the ancillary type-only replay, all 20 first
+All 12 local gains invoke a packet tool; four execute the full path. The other
+eight recover the target without executing the entire suggested sequence with
+matching dataflow. The pilot is excluded from both tests.
+ In the ancillary type-only replay, all 20 first
 paths coincide with and pass the observed-input certificate, yielding the
-same local endpoint. Figure~\ref{fig:results-overview}(a) identifies the safety
-distinction over the complete path--input relation.
+same local endpoint. Figure~\ref{fig:results-overview}(a) compares safe and incorrect admissions across all 31,565 path--input pairs.
