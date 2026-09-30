@@ -1,33 +1,27 @@
 \section{Related Work}
 \textbf{Tool planning and recovery.}
-ReAct and LLMCompiler establish model-led tool reasoning and program
-execution~\cite{react,llmcompiler}.
-HEART, ParaRecover, AgentTether, and AgentRewind address schema-guided recovery,
-replanning, guarded actions, and rollback~\cite{heart,pararecover,agenttether,
-agentrewind}. ICR instead resolves a concrete failed call by jointly selecting
-replacement implementations and the least region that reconnects to the
-continuation.
+ReAct and LLMCompiler support tool reasoning and program execution
+~\cite{react,llmcompiler}. HEART, ParaRecover, AgentTether, and AgentRewind
+address recovery, replanning, guarded actions, and rollback
+~\cite{heart,pararecover,agenttether,agentrewind}. ICR jointly selects
+replacement implementations and the least reconnection region at a failed call.
 
 \textbf{Contracts and graph repair.}
-Contract2Tool and ToolGate encode operation preconditions, effects, and
-invocation guards~\cite{contract2tool,toolgate_published}; Atomic Task Graph,
-counterfactual replay, DART, and REVISE structure tasks or repair execution
-graphs~\cite{atg,gcjr,dart,revise}. Service reconfiguration addresses component
-interfaces~\cite{servicereconfiguration}. ICR combines implementation and scope
-optimization with observed-value binding; conditional equivalence and path-view
-rewriting motivate its input-specific boundary-value certificate
+Contract2Tool and ToolGate encode preconditions and invocation guards
+~\cite{contract2tool,toolgate_published}; Atomic Task Graph, counterfactual
+replay, DART, and REVISE structure tasks or repair graphs
+~\cite{atg,gcjr,dart,revise}. Service reconfiguration addresses interfaces
+~\cite{servicereconfiguration}. Conditional equivalence and path-view rewrites
+motivate our input-specific certificate
 ~\cite{kawaguchi2010conditional,romero2020pathviews}.
 
-For a fixed assignment, closure is Horn reachability; joint choice uses tree
-DP or standard variable elimination~\cite{dechter1999bucket}. The repair
-formulation selects a reconnection boundary and composes it with observed-input
-evidence. Prior graph-repair systems and call-level guards do not jointly
-select an implementation, its closed scope, and an input-specific witness.
+Fixed-assignment closure is Horn reachability; joint choice uses tree DP or
+variable elimination~\cite{dechter1999bucket}. Our formulation composes the
+chosen implementation and closed scope with an observed-input witness.
 
 \textbf{Execution authority and evaluation.}
-Agent-First Tooling and transactional runtimes separate proposed from committed
-effects~\cite{aft,cordon,mnemosyne2026}; provenance and AgentProp-Bench expose
-authorization and parameter-propagation failures~\cite{pactprovenance,
-agentprop}. ICR makes this boundary explicit: local interface and boundary-value
-evidence determines admissibility, while grounded task context determines
-authority to commit.
+Agent-First Tooling and transactional runtimes separate proposals from
+committed effects~\cite{aft,cordon,mnemosyne2026}; provenance and
+AgentProp-Bench expose authorization and parameter failures
+~\cite{pactprovenance,agentprop}. ICR similarly separates local admissibility
+from authority to commit.

@@ -36,33 +36,26 @@ language-model agents, workflow recovery, interface contracts, program synthesis
 \end{IEEEkeywords}
 
 \section{Introduction}
-Language-model agents coordinate tools for multi-step tasks. When a tool fails,
-the agent must find an alternative whose result still supports the remaining
-workflow. Interleaved reasoning and action~\cite{react} leaves dependency
-repair to repeated local decisions.
+Language-model agents must recover from failed tools while preserving the
+remaining workflow. Interleaved reasoning and action~\cite{react} leaves
+dependency repair to local model decisions.
 
-Call-level substitution is insufficient when a replacement changes the
-representation consumed downstream. Conversely, replacing an entire suffix discards valid work and gives the model more decisions where it can fail.
- What is needed instead is a recovery program whose changed region ends exactly where it reconnects to the unchanged workflow.
- Such a program must also
-preserve the failed operation's boundary value at the observed input; interface
-connectivity alone cannot establish this property.
+Replacing one call can break its consumer; replacing the entire suffix discards
+valid work. Recovery must choose where to reconnect and preserve the failed
+operation's boundary value at the observed input. Interface connectivity alone
+cannot establish value preservation.
 
 We introduce Interface-Closed Recovery (ICR) and make three contributions.
-First, we formulate failed-tool recovery as joint implementation and scope
-selection, define its least reconnection boundary, and derive exact structural solvers for
-forests and bounded-width port-bound directed acyclic graphs (DAGs).
-Second, we construct a recovery packet from function-eligible programs,
-validated context, observed-value binding, and admitted boundary-value effects. For
-relational tools, a compositional dependency-and-support certificate proves
-equivalence at the observed failed input under trusted tool contracts and a
-fixed relation snapshot, without executing candidate paths. This retains safe
-alternatives excluded by global equivalence. The packet can guide model choice
-or, under a separate policy, authorize local dispatch. Third,
-we test structural exactness on TaskBench, joint scope and value admission in
-an executor-backed integration replay, and native-agent recovery on PlanBench-XL,
-including a separately frozen 72-task
-confirmation and a 20-prefix same-state test of the observed-input certificate.
+First, we define joint implementation-and-scope repair with a least
+reconnection boundary and exact structural solvers for forests and bounded-width
+port-bound directed acyclic graphs (DAGs). Second, a recovery packet combines
+function eligibility, validated context, observed-value binding, and a
+boundary-value certificate. On a fixed relation under trusted tool contracts,
+dependency and row-support evidence admits input-specific paths without
+executing candidates; separate policies govern advice and dispatch. Third,
+TaskBench tests structural exactness, an executor replay tests combined scope
+and value admission, and PlanBench-XL supplies sealed 72-task and 20-prefix
+native-agent comparisons.
 ICR is available at \url{https://github.com/zhengyuancode/ICR}.
 
 \input{motivation_problem.tex}

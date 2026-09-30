@@ -16,9 +16,9 @@ Starting with $R_0=F$, compute
  R_{k+1}=R_k\cup\{v:\exists u\in R_k,\ u\Rightarrow v\}
  \label{eq:repair-closure}
 \end{equation}
-Because $R_k$ only grows and the graph is finite, iteration reaches the fixed point $R^*_{\rho}$. The worklist records the implication responsible for every added node, so every node in the region has a recorded justification.
-Figure~\ref{fig:repair-obligations} illustrates both propagation directions
-and an immutable-boundary conflict.
+Monotonicity on a finite graph yields $R^*_{\rho}$; the worklist records each
+forced inclusion. Figure~\ref{fig:repair-obligations} shows both propagation
+directions and a boundary conflict.
 
 \begin{figure}[t]
 \centering
@@ -39,11 +39,10 @@ so it contains $R^*_{\rho}$. Edges $(u,v)$ with both endpoints outside retain
 $C^{\rho}_{uv}(0,0)$; closure checks
 mixed edges, and the final test checks internal edges.
 
-It follows that $R^*_{\rho}$ minimizes any nonnegative additive node-change cost for
-the fixed assignment. A worklist examines each node once and each edge at most
-twice, taking $O(|V|+|E|)$ time after compatibility is available. Enumerating a
-finite assignment set $\mathcal{A}$ and choosing its smallest feasible closure
-is exact over $\mathcal{A}$; the cost of discovering that set is separate.
+Thus $R^*_{\rho}$ minimizes nonnegative additive change cost for fixed $\rho$.
+A worklist takes $O(|V|+|E|)$ time after compatibility is available. Searching
+a finite assignment set $\mathcal{A}$ is exact over that set; candidate
+discovery has separate cost.
 
 \textbf{Theorem 2 (contextual interface preservation).}
 When compatibility predicates are sound for the port contracts, replacing
@@ -60,11 +59,9 @@ the original contract, closure, or final test checks each case, respectively.
 Topological induction then propagates valid types, and matching exposed
 values preserves the deterministic suffix.
 
-These properties identify when single-call substitution is insufficient:
-if $\neg C^{\rho}_{fc}(1,0)$, every feasible repair containing the failed producer
-$f$ must also include consumer $c$. The boundary, rather than a fixed repair
-depth, determines where repair may stop. The guarantees concern interface
-composition; functional eligibility must be supplied separately.
+If $\neg C^{\rho}_{fc}(1,0)$, every feasible repair of failed producer $f$
+also changes consumer $c$. Reconnection, not fixed depth, determines the scope;
+functional eligibility remains a separate requirement.
 
 \input{joint_choice_method.tex}
 
@@ -79,14 +76,10 @@ the original consumer and does not prefilter on internal or output-boundary
 compatibility. Closure therefore determines whether to retain $c$, replace
 it, or reject the assignment.
 
-Three evidence tests instantiate this table. The input edge requires a
-lossless transport of the observed failed-call arguments. The internal edge
-uses nominal producer references and a unique payload projection for each
-old--new combination. The output edge requires the chosen consumer's
-normalized public output schema to equal the original boundary. The compiler
-stores every forced inclusion and rejection alongside the emitted program.
-It emits only the nodes chosen by closure as replacements; an unchanged
-consumer can still execute as the continuation.
+The input edge requires lossless argument transport; the internal edge uses
+nominal references and a unique payload projection; the output edge requires
+the original normalized output schema. Forced inclusions and rejections are
+recorded. Closure replaces only selected nodes and may retain the consumer.
 
 \textbf{Corollary (local structural admission).}
 If the alternative producer cannot bind to the original consumer, then a
@@ -96,29 +89,18 @@ $\{f,c\}$. Otherwise, a valid input transport admits the producer-only region
 $\{f\}$ with the original consumer. Function, context, and boundary-value gates are
 applied after this structural test.
 
-With $f$ forced and the ports immutable, an incompatible original consumer
-forces $c$ into the region. The three evidence tests then check precisely its
-input, internal, and output boundaries.
+With $f$ forced and external ports immutable, an incompatible original
+consumer forces $c$ into the region. Input, internal, and output checks then
+establish structural feasibility. Theorem~2 supplies typing under sound port
+contracts; the separate value predicate checks semantic eligibility.
 
-Theorem~1 applies exactly to this Boolean structural relation. Nominal
-annotations establish payload identity for interface checking; the separate
-boundary-value predicate establishes semantic eligibility. Concrete input validation
-checks the selected dataflow at execution time. Theorem~2 gives the typing
-guarantee under sound application port contracts.
+The executor invokes the chosen producer, binds its actual output into the
+consumer, validates that input, then invokes the consumer. Producer failure
+stops before consumer dispatch; all calls remain in the trace.
 
-Each candidate exposes a function whose arguments contain only the context
-still needed from the model. After selection, the executor invokes the
-producer, binds its actual successful output into the consumer, validates
-the resulting input, and invokes the consumer. A failed producer interrupts
-the program before the consumer is dispatched. The original failure and both
-recovery invocations remain in the execution trace. This separates semantic
-choice from deterministic dataflow binding.
-
-The two-node compiler instantiates closure for a producer and its linked
-consumer. In PlanBench-XL, a two- to five-call unary path is instead a
-composite implementation of the failed operation, reconnecting at its output
-port. This setting evaluates path admission and online advice; TaskBench
-evaluates multi-node joint scope.
+The two-node compiler instantiates closure on a producer and linked consumer.
+PlanBench-XL also uses two- to five-call paths as composite implementations of
+a failed operation, reconnecting at its output. TaskBench tests broader scope.
 
 \subsection{Recovery Packet and Authority Boundary}
 At an observed failure record $\xi$ containing failed input $a$, let
@@ -148,14 +130,6 @@ $|\mathcal{D}(\xi)|=1$ and otherwise returns the candidates. Context extraction 
 public schema defaults, and recognizes explicit priority or channel in the
 user request. It never reads benchmark reference paths or judge labels.
 
-\textbf{Proposition (choice collapse).} Conditional on a sound operation
-relation, sound interface and boundary-value predicates, valid context, and a non-committing failed
-call, if $\mathcal{D}(\xi)=\{p\}$, every recovery restricted to the declared
-operation-equivalent, context-valid, value-certified local program class
-selects $p$. Executing $p$
-preserves the unchanged dataflow boundary; its consumer receives a projection
-of the observed producer result, not a predicted value.
-
 The certificate establishes local execution admissibility, while eager
 dispatch is an authority policy that changes the agent's subsequent history.
 The online advice control exposes the same certificate and context but leaves
@@ -172,21 +146,17 @@ dependencies $X_0\to X_\ell$ and $X_{j-1}\to X_j$ for every path edge, plus
  \exists r\in T:\ r[X_0]=a\ \land\ \bigwedge_{j=0}^{\ell}r[X_j]\ne\mathrm{NULL}
  \label{eq:input-support}
 \end{equation}
-Global certification requires this witness for every input in the original
-tool's defined domain; observed-input certification requires it only at $a$.
-Here $\mathrm{NULL}$ is a missing database cell, distinct from a tool exception
-or failed invocation. Values are compared after the benchmark executor's public
-normalization; lossy or nonunique conversions do not satisfy $\Phi$. The row witnesses a defined route; the dependencies make every edge
-single-valued. Induction proves that $\pi(a)$ equals the failed tool's result
-without executing $\pi$. The witness condition is sufficient, not necessary
-for equality on arbitrary relations. This specializes database dependencies and conditional
-equivalence~\cite{abiteboul1995foundations,kawaguchi2010conditional} to a
-failure-time gate. The guarantee is conditional on the declared projection
-semantics, the functional dependencies holding on $T$, and an unchanged
-snapshot during lookup and execution. A trusted backend compiler checks these
-conditions and precomputes witness memberships; runtime admission is an indexed
-lookup with no candidate execution or model call. The online study compares
-this gate with global certification and type-only admission.
+Global certification requires a witness for every defined original input;
+observed-input certification requires one only at $a$. Here $\mathrm{NULL}$
+means a missing database cell, not a tool error. Executor normalization applies;
+lossy or nonunique conversions fail $\Phi$. The witness establishes a defined
+route, and the dependencies make its edges single-valued, so induction yields
+$\pi(a)$ equal to the original result without executing $\pi$. This sufficient
+condition specializes database dependencies and conditional equivalence
+~\cite{abiteboul1995foundations,kawaguchi2010conditional}. It requires sound
+projection semantics, dependencies holding on $T$, and an unchanged snapshot
+through execution. The trusted compiler precomputes witnesses; admission is
+an indexed lookup without candidate execution or model calls.
 
 \begin{figure}[t]
 \centering

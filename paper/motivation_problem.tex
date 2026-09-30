@@ -1,11 +1,9 @@
 \section{Motivation and Problem Formulation}
 \subsection{Why Local Substitution Fails}
-A workflow obtains a device state as a mesh snapshot and passes it to a
-mesh-specific publisher. If the snapshot tool becomes unavailable, an
-alternative producer may return a bridge payload for the same device.
-Substituting only that producer restores availability but violates the
-consumer interface. Replacing the producer and consumer together can preserve
-the output boundary and allow the unchanged continuation to resume
+A mesh snapshot feeds a mesh-specific publisher. If the snapshot tool fails,
+an alternative producer may return a bridge payload for the same device.
+Replacing only the producer breaks the consumer interface; replacing both can
+preserve the output boundary and resume the unchanged continuation
 (Fig.~\ref{fig:continuation-workflow}). The stopping point is therefore part of
 the recovery decision. We write $f$ for the failed producer, $c$ for its
 catalog-linked consumer, and $i,o$ for the immutable input and output ports.
@@ -21,12 +19,9 @@ immutable boundary; state-changing calls already committed to an external
 system belong to $M$ and are never replaced. Online task completion is an
 empirical endpoint rather than a consequence of the dataflow theorem.
 
-ICR separates five obligations that are otherwise conflated in a model retry:
-repair scope, boundary compatibility, functional eligibility, observed-value
-binding, and input-conditional boundary-value preservation. The resulting recovery
-packet carries the selected program, validated context, and checkable
-evidence. Dispatch remains a distinct authority decision because a locally
-valid program may still require task-specific arguments before commitment.
+ICR separates scope, compatibility, function, observed-value binding, and
+input-conditional value preservation. Its packet carries the program, context,
+and evidence; dispatch remains a separate authority decision.
 
 \begin{figure*}[t]
 \centering
@@ -51,12 +46,10 @@ A repair region $R$ is feasible for $\rho$ if
  \bigwedge_{(u,v)\in E}C^{\rho}_{uv}(\mathbf{1}_{u\in R},\mathbf{1}_{v\in R})
  \label{eq:region-feasibility}
 \end{equation}
-The structural objective minimizes the nonnegative cost of changed nodes. External ports
-are immutable, so feasibility explicitly preserves the interface to unchanged
-context. The least feasible region under $\rho$ induces a program $p_{\rho}$.
+The structural objective minimizes nonnegative node-change cost. Immutable
+external ports preserve the unchanged interface. The least feasible region
+under $\rho$ induces program $p_{\rho}$.
 Let $\Phi(p_{\rho},a)$ denote boundary-value eligibility at the observed input and
 $K(p_{\rho},\xi)$ the validated context, with $K(p_{\rho},\xi)=\bot$ on
-validation failure. Structural closure supplies candidate programs satisfying
-\eqref{eq:region-feasibility}; admission additionally requires
-$\Phi(p_{\rho},a)=1$ and $K(p_{\rho},\xi)\ne\bot$. Port connectivity alone
-does not establish boundary-value equivalence.
+validation failure. Structural closure enforces~\eqref{eq:region-feasibility};
+admission also requires $\Phi(p_{\rho},a)=1$ and $K(p_{\rho},\xi)\ne\bot$.

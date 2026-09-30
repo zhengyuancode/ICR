@@ -1,96 +1,72 @@
 \section{Experimental Methodology}
 \subsection{Implementation}
-ICR observes the public tool catalog, concrete call arguments, returned
-observations, and an append-only execution ledger. It never receives benchmark
-injection labels, reference paths, task solutions, or judge verdicts. Tool
-definitions supply input schemas, output annotations, categories, domains,
-and declared substitutes. We retain PlanBench-XL's native retail
-executor~\cite{planbenchxl}.
+ICR uses the public tool catalog, observed arguments and results, and an
+append-only execution ledger. It receives no injection labels, reference
+paths, solutions, or judge verdicts. Tool definitions supply schemas,
+annotations, categories, domains, and declared substitutes. We retain the
+native PlanBench-XL executor~\cite{planbenchxl}.
 
-ICR separates a trusted backend compiler from the end-user agent. In the
-PlanBench-XL deployment, the compiler may read the benchmark's released,
-fixed retail relation to build a certificate index; neither ICR's language
-model nor the native-agent control can inspect relation rows. Global,
-observed-input, and type-only advice controls use the same compiler-side
-catalog and index. Native-versus-ICR results therefore evaluate the deployed
-recovery system, while matched advice controls isolate admission policy.
+The trusted compiler reads PlanBench-XL's fixed retail relation to build a
+certificate index; neither language-model arm sees relation rows. All advice
+controls share its catalog and index. Native-versus-ICR measures the complete
+system; matched advice controls isolate admission policy.
 
-After an observed failure, the compiler enumerates alternative producers and
-linked consumers, constructs their compatibility table, and computes the least
-repair region. Admission requires lossless transport of supplied producer
-arguments, a unique projection that binds the observed payload into the
-consumer, and preservation of the original output schema. Generic
-``data'' or ``object'' matches are rejected. At execution, a failed producer
-interrupts the program before its consumer is dispatched; the original
-failure and all recovery calls remain in the trace.
+After failure, the compiler enumerates producers and linked consumers, builds
+their compatibility table, and computes the least region. Admission requires
+lossless argument transport, a unique observed-payload binding, and the
+original output schema; generic ``data'' or ``object'' matches fail. A failed
+producer interrupts execution before its consumer; all calls remain traced.
 
-Candidate generation does not assume that a new failure is permanent. An
-identical-call retry gate permits one further attempt unless persistence is
-explicit; declared direct substitutions retain precedence when their concrete
-inputs validate. Every matched online control uses the same catalog, retry
-rule, retriever, executor, and failure trigger.
+Unless failure persistence is explicit, an identical-call retry gate permits
+one further attempt. Valid declared direct substitutes retain precedence.
+Matched controls share the catalog, retry rule, retriever, executor, and trigger.
 
 \subsection{Studies and Controls}
-We evaluate structural optimality, boundary-value safety, and
-online completion separately. Within each comparison, controls receive the
-same frozen unit, public catalog, model, executor, and limits; reference paths
-and judge labels enter only offline scoring.
+We evaluate structural optimality, boundary-value safety, and online completion.
+Controls share frozen units, catalogs, models, executors, and limits; reference
+paths and judge labels enter only offline scoring.
 
 \textbf{RQ1: structural exactness and joint choice.}
-An exhaustive small-graph suite covers 40,824 fixed-assignment instances;
-runtime audits enumerate all 16 regions of every recorded local assignment.
-A local processor probe uses worst-propagation chains up to 50,000 nodes.
-The multi-node study deduplicates 1,901 one-input TaskBench Multimedia and
-Hugging Face graphs~\cite{taskbench}; each failed node receives 128 seeded
-domain replacements, type equality defines compatibility, and external ports
-remain immutable. Distinct graphs are cluster-bootstrapped and two additional
-assignment seeds check stability.
+The small-graph oracle covers 40,824 fixed assignments; runtime audits check
+all 16 local regions and chains up to 50,000 nodes. The multi-node study uses
+1,901 deduplicated one-input TaskBench graphs~\cite{taskbench}, with 128 seeded
+domain replacements per failed node, type-equality compatibility, and immutable
+external ports. Graph-cluster bootstrap and two further seeds check stability.
 
-For joint choice, every published operation receives two controlled format
-variants from plain text, JSON, and protobuf, with fixed sampled costs and
-unchanged operation identity. Exact DP, matched-information greedy, beam
-controls, and the exhaustive oracle receive identical choices, boundaries,
-costs, and compatibility tables. On 157 additional multi-input DAGs, variable
-elimination and beams receive the same port-bound variants. Four-choice and
-additional-seed runs test sensitivity. These interventions isolate interface
-optimization; the executable catalog in RQ2 tests boundary-value effects.
+For joint choice, each operation receives two operation-preserving plain-text,
+JSON, or protobuf variants with fixed sampled costs. DP, greedy, beams, and the oracle
+share choices, boundaries, costs, and compatibility. Variable elimination and
+beams share port-bound variants on 157 multi-input DAGs; four-choice and
+additional-seed runs test sensitivity. RQ2 tests executable value effects.
 
 \textbf{RQ2: boundary-value admission and native-agent recovery.}
-PlanBench-XL supplies 327 retail queries, 185 baseline executable tools, and a released
-100-row read-only relation. Without reading task solutions, we enumerate
-boundary-compatible paths of at most five calls. Admitted paths are ordered
-by call count and then tool name, separately from the structural change-cost
-objective. For the relational
-certificate, all 136 unary edge dependencies are checked exhaustively on the
-fixed relation; this is a finite-snapshot guarantee, not an inference about
-future data. The compiler then indexes non-null row witnesses. Compilation
-takes 0.172\,s and no tool or model calls. The index occupies 2.36\,MiB on disk
-and 6.23\,MiB when parsed; 9,850 hash-and-lookup probes take a median
-1.72\,$\mu$s each on one processor. Exhaustive native replay is used
-only after compilation to audit all 31,565 path--input classifications. We additionally replay all paths under a calibration/held-out split to obtain an empirical baseline for comparison.
+PlanBench-XL provides 327 retail queries, 185 tools, and a fixed 100-row
+read-only relation. Without task solutions, we enumerate boundary-compatible
+paths of at most five calls, ordered by length then tool name. The compiler
+exhaustively checks 136 unary dependencies and indexes non-null witnesses on
+this snapshot. Compilation takes 0.172\,s without tool or model calls; the
+index uses 2.36\,MiB on disk and 6.23\,MiB parsed. Across 9,850 performance
+probes, median lookup takes 1.72\,$\mu$s. Native execution audits all 31,565
+path--input classifications only after compilation; a calibration/held-out
+replay supplies an empirical control.
 
-An exploratory integration replay pairs globally rejected but observed-input-
-supported routes with two-call programs having the same external types and a
+An exploratory integration replay pairs globally rejected but
+observed-input-supported routes with two-call programs having the same external types and a
 different intermediate type. The joint solver determines repair scope; native
 execution audits boundary values on defined relation inputs. We append every
 compatible one-call consumer to audit unchanged downstream execution.
 
 
-The online policies are native execution, type-only advice,
-global-certificate advice, and ICR advice using the observed-input certificate.
-A 29-prefix development study precedes an all-arm, reserved 21-task seed-42
-holdout. The target population is explicit-blocker tasks with at least one
-available globally certified local bypass, defined before model outcomes. Of 134 tasks untouched by
-earlier development, 102 met this structural rule (76.1\%). Under seed 43 these
-102 eligible tasks were frozen;
-the first 30 served as diagnostics and the remaining 72 formed the sealed
-independent-task confirmation. A separate 80-task schedule captures previously
-unused input-only opportunities. Six prefixes form a pilot; the next 20 form
-the sealed same-prefix comparison, with identical histories, states, and
-failed actions. Its predeclared primary endpoint is restoration of the trusted
-target value within 12 subsequent model turns; whole-task success is
-secondary. An ancillary post-primary type-only arm replays the same 20
-prefixes. Table~\ref{tab:study-map} separates their endpoints and units.
+Online arms are native execution and three advice policies: type-only,
+global-certificate, and observed-input. A 29-prefix development study precedes a reserved 21-task all-arm
+holdout. Of 134 untouched tasks, 102 met the predefined explicit-blocker and
+globally certified-bypass rule (76.1\%); the first 30 were diagnostic, and the
+remaining 72 formed the sealed confirmation. A separate 80-task schedule
+captured input-only opportunities: six pilot prefixes preceded 20 sealed
+matched prefixes with identical histories, states, and failed actions. Their
+primary endpoint was trusted-target restoration within 12 turns; whole-task
+success was secondary. A post-primary type-only arm replayed the same prefixes.
+Table~\ref{tab:study-map} gives units and endpoints.
 
 \begin{table*}[t]
 \centering\footnotesize\setlength{\tabcolsep}{5pt}
@@ -111,17 +87,13 @@ Same-prefix confirmation & 20 input-only failure states & Three admission rules 
 \end{table*}
 
 \subsection{Online Settings and Statistics}
-All online arms use the same hosted endpoint, which reports the served-model
-identifier deepseek-flash.
-Temperature is zero, thinking is disabled, and the response cap is 4,096
-tokens. PlanBench-XL retains its 100-step cap.
-We use 100,000 paired template, task, or prefix bootstrap resamples (seed
-20260924); reported 95\% intervals are percentile intervals. TaskBench graph
-resamples are stratified by domain. Exact paired binary tests use the two-sided
-McNemar test. The sealed 72-task and 20-prefix studies use task and matched
-prefix as their respective units; pilots and ancillary controls are not pooled
-with them. Every paired 72-task run reached a terminal benchmark outcome; no
-task was omitted because of a missing model response.
+Online arms use the served-model identifier deepseek-flash, temperature zero,
+thinking disabled, a 4,096-token response cap, and PlanBench-XL's 100-step cap.
+Reported 95\% intervals use 100,000 paired percentile-bootstrap draws (seed
+20260924), stratified by TaskBench domain where relevant. Binary contrasts use
+two-sided exact McNemar tests. Sealed studies use task or matched-prefix units;
+pilots and ancillary arms are separate. All 72 paired tasks reached terminal
+outcomes, with no missing-response exclusions.
 
 \section{Results}
 \input{generated_candidate_results.tex}

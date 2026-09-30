@@ -1,14 +1,16 @@
-When a tool used by a language-model agent fails, replacing one call can break
-downstream interfaces or alter values needed by the remaining workflow. We
-present Interface-Closed Recovery (ICR), which jointly selects replacements and
-an interface-closed changed region that reconnects to unchanged execution. Its
-recovery packets bind observed values and carry interface, function, and boundary-value
-evidence. On a fixed read-only relation, functional dependencies and a
-common-row witness certify candidates at the observed input without executing
-them. Across
-1,901 TaskBench graphs, ICR's exact optimizer matches exhaustive search and
-finds 484 feasible repairs missed by a matched-information greedy baseline. On PlanBench-XL, observed-input certification recovers 774 additional shortest-safe decisions relative to global certification and avoids 126 incorrect type-only selections across 9,250 failed-tool--input cases. An executor-backed replay shows that joint repair and the certificate preserve unchanged downstream calls. In a sealed 72-task
-study, the complete ICR advice system succeeds on 58 tasks versus 39 for the native agent, a paired
-gain of 26.4 percentage points. At 20 matched failure prefixes whose native-correct path
-fails global certification, ICR restores the trusted target value within 12
-turns in 19 cases, versus seven for the global-certificate arm.
+When a tool in a language-model agent fails, replacing one call can break
+downstream interfaces or change a value needed by the remaining workflow. We
+present Interface-Closed Recovery (ICR), which jointly chooses replacements
+and the least changed region that reconnects to unchanged execution. Its
+recovery packet carries interface, function, and boundary-value evidence. On
+a fixed read-only relation, functional dependencies and a common-row witness
+certify paths at the observed input without executing them. Across 1,901
+TaskBench graphs, ICR's exact solver matches exhaustive search and finds 484
+repairs missed by matched-information greedy. On PlanBench-XL, the certificate
+recovers 774 additional safe shortest-route decisions over global certification
+and avoids 126 incorrect type-only choices across 9,250 failed-tool--input
+cases. An executor-backed replay confirms that joint repair preserves unchanged
+downstream calls. In a sealed 72-task study, the complete ICR advice system
+passes 58 tasks versus 39 for the native agent. At 20 matched input-only
+failure prefixes, it restores the trusted target value within 12 turns in 19
+cases versus seven for global-certificate advice.
