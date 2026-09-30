@@ -1,0 +1,12 @@
+[
+  {
+    "customer": "Ada",
+    "account": "A7",
+    "balance": 42
+  },
+  {
+    "customer": "Ben",
+    "account": null,
+    "balance": 10
+  }
+]

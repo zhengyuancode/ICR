@@ -1,0 +1,17 @@
+[
+  {
+    "name": "direct_balance",
+    "source": "customer",
+    "target": "balance"
+  },
+  {
+    "name": "customer_account",
+    "source": "customer",
+    "target": "account"
+  },
+  {
+    "name": "account_balance",
+    "source": "account",
+    "target": "balance"
+  }
+]

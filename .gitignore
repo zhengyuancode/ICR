@@ -11,4 +11,13 @@ paper/*.log
 paper/*.out
 paper/main.pdf
 reproduced_claims.json
-
+build/
+dist/
+*.egg-info/
+*.pdf
+*.tex
+*.bib
+*.png
+*.svg
+*.jpg
+*.jpeg

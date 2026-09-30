@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKIP_PARTS = {".git", ".venv", "__pycache__", ".pytest_cache"}
+SKIP_PARTS = {".git", ".venv", "__pycache__", ".pytest_cache", "build", "dist", "external"}
 SKIP_NAMES = {"MANIFEST.sha256", "reproduced_claims.json", "main.pdf"}
 
 
@@ -14,7 +14,7 @@ def main() -> None:
     rows = []
     for path in sorted(ROOT.rglob("*")):
         if (not path.is_file() or path.name in SKIP_NAMES
-                or any(part in SKIP_PARTS for part in path.parts)):
+                or any(part in SKIP_PARTS or part.endswith(".egg-info") for part in path.parts)):
             continue
         data = path.read_bytes()
         # .gitattributes stores text with LF even when a Windows worktree has

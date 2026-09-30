@@ -11,4 +11,6 @@ authors:
     given-names: Yuming
   - family-names: Liu
     given-names: Bo
-date-released: 2026-09-29
+version: 0.1.0
+repository-code: "https://github.com/zhengyuancode/ICR"
+date-released: 2026-09-30

@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-IGNORED_PARTS = {".git", ".venv", "__pycache__", ".pytest_cache"}
+IGNORED_PARTS = {".git", ".venv", "__pycache__", ".pytest_cache", "build", "dist", "external"}
 FORBIDDEN_NAMES = {
     "config.local.json", ".env", "memory.md", "agents.md",
 }
@@ -26,7 +26,7 @@ PATTERNS = {
 
 def tracked_files():
     for path in ROOT.rglob("*"):
-        if not path.is_file() or any(part in IGNORED_PARTS for part in path.parts):
+        if not path.is_file() or any(part in IGNORED_PARTS or part.endswith(".egg-info") for part in path.parts):
             continue
         yield path
 
@@ -37,6 +37,8 @@ def main() -> None:
         relative = path.relative_to(ROOT)
         if path.name.lower() in FORBIDDEN_NAMES:
             failures.append(f"forbidden file: {relative}")
+        if path.suffix.lower() in {".pdf", ".tex", ".bib", ".png", ".svg", ".jpg", ".jpeg"}:
+            failures.append(f"manuscript or image file: {relative}")
         if path.suffix.lower() not in TEXT_SUFFIXES:
             continue
         if path == Path(__file__).resolve():

@@ -1,0 +1,59 @@
+{
+  "nodes": {
+    "fetch": [
+      {
+        "name": "csv",
+        "inputs": [
+          "customer_id"
+        ],
+        "output": "csv_record",
+        "operation": "fetch_record",
+        "original": true,
+        "cost": 1,
+        "read_only": true
+      },
+      {
+        "name": "json",
+        "inputs": [
+          "customer_id"
+        ],
+        "output": "json_record",
+        "operation": "fetch_record",
+        "original": false,
+        "cost": 1,
+        "read_only": true
+      }
+    ],
+    "summarize": [
+      {
+        "name": "csv",
+        "inputs": [
+          "csv_record"
+        ],
+        "output": "summary",
+        "operation": "summarize",
+        "original": true,
+        "cost": 1,
+        "read_only": true
+      },
+      {
+        "name": "json",
+        "inputs": [
+          "json_record"
+        ],
+        "output": "summary",
+        "operation": "summarize",
+        "original": false,
+        "cost": 1,
+        "read_only": true
+      }
+    ]
+  },
+  "edges": [
+    [
+      "fetch",
+      "summarize",
+      0
+    ]
+  ]
+}

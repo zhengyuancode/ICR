@@ -1,102 +1,135 @@
 # Interface-Closed Recovery (ICR)
 
-This repository provides the reference implementation of **Interface-Closed
-Recovery (ICR)**, together with tests, experiment drivers, and frozen results.
+ICR is a Python tool for recovering read-only tool workflows when an implementation
+fails or a replacement changes an intermediate interface. It jointly selects
+alternative implementations and the nodes that must change, so a locally valid
+replacement does not break the remaining workflow.
 
-ICR repairs a failed tool workflow in two coupled steps: it selects replacement
-implementations together with the least region that reconnects to unchanged
-work, then admits a relational recovery path only when its boundary value is
-certified for the observed input.
+For tools defined as unary projections over a JSON relation, ICR also finds and
+executes an alternative route with an **observed-input certificate**: the route
+must produce the trusted target value for the actual input on the bound snapshot.
 
-## Install and verify
+## Install and run
 
-The commands below do not call a language model or download a benchmark.
+Python 3.10 or newer. The tool has **no runtime dependencies**, GPU requirement,
+model subscription or benchmark download.
 
 ```bash
-python -m pip install -r requirements.txt
-python scripts/verify_claims.py
-python -m pytest experiments/test_repair_region.py \
-  experiments/test_joint_repair.py experiments/test_port_joint_repair.py
+python -m pip install .
+icr demo
+# Equivalent: python -m icr demo
 ```
 
-`verify_claims.py` recomputes denominators, paired contrasts, and exact McNemar
-tests from the committed graph-level and task-level records. It writes
-`reproduced_claims.json` and exits with a nonzero status if a recorded result
-does not match its frozen evidence.
+The demo actually executes two recoveries:
 
-## Use the solvers
+* A failed CSV producer is replaced by a JSON producer. ICR also replaces the
+  consumer, preserving the final summary interface.
+* A failed direct balance lookup is replaced by customer-to-account-to-balance
+  projections. A sparse unrelated record prevents global certification, but the
+  observed input has a valid common-record witness and returns the correct value.
 
-The implementation is ordinary Python source and does not require package
-installation. Run code from the repository root. For example:
+## Repair your workflow
+
+Describe each node's original implementation, approved alternatives, operation
+identity, input/output schema IDs and change costs. Bind dependency edges to input
+ports. Then plan a repair:
+
+```bash
+icr plan examples/workflow.json --failed fetch
+icr plan examples/workflow.json --failed fetch --immutable summarize
+```
+
+The first command returns a minimum-cost joint assignment and changed region.
+The second returns infeasible because the consumer cannot change. Plans are JSON
+advice packets; planning does not call your tools.
+
+For automatic read-only recovery, register your actual Python handlers and schema
+validators:
 
 ```python
-from experiments.repair_region import Edge, least_region
+from icr import Workflow, recover
 
-region = least_region(
-    nodes=["producer", "consumer", "context"],
-    edges=[
-        Edge("producer", "consumer", ok_10=False),
-        Edge("consumer", "context"),
-    ],
-    failed={"producer"},
-    immutable={"context"},
+workflow = Workflow.from_file("examples/workflow.json")
+# handlers: {(node, implementation): callable}
+# validators: {schema_id: predicate}
+# external_inputs: {node: [values for its input ports]}
+outputs, plan, failures = recover(
+    workflow, handlers, external_inputs, validators, max_attempts=3
 )
-print(region.feasible, sorted(region.nodes))
 ```
 
-Joint implementation and scope selection is exposed through
-`experiments.joint_repair.solve_tree`; port-bound DAG optimization is exposed
-through `experiments.port_joint_repair.solve_ports`. Their oracle-backed tests
-show complete input constructions.
+A complete runnable handler example is `icr/demo.py`; run it with `icr demo`.
+`examples/http_workflow.py` connects the same workflow to actual CSV/JSON HTTP
+endpoints supplied through environment variables.
+[`docs/workflows.md`](docs/workflows.md) explains how to integrate HTTP tools,
+set execution budgets, freeze implementation choices and interpret failures.
 
-## Repository map
-
-| Component | Code | Frozen evidence |
-|---|---|---|
-| Least interface-closed repair region | `experiments/repair_region.py` | `research/continuation_repair/taskbench_*_multinode_results*.json` |
-| Joint implementation/scope optimization | `experiments/joint_repair.py` | `joint_taskbench_results*.json`, `joint_beam_*.json` |
-| Port-bound DAG optimization | `experiments/port_joint_repair.py` | `port_dag_taskbench_*.json` |
-| Observed-input certificate | `research/relational_certificate_study.py`, `research/compile_planbench_instance_contracts.py` | `planbench_*contracts.json`, `planbench_route_decisions.json` |
-| Exploratory two-call integration replay | `research/integrated_planbench_replay.py` | `integrated_replay_20260930.json`, `integrated_replay_protocol_20260930.json` |
-| Unchanged downstream execution audit | `research/integrated_planbench_suffix_replay.py` | `integrated_suffix_replay_20260930.json` |
-| Same-instance tree DP versus beam timing | `research/benchmark_joint_beam_20260930.py` | `joint_beam_timing_20260930.json` |
-| 72-task system confirmation | `research/analyze_planbench_seed43_confirmation.py` | `planbench_seed43_*protocol.json`, `planbench_seed43_confirmation72_analysis.json` |
-| 21-task matched policy control | `research/analyze_planbench_final_holdout.py` | `planbench_final_*` |
-| 20-prefix matched-state control | `research/analyze_planbench_prefix_trial.py` | `planbench_prefix_*` |
-| Post hoc trajectory mechanism audit | `research/audit_review_mechanism_20260930.py` | `review_mechanism_audit_20260930.json` |
-
-The evidence directory contains graph-level records for the structural studies
-and task-level rows for the online evaluations. Large
-provider-generated conversation traces are not required to reproduce the
-reported statistics; the online runners recreate them when supplied with an
-API configuration.
-
-## Reproducing the experiments
-
-Run the public-data fetcher once:
+## Certify and execute a relation route
 
 ```bash
-python scripts/fetch_public_data.py
+icr repair examples/snapshot.json examples/catalog.json --source customer --target balance --input '"Ada"' --exclude direct_balance --execute
 ```
 
-It downloads the six TaskBench files used in the experiments, clones PlanBench-XL at
-the recorded commit, and verifies every source SHA-256 digest. Then follow
-[`REPRODUCING.md`](REPRODUCING.md) for the structural, certificate, and online
-experiments.
+`--input` is a JSON value; quote strings as JSON strings. On Windows PowerShell,
+Python is often simpler when shell quoting differs:
 
-All structural and certificate experiments are local and require no GPU or
-model API. Online reruns require an OpenAI-compatible endpoint. Copy
-`experiments/config.example.json` to `experiments/config.local.json`, fill in
-the three values, and keep that file untracked. The repository contains no API
-credentials.
+```python
+from icr import Snapshot, Projection, RelationalRecovery
 
-## Scope
+snapshot = Snapshot([
+    {"customer": "Ada", "account": "A7", "balance": 42},
+    {"customer": "Ben", "account": None, "balance": 10},
+])
+engine = RelationalRecovery(snapshot, [
+    Projection("customer_account", "customer", "account"),
+    Projection("account_balance", "account", "balance"),
+])
+admission, rejected = engine.repair("customer", "balance", "Ada")
+if admission.admitted:
+    value = engine.execute(admission.certificate, current_snapshot=snapshot)
+    assert value == 42
+```
 
-The certificate result is a finite-snapshot guarantee for PlanBench-XL's fixed,
-read-only retail relation under the declared projection semantics. The 72-task
-comparison evaluates the complete ICR advice system against the native agent;
-it is not presented as an isolated causal estimate of the certificate alone.
+Certificates include the snapshot/catalog digests, path, observed input, expected
+output and witness rows. Execution recomputes evidence and refuses stale or altered
+certificates. [`docs/relational.md`](docs/relational.md) describes equality, NULL,
+search bounds, global certification and snapshot updates.
 
-TaskBench and PlanBench-XL remain subject to their upstream licenses. This
-repository does not redistribute their source datasets; the fetcher retrieves
-the exact public files and checks their recorded hashes.
+## Choose the interface
+
+| Need | API |
+|---|---|
+| Plan a multi-input DAG repair | `Workflow`, `plan_repair` |
+| Execute registered read-only handlers after validation | `execute` |
+| Run and recover after failures | `recover` |
+| Find and execute a certified relation route | `RelationalRecovery` |
+| Least region for a fixed assignment | `least_region`, `Edge` |
+| Exact forest optimization | `solve_tree`, `Choice` |
+| Exact port-bound constraint optimization | `solve_ports`, `PortChoice` |
+
+Operation equivalence and implementation schemas are application declarations.
+ICR checks these declarations and does not infer semantic equivalence from tool
+names. The workflow executor requires explicit read-only declarations and schema
+validators. It reruns predecessors; it does not roll back or authorize writes.
+Relational certificates cover the declared fixed-snapshot projection semantics,
+not arbitrary remote API behavior or complete agent intent.
+
+## Tests and experiment reproduction
+
+```bash
+python -m pip install ".[test]"
+python -m pytest -q
+python scripts/verify_claims.py
+```
+
+Tests exercise actual execution, failed-alternative exclusion, interface boundaries,
+stale snapshots, ambiguous lookup values and exhaustive structural oracles.
+`verify_claims.py` independently recomputes the recorded experiment statistics;
+it neither calls a model nor downloads data.
+
+The product is in `icr/`; practical examples are in `examples/`. The separate
+`experiments/`, `research/` and `scripts/` directories contain experiment runners
+and committed result records. [`REPRODUCING.md`](REPRODUCING.md) gives the complete
+reproduction commands. Model API access is needed only to rerun online experiments.
+Benchmark source datasets retain their upstream licenses and are fetched separately.
+This repository contains no manuscript, figures or figure-generation sources.
