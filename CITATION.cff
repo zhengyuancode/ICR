@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this artifact, please cite the accompanying paper."
+message: "If you use this software, please cite this repository."
 title: "Interface-Closed Recovery (ICR)"
 type: software
 authors:

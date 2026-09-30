@@ -139,15 +139,6 @@ python -m research.analyze_planbench_prefix_type_control
 python -m research.audit_review_mechanism_20260930
 ```
 
-Hosted model services can change after publication, so a fresh API rerun need
-not reproduce identical trajectories. The committed protocols and outcome rows
-preserve the exact evaluated sample and submitted statistics.
-
-## 5. Paper and figures
-
-```bash
-python paper/figure_sources/generate_figures.py
-```
-
-Compile `paper/main.tex` with an IEEE-compatible LaTeX installation or upload
-the `paper/` directory to Overleaf.
+Hosted model services can change over time, so a fresh API rerun need not
+reproduce identical trajectories. The committed protocols and outcome rows
+preserve the exact evaluated sample and recorded statistics.

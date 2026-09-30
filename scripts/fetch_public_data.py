@@ -1,4 +1,4 @@
-"""Fetch and verify the public benchmark files used by the paper."""
+"""Fetch and verify the public benchmark files used by the experiments."""
 from __future__ import annotations
 
 import hashlib

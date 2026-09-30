@@ -1,9 +1,7 @@
 # Interface-Closed Recovery (ICR)
 
 This repository provides the reference implementation of **Interface-Closed
-Recovery (ICR)**, together with tests, experiment drivers, and the paper source
-for **Interface-Closed Recovery: Joint Workflow Repair with Observed-Input
-Certificates**.
+Recovery (ICR)**, together with tests, experiment drivers, and frozen results.
 
 ICR repairs a failed tool workflow in two coupled steps: it selects replacement
 implementations together with the least region that reconnects to unchanged
@@ -21,9 +19,9 @@ python -m pytest experiments/test_repair_region.py \
   experiments/test_joint_repair.py experiments/test_port_joint_repair.py
 ```
 
-`verify_claims.py` recomputes the reported denominators, paired contrasts, and
-exact McNemar tests from the committed graph-level and task-level records. It
-writes `reproduced_claims.json` and exits with a nonzero status if a paper claim
+`verify_claims.py` recomputes denominators, paired contrasts, and exact McNemar
+tests from the committed graph-level and task-level records. It writes
+`reproduced_claims.json` and exits with a nonzero status if a recorded result
 does not match its frozen evidence.
 
 ## Use the solvers
@@ -53,7 +51,7 @@ show complete input constructions.
 
 ## Repository map
 
-| Paper result | Code | Frozen evidence |
+| Component | Code | Frozen evidence |
 |---|---|---|
 | Least interface-closed repair region | `experiments/repair_region.py` | `research/continuation_repair/taskbench_*_multinode_results*.json` |
 | Joint implementation/scope optimization | `experiments/joint_repair.py` | `joint_taskbench_results*.json`, `joint_beam_*.json` |
@@ -68,12 +66,12 @@ show complete input constructions.
 | Post hoc trajectory mechanism audit | `research/audit_review_mechanism_20260930.py` | `review_mechanism_audit_20260930.json` |
 
 The evidence directory contains graph-level records for the structural studies
-and task-level rows for every online denominator used in the paper. Large
+and task-level rows for the online evaluations. Large
 provider-generated conversation traces are not required to reproduce the
 reported statistics; the online runners recreate them when supplied with an
 API configuration.
 
-## Reproducing the paper
+## Reproducing the experiments
 
 Run the public-data fetcher once:
 
@@ -81,7 +79,7 @@ Run the public-data fetcher once:
 python scripts/fetch_public_data.py
 ```
 
-It downloads the six TaskBench files used by the paper, clones PlanBench-XL at
+It downloads the six TaskBench files used in the experiments, clones PlanBench-XL at
 the recorded commit, and verifies every source SHA-256 digest. Then follow
 [`REPRODUCING.md`](REPRODUCING.md) for the structural, certificate, and online
 experiments.
