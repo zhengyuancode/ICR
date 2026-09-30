@@ -1,4 +1,20 @@
-# Interface-Closed Recovery (ICR)
+<div align="center">
+
+# ICR · Interface-Closed Recovery
+
+**Recover tool workflows without breaking the continuation.**
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.1.0-0F766E?style=flat-square)
+![Dependencies](https://img.shields.io/badge/core_dependencies-0-475569?style=flat-square)
+
+**English** · [简体中文](README.zh-CN.md)
+
+[Quick start](#quick-start) · [Workflow recovery](#workflow-recovery) · [Relational certificates](#relational-certificates) · [Documentation](#documentation) · [Reproduction](REPRODUCING.md)
+
+</div>
+
+---
 
 ICR is a Python tool for recovering read-only tool workflows when an implementation
 fails or a replacement changes an intermediate interface. It jointly selects
@@ -9,16 +25,28 @@ For tools defined as unary projections over a JSON relation, ICR also finds and
 executes an alternative route with an **observed-input certificate**: the route
 must produce the trusted target value for the actual input on the bound snapshot.
 
-## Install and run
+## What you can do
+
+| Workflow repair | Relational recovery | Application integration |
+| :--- | :--- | :--- |
+| Jointly select implementations and repair scope | Certify the actual input against a bound snapshot | Use Python APIs or JSON CLI packets |
+| Preserve external input and terminal output interfaces | Reject ambiguous values and stale certificates | Register read-only Python or HTTP handlers |
+| Replan after an implementation fails | Rank admitted routes by declared cost | Validate values before downstream execution |
+
+## Quick start
 
 Python 3.10 or newer. The tool has **no runtime dependencies**, GPU requirement,
 model subscription or benchmark download.
 
 ```bash
+git clone https://github.com/zhengyuancode/ICR.git
+cd ICR
 python -m pip install .
 icr demo
-# Equivalent: python -m icr demo
 ```
+
+Already cloned? Run the last two commands from the repository root.
+`python -m icr demo` is equivalent to `icr demo`.
 
 The demo actually executes two recoveries:
 
@@ -28,7 +56,7 @@ The demo actually executes two recoveries:
   projections. A sparse unrelated record prevents global certification, but the
   observed input has a valid common-record witness and returns the correct value.
 
-## Repair your workflow
+## Workflow recovery
 
 Describe each node's original implementation, approved alternatives, operation
 identity, input/output schema IDs and change costs. Bind dependency edges to input
@@ -58,13 +86,13 @@ outputs, plan, failures = recover(
 )
 ```
 
-A complete runnable handler example is `icr/demo.py`; run it with `icr demo`.
-`examples/http_workflow.py` connects the same workflow to actual CSV/JSON HTTP
+A complete runnable handler example is [`icr/demo.py`](icr/demo.py); run it with `icr demo`.
+[`examples/http_workflow.py`](examples/http_workflow.py) connects the same workflow to actual CSV/JSON HTTP
 endpoints supplied through environment variables.
 [`docs/workflows.md`](docs/workflows.md) explains how to integrate HTTP tools,
 set execution budgets, freeze implementation choices and interpret failures.
 
-## Certify and execute a relation route
+## Relational certificates
 
 ```bash
 icr repair examples/snapshot.json examples/catalog.json --source customer --target balance --input '"Ada"' --exclude direct_balance --execute
@@ -95,7 +123,18 @@ output and witness rows. Execution recomputes evidence and refuses stale or alte
 certificates. [`docs/relational.md`](docs/relational.md) describes equality, NULL,
 search bounds, global certification and snapshot updates.
 
-## Choose the interface
+## Documentation
+
+| Start here | Contents |
+| :--- | :--- |
+| [Workflow guide](docs/workflows.md) | Specification, planning, execution, HTTP handlers and agent integration |
+| [Certificate guide](docs/relational.md) | Evidence, value equality, route search and snapshot updates |
+| [HTTP example](examples/http_workflow.py) | Connect recovery to your own CSV/JSON endpoints |
+| [Reproduction guide](REPRODUCING.md) | Data acquisition, experiment runners and recorded statistics |
+
+<details>
+<summary><strong>Public API reference at a glance</strong></summary>
+
 
 | Need | API |
 |---|---|
@@ -106,6 +145,10 @@ search bounds, global certification and snapshot updates.
 | Least region for a fixed assignment | `least_region`, `Edge` |
 | Exact forest optimization | `solve_tree`, `Choice` |
 | Exact port-bound constraint optimization | `solve_ports`, `PortChoice` |
+
+</details>
+
+## Execution contract
 
 Operation equivalence and implementation schemas are application declarations.
 ICR checks these declarations and does not infer semantic equivalence from tool
@@ -133,3 +176,11 @@ and committed result records. [`REPRODUCING.md`](REPRODUCING.md) gives the compl
 reproduction commands. Model API access is needed only to rerun online experiments.
 Benchmark source datasets retain their upstream licenses and are fetched separately.
 This repository contains no manuscript, figures or figure-generation sources.
+
+---
+
+<div align="center">
+
+[Source](https://github.com/zhengyuancode/ICR) · [Report an issue](https://github.com/zhengyuancode/ICR/issues) · [中文文档](README.zh-CN.md)
+
+</div>
